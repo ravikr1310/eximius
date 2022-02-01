@@ -1231,14 +1231,14 @@ label.port-lbl {
 /*-------------------------------------------------------------
 # Portfolio main Page
 --------------------------------------------------------------*/
-.portfolio-main-pg section.offer {
+.inner-main-container section.offer {
   padding-bottom: 147px;
   margin-bottom: 0;
   padding-top: 117px;
   display: block;
   margin-top: 295px;
 }
-.portfolio-main-pg section.testimonial {
+.inner-main-container section.testimonial {
   padding-top: 166px;
   background-image: url(../images/icons/Group25.png);
   background-position: right 0 bottom 170px;
@@ -1246,7 +1246,7 @@ label.port-lbl {
   background-size: auto;
   position: relative;
 }
-.portfolio-main-pg .portPloy1{
+.inner-main-container .portPloy1{
   background-image: url(../images/icons/portPoligion.png);
   width: 133px;
   height: 177px;
@@ -1254,7 +1254,7 @@ label.port-lbl {
   right: 0;
   bottom: -146px;
 }
-.pfolio .section-title h5 {
+.innerpages .section-title h5 {
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
@@ -1262,13 +1262,13 @@ label.port-lbl {
   text-align: center;
   padding-bottom: 117px;
 }
-.pfolio .section-title ul {
+.innerpages .section-title ul {
   display: flex;
   justify-content: center;
   padding: 11px;
   margin-bottom: 20px;
 }
-.pfolio .section-title ul li{
+.innerpages .section-title ul li{
   box-shadow: 0px 3px 4px rgb(0 0 0 / 8%);
   border-radius: 15px;
   padding: 15px 40px;
@@ -1279,11 +1279,11 @@ label.port-lbl {
   font-size: 16px;
   line-height: 19px;
 }
-.pfolio .section-title ul li.active{
+.innerpages .section-title ul li.active{
   background: #6570F1;
   color: #fff;
 }
-.pfolio .result-sec {
+.innerpages .result-sec {
   background: #EFF4FF;
   border: 1px solid rgba(101, 112, 241, 0.2);
   box-sizing: border-box;
@@ -1301,7 +1301,7 @@ label.port-lbl {
   font-size: 16px;
   padding-right: 40px;
 }
-.pfolio form label.checkbox-inline {
+.innerpages form label.checkbox-inline {
   color: #6570F1;
   font-weight: 600;
   font-size: 16px;
@@ -1368,10 +1368,10 @@ a.btn-jar-btn {
   color: #000;
   padding:16px 38px 38px;
 }
-.jar-container div:nth-child(2) div:nth-child(5) {
+.sub-container div:nth-child(2) div:nth-child(5) {
   margin-top: 26px;
 }
-.jar-container > div:nth-child(n+2) {
+.sub-container > div:nth-child(n+2) {
   padding-top: 50px;
 }
 h3.jar-subhead {
@@ -1402,9 +1402,9 @@ h3.jar-subhead {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-section.pfolio{
-  background-image: url(../images/icons/thickDots.png),url(../images/icons/PolygonRight.png),url(../images/icons/Polygon10.png);
-  background-position: left 0 top 145px,right -38px top 192px,left 0 top 434px;
+section.innerpages{
+  background-image: url(../images/icons/thickDots.png),url(../images/icons/PolygonRight.png),url(../images/icons/Polygon10.png),url(../images/icons/thickDots.png);
+  background-position: left 0 top 145px,right 87px top 192px,left 0 top 434px,right 64px top 328px;
   background-repeat: no-repeat;
   background-size: auto;
   padding-top: 108px;
@@ -1422,6 +1422,116 @@ section.pfolio{
   background-position: right 0 bottom 170px;
   background-repeat: no-repeat;
 }
+
+/*--------------------------------------------------------------
+# Team
+---------------------------------------------------------------*/
+.team .nav{
+  display: inline-block;
+}
+.team h3{
+  margin-top: 0;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 160%; 
+  margin-bottom: 32px; 
+}
+.team .nav-pills>li{
+  clear: left;
+}
+.team .nav>li>a {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: unset;
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 228%;
+  padding-top: 0;
+}
+.team .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: #6570F1;
+  background-color: unset;
+}
+.team .nav-pills>li.active:before {
+  content: url("../images/team/pipe.png");
+  display: inline;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.team .team-tab-box {
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgb(26 35 42 / 15%);
+  border-radius: 0px 0px 12px 12px;
+  padding: 24px;
+}
+.team .team-tab-box ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0 16px 0 0;
+  margin: 0;
+  display: inline-block;
+}
+.team .team-tab-box p {
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+.team a.team-btn {
+  background: #EFF4FF;
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 8%);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 11px 24px;
+    margin-top: 27px;
+    display: inline-block;
+}
+.team .team-tab-box p span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6570F1;
+}
+.team .team-tab-box ul {
+  margin-bottom: 0;
+}
+.space-between-box{
+  display: flex;
+  justify-content: space-between;
+}
+.team-tab-box > img {
+  height: 279px;
+}
+.team-overlay{
+  margin-top: 72px;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1008;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+}
+.modal-dialog {
+  position: absolute;
+  width: auto;
+  margin: 10px;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 10%);
+}
+.modal-content {
+  background: #FFFFFF;
+  box-shadow: 0px 16px 48px rgb(0 0 0 / 25%);
+  border-radius: 32px;
+}
+
+
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
@@ -1501,9 +1611,9 @@ section.pfolio{
 }
 
 /*--------------------------------------------------------------
-# Team
+# Focus
 --------------------------------------------------------------*/
-.team {
+.focus {
   /* background: #fff; */
   padding: 60px 0;
   margin-top: 350px;
@@ -1512,7 +1622,7 @@ section.pfolio{
   background-position: top 241px left 176px,bottom 383px right 180px,bottom 7px right 603px;
   background-repeat: no-repeat;
 }
-.team .team-bg{
+.focus .focus-bg{
   background-image: url(../images/icons/dots10.png);  
   background-position: right 0 bottom 127px;
   background-repeat: no-repeat;
@@ -1527,7 +1637,7 @@ section.ourteam-sec{
   background-position: top 105px left 180px,bottom 217px right 207px;
   background-repeat: no-repeat;
 }
-.team .team-bg1{
+.focus .focus-bg1{
   background-image: url(../images/icons/smallPoly.png);  
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
@@ -1563,14 +1673,14 @@ section.invo{
 .ourteam-sec .section-title {
   margin-top: 104px;
 }
-.team .member {
+.focus .member {
   text-align: center;
   margin-bottom: 20px;
   background: #343a40;
   position: relative;
   overflow: hidden;
 }
-.team .member .member-info {
+.focus .member .member-info {
   opacity: 0;
   position: absolute;
   bottom: 0;
@@ -1579,26 +1689,26 @@ section.invo{
   right: 0;
   transition: 0.2s;
 }
-.team .member .member-info-content {
+.focus .member .member-info-content {
   position: absolute;
   left: 50px;
   right: 0;
   bottom: 0;
   transition: bottom 0.4s;
 }
-.team .member .member-info-content h4 {
+.focus .member .member-info-content h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
   color: #fff;
 }
-.team .member .member-info-content span {
+.focus .member .member-info-content span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #fff;
 }
-.team .member .social {
+.focus .member .social {
   position: absolute;
   left: -50px;
   top: 0;
@@ -1608,29 +1718,29 @@ section.invo{
   background: rgba(78, 64, 57, 0.6);
   text-align: center;
 }
-.team .member .social a {
+.focus .member .social a {
   transition: color 0.3s;
   display: block;
   color: #fff;
   margin-top: 15px;
 }
-.team .member .social a:hover {
+.focus .member .social a:hover {
   color: #6570F1;
 }
-.team .member .social i {
+.focus .member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
-.team .member:hover .member-info {
+.focus .member:hover .member-info {
   background: linear-gradient(0deg, rgba(78, 64, 57, 0.95) 0%, rgba(78, 64, 57, 0.95) 15%, rgba(255, 255, 255, 0) 100%);
   opacity: 1;
   transition: 0.4s;
 }
-.team .member:hover .member-info-content {
+.focus .member:hover .member-info-content {
   bottom: 30px;
   transition: bottom 0.4s;
 }
-.team .member:hover .social {
+.focus .member:hover .social {
   left: 0;
   transition: left ease-in-out 0.3s;
 }
