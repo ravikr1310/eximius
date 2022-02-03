@@ -722,7 +722,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   color:var(--font-color);
 }
 .section-title h2 {
@@ -1344,7 +1344,7 @@ label.port-lbl {
   margin-bottom: 0;
   padding-top: 117px;
   display: block;
-  margin-top: 295px;
+  /* margin-top: 295px; */
 }
 .inner-main-container section.testimonial {
   padding-top: 166px;
@@ -1369,6 +1369,7 @@ label.port-lbl {
   line-height: 68px;
   text-align: center;
   padding-bottom: 117px;
+  margin-top: 52px;
 }
 .innerpages .section-title ul {
   display: flex;
@@ -1422,7 +1423,7 @@ label.port-lbl {
   overflow: hidden;
   width: 93%;
   height: 0;
-  transition: .5s ease;
+  transition: .1s ease;
   -webkit-transform: translate(-100%, 0);
   -ms-transform: translate(-100%, 0);
   transform: translate(-100%, 0);
@@ -1465,16 +1466,15 @@ a.btn-jar-btn {
   float: right;
 }
 .jar-inner:hover .overlay {
-  height: fit-content;
-  top: 100%;
-  bottom: 100%;
-  margin-top: -14px;
+  height: auto;
+  top: 0px;
+  bottom: 0;
   background: #fff;
   width: 93%;
-  border-radius: 0px 0 24px 24px;
+  border-radius: 24px 24px;
   box-shadow: 0px 8px 24px rgb(26 35 42 / 15%);
   color: #000;
-  padding:16px 38px 38px;
+  padding: 16px 38px 38px;
 }
 .sub-container div:nth-child(2) div:nth-child(5) {
   margin-top: 26px;
@@ -1510,13 +1510,22 @@ h3.jar-subhead {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.innerpage-common{
+  background-image: url(../images/icons/Polygon10.png);
+  background-position: left 0 top 313px;
+    background-repeat: no-repeat;
+    background-size: 140px 290px;
+    width: 140px;
+    display: inline-block;
+    height: 608px;
+    position: absolute;
+}
 section.innerpages{
-  background-image: url(../images/icons/thickDots.png),url(../images/icons/PolygonRight.png),url(../images/icons/Polygon10.png),url(../images/icons/thickDots.png);
-  background-position: left 0 top 145px,right 87px top 192px,left 0 top 434px,right 64px top 328px;
+  background-image: url(../images/icons/thickDots.png),url(../images/icons/PolygonRight.png),url(../images/icons/thickDots.png);
+  background-position: left 0 top 105px,right 87px top 140px,right 64px top 303px;
   background-repeat: no-repeat;
   background-size: auto;
   padding-top: 108px;
-  padding-top: 209px;
 }
 .pfdetail{
   background-image: url(../images/icons/Group25.png);
@@ -1536,6 +1545,9 @@ section.innerpages{
 ---------------------------------------------------------------*/
 .team .nav{
   display: inline-block;
+}
+.tab-content.team-tab-container div:nth-child(5) {
+  margin-top: 0 !important;
 }
 .team h3{
   margin-top: 0;
@@ -1962,6 +1974,37 @@ section.innerpages{
   width: 1014px;
   margin: 0 auto;  
 }
+
+/*-------------------------------------------------------------
+# Press Release
+---------------------------------------------------------------*/
+.cus-card-body {
+  padding: 34px 11px 11px 11px;
+}
+.cus-card-body p.inner-heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #251238;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+.press-release img.card-img-top {
+  width: 330.67px;
+  height: 191px;
+  margin: 0 auto;
+  background: #EDEDED;
+  border-radius: 12px;
+}
+.blog-cards.press-release .card {
+  margin-bottom: 32px;
+}
+section.press-release {
+  margin-bottom: 96px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Focus
