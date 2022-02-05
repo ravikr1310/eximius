@@ -1579,13 +1579,13 @@ h3.jar-subhead {
 }
 .innerpage-common{
   background-image: url(../images/icons/Polygon10.png);
-  background-position: left 0 top 313px;
-    background-repeat: no-repeat;
-    background-size: 140px 290px;
-    width: 140px;
-    display: inline-block;
-    height: 608px;
-    position: absolute;
+  background-position: left -24px top 313px;
+  background-repeat: no-repeat;
+  background-size: 140px 290px;
+  width: 140px;
+  display: inline-block;
+  height: 608px;
+  position: absolute;
 }
 section.innerpages{
   background-image: url(../images/icons/thickDots.png),url(../images/icons/PolygonRight.png),url(../images/icons/thickDots.png);
@@ -1606,6 +1606,98 @@ section.innerpages{
   background-position: right 0 bottom 170px;
   background-repeat: no-repeat;
 }
+
+/*--------------------------------------------------------------
+# FAQs
+----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+
+#accordion {
+  margin: auto;
+}
+.faqs .panel-heading a {
+  display: block;
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+}
+.faqs .panel-heading a::after {
+  content: "";
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  transform: rotate(45deg);
+}
+.faqs .panel-heading a[aria-expanded="true"]::after {
+  transform: rotate(-135deg);
+}
+.faqs .panel-body .row {
+  padding: 24px 24px 9px 24px;
+}
+.faqs .panel-body p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #413E49;  
+  padding-bottom: 15px;
+}
+.faqs .panel-default>.panel-heading {
+  color: #333;
+  background-color: #fff;
+  padding: 24px 24px 32px;
+  border: none;
+  border-radius: 97%;
+}
+.faqs .panel-group .panel {
+  margin-bottom: 32px;
+  border-radius: 19px;
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgb(26 35 42 / 15%);
+}
+.faqsPolygon{
+  background-image: url(../images/faqs/faqsPolygon.png);
+  background-repeat: no-repeat;
+  background-size: 106px 514px;
+  width: 106px;
+  display: inline-block;
+  right: 0;
+  top: 659px;
+  height: 514px;
+  position: absolute;
+}
+.faqsDotsRight{
+  background-image: url(../images/faqs/faqs-dots.png);
+  background-repeat: no-repeat;
+  background-size: 271px 77px;
+  width: 271px;
+  display: inline-block;
+  right: 0;
+  top: 1452px;
+  height: 77px;
+  position: absolute;
+}
+.faqsDotsLeft{
+  background-image: url(../images/faqs/faqs-dots.png);
+  background-repeat: no-repeat;
+  background-size: 271px 77px;
+  width: 271px;
+  display: inline-block;
+  left: 0;
+  top: 836px;
+  height: 77px;
+  position: absolute;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Team
