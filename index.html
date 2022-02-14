@@ -37,14 +37,12 @@
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
+    <div class="container align-items-center">
 
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html"><img src="./assets/images/logo/logo.jpg" alt="Main Logo" /></a>
-        </h1>
+      <div class="main-logo">
+        <a href="index.html"><img src="./assets/images/logo/logo.jpg" alt="Main Logo" /></a>
       </div>
-
-      <nav id="navbar" class="navbar custom-offset-left">
+      <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="portfolio.html">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="team.html">Team</a></li>
@@ -52,6 +50,7 @@
           <li><a class="nav-link scrollto" href="#portfolio">Career</a></li>
           <li><a class="nav-link scrollto" href="#founder">Founder's Forum</a></li>
           <li><a class="getstarted scrollto" href="#about">Pitch Us</a></li>
+          <li><a class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png" alt="menu btn" /></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -60,11 +59,11 @@
   </header><!-- End Header -->
 
   <!-- ======= Value Time Section ======= -->
-  <section id="exis" class="d-flex align-items-center">
+  <section id="exis" class="d-flex align-items-center home-banner">
 
     <div class="container">
       <div class="row gy-4">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center banner-sec">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center home-banner-sec">
           <h1>We value your time,<br>
             we’ll give a term<br> sheet in <span class="p-color">
               < 15 days</span>
@@ -107,30 +106,20 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Our Strength</h2>
+          <h2 class="global-sub-title">Our Strength</h2>
           <p>What Defines Us</p>
         </div>
 
         <div class="row">
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos-delay="100">
+          <div class="col-md-6 col-lg-6 align-items-stretch" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><img src="./assets/images/icons/img1.png" class="img-fluid" alt="" /></div>
-              <h4 class="title"><a href="">First institutional<br>cheque</a></h4>
+              <h4 class="title"><a href="">First institutional cheque</a></h4>
               <p class="description">
                 We are among your earliest supporters</p>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/img1.png" class="img-fluid" alt="" /></div>
-              <h4 class="title"><a href="">Peer investors</a></h4>
-              <p class="description">
-                We’re not your mentor or advisor but a friend for good times and bad.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><img src="./assets/images/icons/img1.png" class="img-fluid" alt="" /></div>
               <h4 class="title"><a href="">Speed of execution</a></h4>
@@ -146,10 +135,12 @@
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
+      <div class="bigpolygon-left"></div>
+      <div class="bigpolygon-right"></div>
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>OUR PORTFOLIO</h2>
+          <h2 class="global-sub-title">OUR PORTFOLIO</h2>
           <p>The Gamechangers We <br>Support and Why</p>
         </div>
         <div class="container">
@@ -225,11 +216,11 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonial Section ======= -->
-    <section id="faq" class="faq section-bg testimonial">
+    <section id="faq" class="section-bg testimonial">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Testimonials</h2>
+          <h2 class="global-sub-title">Testimonials</h2>
           <p>What They Say About Us</p>
         </div>
         <div class="carousel slide caro1">
@@ -238,7 +229,8 @@
               <div>
                 <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
                   <img src="./assets/images/icons/doublecot.png" alt="" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra lorem
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
+                    lorem
                     convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
                     fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
                     vitae.
@@ -254,7 +246,8 @@
               <div>
                 <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
                   <img src="./assets/images/icons/doublecot.png" alt="" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra lorem
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
+                    lorem
                     convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
                     fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
                     vitae.
@@ -270,7 +263,8 @@
               <div>
                 <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
                   <img src="./assets/images/icons/doublecot.png" alt="" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra lorem
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
+                    lorem
                     convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
                     fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
                     vitae.
@@ -295,7 +289,7 @@
       <div class="focus-bg1"></div>
       <div class="container">
         <div class="section-title">
-          <h2>Sectors of focus</h2>
+          <h2 class="global-sub-title">Sectors of focus</h2>
           <p>Sectors That Belong to Today and <br>Build for Tomorrow</p>
         </div>
         <div class="row">
@@ -325,7 +319,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Our Team</h2>
+          <h2 class="global-sub-title">Our Team</h2>
           <p>The Hustlers Behind the Scenes</p>
         </div>
 
@@ -439,9 +433,9 @@
     <section id="contact" class="contact press-rel">
       <div class="pressreleases"></div>
       <div class="container" data-aos="fade-up">
-        
+
         <div class="section-title">
-          <h2>Press Releases</h2>
+          <h2 class="global-sub-title">Press Releases</h2>
           <p>We are in News</p>
         </div>
         <div class="row">
@@ -483,7 +477,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>MORE TO OFFER</h2>
+          <h2 class="mo-head">MORE TO OFFER</h2>
           <p>Find informative<br> insights in our library</p>
         </div>
         <div class="row pr-cont">
