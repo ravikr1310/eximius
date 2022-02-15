@@ -367,13 +367,13 @@ section.testimonial{
 }
 .banner-2{
   position: relative;
-  right: -133px;
+  right: -79px;
   top: 12px;
 }
 .banner-3{
   position: var(--pos-abst);
   top: 400px;
-  left: 127px;
+  left: 76px;
 }
 section.marq-1 {
   margin-top: 88px;
@@ -399,9 +399,9 @@ section .home-banner-sec {
   padding-left: 0;
 }
 @media (min-width: 1200px){
-  .container {
+  /* .container {
       width: 1300px;
-  }
+  } */
 }
 @media only screen and (max-width:768px){
   .custom-wratter{
