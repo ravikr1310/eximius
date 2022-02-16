@@ -50,12 +50,26 @@
           <li><a class="nav-link scrollto" href="#portfolio">Career</a></li>
           <li><a class="nav-link scrollto" href="#founder">Founder's Forum</a></li>
           <li><a class="getstarted scrollto" href="#about">Pitch Us</a></li>
-          <li><a class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png" alt="menu btn" /></a></li>
+          <li><a id="sidemenuicon" class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png"
+                alt="menu btn" /></a></li>
         </ul>
+        <div class="header-side-menu">
+          <a id="sidecrossbtn" href="#" class="side-menu-cross"><img
+              src="./assets/images/icons/menu-cross-btn.svg" /></a>
+          <ul>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./pressrelease.html">Press Releases</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="./faq.html">FAQs</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+            <li><a href="./provacypolicy.html">Privacy Policy</a></li>
+            <li><a href="./terms-0f-use.html">Terms of Use</a></li>
+          </ul>
+        </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
+
   </header><!-- End Header -->
 
   <main id="main" class="inner-main-container">
@@ -73,7 +87,7 @@
                 <li>Fintech</li>
                 <li>Health Tech</li>
                 <li>Gaming</li>
-            </ul>
+              </ul>
             </div>
           </div>
         </div>
@@ -87,8 +101,10 @@
             <div class="card cus-card">
               <img class="card-img-top" src="./assets/images/pressreleases/img1.png" alt="Card image cap">
               <div class="cus-card-body">
-                <p class="inner-heading">Looking to Make Your Startup the Next Unicorn? Here’s How to Get Seed Funding in Place</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non et aliquet diam. Sit sit in metus, sed cursus lorem venenatis. </p>
+                <p class="inner-heading">Looking to Make Your Startup the Next Unicorn? Here’s How to Get Seed Funding
+                  in Place</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non et aliquet diam. Sit sit in
+                  metus, sed cursus lorem venenatis. </p>
                 <span class="span-1">Startup</span>
                 <span class="span-2">July 2021</span>
               </div>
@@ -98,8 +114,10 @@
             <div class="card cus-card">
               <img class="card-img-top" src="./assets/images/pressreleases/img1.png" alt="Card image cap">
               <div class="cus-card-body">
-                <p class="inner-heading">Looking to Make Your Startup the Next Unicorn? Here’s How to Get Seed Funding in Place</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non et aliquet diam. Sit sit in metus, sed cursus lorem venenatis. </p>
+                <p class="inner-heading">Looking to Make Your Startup the Next Unicorn? Here’s How to Get Seed Funding
+                  in Place</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non et aliquet diam. Sit sit in
+                  metus, sed cursus lorem venenatis. </p>
                 <span class="span-1">Startup</span>
                 <span class="span-2">July 2021</span>
               </div>
@@ -295,19 +313,13 @@
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
-    $(document).on('ready', function () {
-      $(".regular").slick({
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4
-      });
-      $(".regular1").slick({
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
+     $(document).on('ready', function () {
+      $("#sidemenuicon").on("click", function () {
+        $('.header-side-menu').show();
+      })
+      $("#sidecrossbtn").on("click", function () {
+        $('.header-side-menu').hide();
+      })
     });
 
   </script>
