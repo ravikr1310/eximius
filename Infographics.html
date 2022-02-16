@@ -38,25 +38,39 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container align-items-center">
-    
-          <div class="main-logo">
-            <a href="index.html"><img src="./assets/images/logo/mainLogo.svg" alt="Main Logo" /></a>
-          </div>
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li><a class="nav-link scrollto active" href="portfolio.html">Portfolio</a></li>
-              <li><a class="nav-link scrollto" href="team.html">Team</a></li>
-              <li><a class="nav-link scrollto" href="#services">Sectors of focus</a></li>
-              <li><a class="nav-link scrollto" href="#portfolio">Career</a></li>
-              <li><a class="nav-link scrollto" href="#founder">Founder's Forum</a></li>
-              <li><a class="getstarted scrollto" href="#about">Pitch Us</a></li>
-              <li><a class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png" alt="menu btn" /></a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
-    
+
+            <div class="main-logo">
+                <a href="index.html"><img src="./assets/images/logo/mainLogo.svg" alt="Main Logo" /></a>
+            </div>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Sectors of focus</a></li>
+                    <li><a class="nav-link scrollto" href="#portfolio">Career</a></li>
+                    <li><a class="nav-link scrollto" href="#founder">Founder's Forum</a></li>
+                    <li><a class="getstarted scrollto" href="#about">Pitch Us</a></li>
+                    <li><a id="sidemenuicon" class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png"
+                                alt="menu btn" /></a></li>
+                </ul>
+                <div class="header-side-menu">
+                    <a id="sidecrossbtn" href="#" class="side-menu-cross"><img
+                            src="./assets/images/icons/menu-cross-btn.svg" /></a>
+                    <ul>
+                        <li><a href="./blog.html">Blogs</a></li>
+                        <li><a href="./pressrelease.html">Press Releases</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="./faq.html">FAQs</a></li>
+                        <li><a href="./contact.html">Contact us</a></li>
+                        <li><a href="./provacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="./terms-0f-use.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
         </div>
-      </header><!-- End Header -->
+
+    </header><!-- End Header -->
     <div class="faqsPolygon"></div>
     <div class="faqsDotsRight"></div>
     <div class="faqsDotsLeft"></div>
@@ -82,7 +96,7 @@
                 </div>
                 <div class="row sub-container">
                     <div class="col-xl-6 col-lg-6 col-md-6 infogr" data-aos="zoom-in" data-aos-delay="50">
-                        <img src="./assets/images/infographics/infog1.svg" alt="" />                        
+                        <img src="./assets/images/infographics/infog1.svg" alt="" />
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 infogr" data-aos="zoom-in" data-aos-delay="50">
                         <img src="./assets/images/infographics/infog2.svg" alt="" />
@@ -232,17 +246,14 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
-        var myVideo = document.getElementById("video1");
-        var myBtn = document.getElementById("playbtn1");
-        function playPause() {
-            if (myVideo.paused) {
-                myVideo.play();
-                myBtn.style.display = 'none';
-            } else {
-                myVideo.pause();
-                myBtn.style.display = 'block';
-            }
-        }
+        $(document).on('ready', function () {
+            $("#sidemenuicon").on("click", function () {
+                $('.header-side-menu').show();
+            })
+            $("#sidecrossbtn").on("click", function () {
+                $('.header-side-menu').hide();
+            })
+        });
     </script>
 </body>
 
