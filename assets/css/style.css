@@ -260,6 +260,7 @@ h2.global-sub-title{
   --primary-color:#6570F1;
   --font-color:#251238;
   --font-color1:#413E49;
+  --font-white:#FAFAFA;
   --bg-color:#F8FAFF;
   --font-color2:var(--font-color2);
   --font-head-color:var(--font-head-color);
@@ -566,9 +567,13 @@ section.invo {
   margin-top: 61px;
 }
 .invo h5 {
-  font-size: 18px;
-  font-weight: bold;
   font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color:var(--font-white)
 }
 .invo img {
   padding-left: 75px;
@@ -670,21 +675,31 @@ section.invo{
   margin-top: 60px;
 }
 .inner-press-cont img:nth-child(2) {
-  padding: 34px 16px 11px;
+  padding: 34px 10px 11px;
 }
-.inner-press-cont h4{
+.pr-desc{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 150%;
   letter-spacing: -0.01em;
+  color: var(--font-color);
+}
+span.pr-date {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: var(--font-color1);
 }
 .inner-press-cont img:nth-child(1) {
   width: 100%;
 }
-.inner-press-cont h4,.inner-press-cont h5 {
-  padding-left: 16px;
+.inner-press-cont .pr-date,.inner-press-cont .pr-desc {
+  padding-left: 10px;
 }
 .home-banner .btn-get-started:hover {
   background: #ef7f4d;
@@ -763,7 +778,8 @@ p.ot-ttle {
   font-size: 16px;
   line-height: 135%;
   letter-spacing: -0.01em;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+
 }
 p.ot-desig {
   font-family: 'Inter';
@@ -772,7 +788,9 @@ p.ot-desig {
   font-size: 14px;
   line-height: 135%;
   letter-spacing: -0.01em;
-  color:var(--primary-color)
+  color:var(--primary-color);
+  padding-bottom: 19px;
+    margin-bottom: 0;
 }
 
 .row.pr-cont{
@@ -925,7 +943,7 @@ section {
   background: #FFFFFF;
   box-shadow: 0px 8px 16px rgb(48 57 66 / 8%);
   border-radius: 16px;
-  padding: 16px;
+  padding: 16px 16px 26px 16px;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -1162,13 +1180,22 @@ section.testimonial .one {
   padding: 56px 40px 0 40px;
 }
 h3.port-para {
-  font-size: 16px;
   margin-top: 0;
   margin-bottom: 28px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
 }
 label.port-lbl {
-  font-size: 18px;
   margin-bottom: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: -0.01em;
 }
 .right-port img{
   /* float: left; */
@@ -3281,7 +3308,7 @@ section.offer{
   font-family: 'Montserrat';
   font-size: 20px;
   font-weight: bold;
-  color: var(--font-color2);
+  color: var(--font-color1);
   position: var(--pos-rltv);
   text-transform: uppercase;
   padding-bottom: 12px;
@@ -3338,10 +3365,12 @@ section.offer{
 #footer .footer-top .footer-links ul a {
   color: var(--font-color);
   transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-  font-weight: bold;  
+  display: inline-block;    
   font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
