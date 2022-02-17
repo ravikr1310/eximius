@@ -3131,6 +3131,63 @@ section.press-rel {
 }
 
 /*--------------------------------------------------------------
+# fintech
+--------------------------------------------------------------*/
+.fintech-header{
+  background: rgba(0,0,0,0.0)!important;
+  color: white;
+}
+
+.fintech-header .getstarted{
+  background-color: white;
+  color: var(--primary-color);
+}
+.fintech .banner-1{
+  top: 68px;
+}
+.fintech-home-banner h1{
+  font-size: 70px;
+  margin-bottom: 21px;
+  color: white;
+}
+.fintech-home-banner h3{
+  margin-top: 0;
+  line-height: 2;
+  color: white;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 26px;
+}
+.fintech-home-banner::before{
+  content: "";
+  background-image: url(../images/fintech/fintechBg.svg); 
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.fintech-home-banner-inner{
+  margin-top: -68px;
+}
+.fintech .banner-3{
+  left: 36px;
+}
+.investment{
+  margin-top: 33rem;
+}
+.fintech{
+  padding-top: 15rem;
+}
+.investment .inner-para{
+ width: 90%;
+ margin:0 auto;
+ font-size: 16px;
+}
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
