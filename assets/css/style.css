@@ -1379,6 +1379,9 @@ label.port-lbl {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+.our-portfolio h3.port-para {
+  margin-bottom: 0;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 0 35px 0;
