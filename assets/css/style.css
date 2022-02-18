@@ -1032,21 +1032,32 @@ section {
 }
 
 /*-------------------------------------------------------------
-# Thesis
+# Thesis and About us
 --------------------------------------------------------------*/
-.thesis .nav{
+.thesis-aboutus .nav{
   display: inline-block;
   width: 100%;
 }
-.thesis .nav-pills>li:nth-child(-n+3) {
+.thesis-aboutus .nav-pills>li:nth-child(-n+5) {
   clear: left;
   width: 100%;
   margin-bottom: 16px;
 }
-.thesis .nav-pills>li:nth-child(3){
+.tab-content.thesis-aboutus-tab-container div:nth-child(7) {
+  margin-top: 0 !important;
+}
+.tab-content.thesis-aboutus-tab-container p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--font-color1);
+}
+.thesis-aboutus .nav-pills>li:nth-child(3){
 
 }
-.thesis h3{
+.thesis-aboutus h3{
   margin-top: 0;
   margin-top: 0;
   font-weight: bold;
@@ -1056,12 +1067,12 @@ section {
   line-height: 160%; 
   margin-bottom: 32px; 
 }
-.thesis-inner {
+.thesis-aboutus-inner {
   background: #EFF4FF;
   border-radius: 16px;
   padding: 32px;
 }
-.thesis .nav-pills>li>a, .thesis .nav-pills>li>a, .thesis .nav-pills>li>a{
+.thesis-aboutus .nav-pills>li>a, .thesis-aboutus .nav-pills>li>a, .thesis-aboutus .nav-pills>li>a{
   background-color: #fff;
   color:var(--font-color1);
   font-weight: 600;
@@ -1071,7 +1082,7 @@ section {
   border-radius: 15px;
 }
 
-.thesis .nav-pills>li.active>a, .thesis .nav-pills>li.active>a:focus, .thesis .nav-pills>li.active>a:hover{
+.thesis-aboutus .nav-pills>li.active>a, .thesis-aboutus .nav-pills>li.active>a:focus, .thesis-aboutus .nav-pills>li.active>a:hover{
   background-color: var(--primary-color);
   color:#fff;
   font-weight: 600;
@@ -1822,14 +1833,14 @@ h2.mo-head {
   display: block;
   /* margin-top: 295px; */
 }
-.inner-main-container section.testimonial {
+/* .inner-main-container section.testimonial {
   padding-top: 166px;
   background-image: url(../images/icons/Group25.png);
   background-position: right 0 bottom 170px;
   background-repeat: no-repeat;
   background-size: auto;
   position: var(--pos-rltv);
-}
+} */
 .inner-main-container .portPloy1{
   background-image: url(../images/icons/portPoligion.png);
   width: 133px;
@@ -1995,6 +2006,7 @@ h3.jar-subhead {
   height: 608px;
   position: absolute;
   top: 418px;
+  left:-22px
 }
 section.innerpages{
   background-image: url(../images/icons/thickDots.png),url(../images/icons/PolygonRight.png),url(../images/icons/thickDots.png);
@@ -2427,6 +2439,7 @@ a.readmore-btn {
   vertical-align: middle;
   min-height: 268px;
   height: 268px;
+  border-radius: 10px;
 }
 .team .team-tab-box ul {
   margin-bottom: 0;
