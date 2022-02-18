@@ -38,7 +38,6 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center fintech-header">
     <div class="container align-items-center">
-
       <div class="main-logo">
         <a href="index.html"><img src="./assets/images/fintech/white_logo.svg" alt="Main Logo" /></a>
       </div>
@@ -68,6 +67,41 @@
       </nav><!-- .navbar -->      
     </div>    
   </header><!-- End Header -->
+  <!-- ======= Header 2======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header_black hide">
+    <div class="container align-items-center">
+
+      <div class="main-logo">
+        <a href="index.html"><img src="./assets/images/logo/mainLogo.svg" alt="Main Logo" /></a>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+          <li><a class="nav-link scrollto" href="#services">Sectors of focus</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Career</a></li>
+          <li><a class="nav-link scrollto" href="#founder">Founder's Forum</a></li>
+          <li><a class="getstarted scrollto" href="#about">Pitch Us</a></li>
+          <li><a id="sidemenuicon" class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png" alt="menu btn" /></a></li>
+        </ul>
+        <div class="header-side-menu">
+          <a id="sidecrossbtn" href="#" class="side-menu-cross"><img src="./assets/images/icons/menu-cross-btn.svg"/></a>
+          <ul>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./pressrelease.html">Press Releases</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="./faq.html">FAQs</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+            <li><a href="./provacypolicy.html">Privacy Policy</a></li>
+            <li><a href="./terms-0f-use.html">Terms of Use</a></li>
+          </ul>
+        </div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->      
+    </div>
+    
+  </header>
+  <!-- End Header 2-->
 
   <!-- ======= Value Time Section ======= -->
   <section id="exis" class="d-flex align-items-center home-banner fintech-home-banner">
@@ -510,7 +544,29 @@
       })
     });
 
+    document.addEventListener("DOMContentLoaded", function(){
+      window.addEventListener('scroll', function() {
+        console.log(window.scrollY)
+          if (window.scrollY > 140) {
+            $(".header_black").fadeIn();
+            $(".header_black").addClass('show')
+            $(".header_black").removeClass('hide')
+          }  
+          if (window.scrollY < 140) {
+            $(".header_black").addClass('hide')
+            $(".header_black").removeClass('show')
+          }  
+      });
+    });
   </script>
 </body>
+<style>
+  .header_black .hide {
+    display: none !important;
+  }
+  .header_black .show {
+    display: block !important;
+  }
+</style>
 
 </html>
