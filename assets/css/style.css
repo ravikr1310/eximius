@@ -1522,6 +1522,56 @@ label.port-lbl {
 
 
 /*-------------------------------------------------------------
+# video model
+---------------------------------------------------------------*/
+
+.modal-body{
+  padding: 0 !important;
+}
+ .videos video {
+  padding: 0 !important; 
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+
+.modal-content{
+  border: none !important;
+  border-radius: 23px !important;
+}
+.modal-dialog{
+  top: 10% !important;
+  left: 10% !important;
+  right: 10% !important;
+  min-width: 80% !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  
+}
+.videos-container .inner-para{
+  font-weight: normal;
+  font-size: 15px;
+}
+.footer-para{
+  width: 98%;
+}
+.footer-para .inner-para{
+  width: 97%;
+}
+.modal-footer .btn{
+  background-color: var(--primary-color);
+  color: white ;
+  padding-left: 21px !important;
+  padding-right: 21px !important;
+  height: 30px;
+  padding: 0;
+  margin-top: 6px;
+}
+.modal-footer {
+  border-bottom-right-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+
+}
+/*-------------------------------------------------------------
 # Reports
 ---------------------------------------------------------------*/
 .report p {
@@ -2477,7 +2527,8 @@ a.readmore-btn {
   color: #808080d2;
 }
 
-.blog input[type="submit"] {
+.blog input[type="submit"]
+ {
   margin-left: -10%;
   padding: 10px 16px;
   border-radius: 13px;
