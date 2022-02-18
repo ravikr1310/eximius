@@ -2309,50 +2309,101 @@ h2.c-h2 {
   left: 0;
   top: 10px;
 }
-.team .team-tab-box {
+.team .team-tab-box,.team .team-tab-box-inner {
   text-align: center;
   background: #FFFFFF;
   box-shadow: 0px 6px 16px rgb(0 0 0 / 8%);
   border-radius: 16px;
   padding: 24px;
 }
-.team .team-tab-box ul li {
+.team .team-tab-box ul li,.team .team-tab-box-inner ul li {
   text-decoration: none;
   list-style: none;
   padding: 0 16px 0 0;
   margin: 0;
   display: inline-block;
 }
-.team .team-tab-box p {
+p.team-head {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  padding-bottom: 18px;
+  margin-bottom: 0;
+}
+p.team-designation {
   font-family: 'Inter';
-  font-size: 16px;
-  padding-top: 24px;
-  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135%;
+  letter-spacing: -0.01em;
+  color: var(--menu-active);
+  padding-bottom: 18px;
+  margin-bottom: 0;
+  display: block;
+}
+p.team-parag{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  color: var(--font-color1);
+  display: inline;
 }
 .team-tab-box > a.readmore-btn {
   margin-top: 27px;
 }
 a.readmore-btn {
   background: #EFF4FF;
-    box-shadow: 0px 3px 4px rgb(0 0 0 / 8%);
-    border-radius: 8px;
-    font-size: 14px;
-    line-height: 17px;
-    padding: 11px 24px;
-    display: inline-block;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 8%);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 11px 24px;
+  /* display: inline-block; */
+  float: right;
 }
-.team .team-tab-box p span {
+.team .team-tab-box-inner p span {
   font-weight: 500;
   font-size: 14px;
   color: var(--primary-color);
+  padding-top: 4px;
+  display: block;
+}
+.team-tab-box-inner > img {
+  vertical-align: middle;
+  min-height: 268px;
+  height: 268px;
 }
 .team .team-tab-box ul {
   margin-bottom: 0;
   display: inline-block;
   padding-left: 0;
+  margin-top: 10px;
+}
+.team-tab-box-inner p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 135%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+.team-tab-box-inner a.readmore-btn{
+  float: none;
+}
+.team-social-cont {
+  margin-top: 36px;
 }
 .pearl-2 {
   text-align: left;
+  padding-top: 17px;
 }
 .space-between-box{
   display: flex;
