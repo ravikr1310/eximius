@@ -1415,6 +1415,109 @@ label.port-lbl {
   opacity: 0.5;
   display: inline-block;
 }
+
+
+
+/*-------------------------------------------------------------
+# Pitch us
+---------------------------------------------------------------*/
+.pitch-inner {
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 48px 32px;
+  margin-bottom: 32px;
+}
+img.pitch-icon {
+  background: #EFF4FF;
+  border-radius: 8px;
+  padding: 8px;
+}
+.pitch-subcomm-head {
+  color: var(--primary-color);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+}
+.pitch-right-container .pitch-subcomm-head{
+  text-transform: uppercase;
+}
+h2.p-m-head {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+.pitch-prof {
+  padding-bottom: 37px;
+}
+.pitch-prof .pitch-subcomm-head{
+  padding-left: 16px;
+}
+.pitch-inner input.form-control {
+  background: #FFFFFF;
+  border: 1px solid #E3E2E2;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 26px 16px !important;
+}
+.pitch-inner input.form-control[type=file]{
+  background: #FFFFFF;
+  border: 1px solid #E3E2E2;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 70px 16px !important;
+}
+.pitch-inner label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  line-height: 150%;
+}
+.mg-b-32{
+  margin-bottom: 32px;
+}
+.pitch-inner .form-group {
+  margin-bottom: 0;
+}
+.pitchus button.btn.btn-default {
+  background: #6570F1;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 8%);
+  border-radius: 15px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 14px 75px;
+  color: var(--font-white);
+  margin-top: 48px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btn-container .btn.btn-default:hover{
+  color: var(--font-white);
+  background-color: var(--font-color1);
+}
+.pitch-rr {
+  padding-bottom: 56px;
+}
+section.pitchus {
+  margin-bottom: 151px;
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -2551,14 +2654,14 @@ a.readmore-btn {
   padding-top: 162px;
 } */
 
-.blog .section-title h5{
+/* .blog .section-title h5{
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
   line-height: 1;
   text-align: center;
   padding-bottom: 25px;
-}
+} */
 .card-body {
   padding: 1.8rem 1rem;
 }
@@ -3311,37 +3414,35 @@ section.press-rel {
   color: white;
 }
 
-.fintech-header .getstarted{
-  background-color: white;
-  color: var(--primary-color);
-}
-.fintech .banner-1{
-  top: 68px;
-}
 .fintech-home-banner h1{
-  font-size: 70px;
   margin-bottom: 21px;
-  color: white;
+  color: var(--font-white);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 98px;
 }
 .fintech-home-banner h3{
   margin-top: 0;
-  line-height: 2;
-  color: white;
-  font-family: "Inter";
-  font-weight: bold;
-  font-size: 26px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--font-white);
 }
-.fintech-home-banner::before{
-  content: "";
+body.fintech-body{
   background-image: url(../images/fintech/fintechBg.svg); 
   background-size: cover;
-  position: absolute;
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+  background-repeat: no-repeat;
 }
 .fintech-home-banner-inner{
   margin-top: -68px;
@@ -3350,7 +3451,7 @@ section.press-rel {
   left: 36px;
 }
 .investment{
-  margin-top: 33rem;
+  margin-top: 79rem;
 }
 .fintech{
   padding-top: 15rem;
