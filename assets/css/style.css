@@ -3413,7 +3413,10 @@ section.press-rel {
   background: rgba(0,0,0,0.0)!important;
   color: white;
 }
-
+.addbg{
+  background-color: var(--font-white) !important;
+  color: var(--menu-active) !important;
+}
 .fintech-home-banner h1{
   margin-bottom: 21px;
   color: var(--font-white);
