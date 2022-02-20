@@ -131,14 +131,20 @@ nav#navbar {
 .header-side-menu ul li a {
   display: contents;
 }
+.header-side-menu ul li a:hover,.header-side-menu ul li a.active{
+  color: var(--menu-active) !important;
+  font-size: 14px;
+  font-weight: bold;
+}
 .header-side-menu ul {
   display: block !important;
 }
-a.side-menu-cross {
-  float: right;
+span.side-menu-cross {
   position: relative;
   top: 0;
-  right: -22px;
+  right: -74px;
+  cursor: pointer;
+  display: block;
 }
 .side-menu-popup {
   display: block;
@@ -170,7 +176,7 @@ a.side-menu-cross {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 25px;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -195,8 +201,15 @@ h2.global-sub-title{
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: var(--primary-color);
+.navbar li:nth-child(-n+6) a:hover, .navbar li:nth-child(-n+6) a.active, .navbar li:nth-child(-n+6) .active:focus{
+  color: var(--font-white);
+  background-color: var(--primary-color);
+  padding: 10px 25px;
+  margin-left: 30px;
+  border-radius: 12px;
+}
+.wrap-menu{
+  cursor: pointer;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   background: var(--primary-color);
@@ -317,6 +330,33 @@ h2.global-sub-title{
   line-height: 19px;
   padding: 8px 40px;
   color: var(--font-white);
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------
+# Gaming
+-----------------------------------------------------------*/
+.gaming-btns li {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  display: inline-block;
+  color: var(--primary-color);
+  background: #EFF4FF;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 8%);
+  border-radius: 15px;
+  margin-right: 24px;
+  padding: 13px 40px;
+  margin-top: 24px;
+}
+ul.gaming-btns {
+  padding-left: 0;
 }
 
 
@@ -466,10 +506,8 @@ section .home-banner-sec {
   padding-right: 0;
   padding-left: 0;
 }
-@media (min-width: 1200px){
-  /* .container {
-      width: 1300px;
-  } */
+@media (min-width: 992px){
+  
 }
 @media only screen and (max-width:768px){
   .custom-wratter{
@@ -477,12 +515,18 @@ section .home-banner-sec {
       padding-left: var(--bs-gutter-x,.75rem);
   }
 }
+@media (max-width: 1360px){
+  
+}
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
+  }
+  .investment {
+    margin-top: 32rem !important;
   }
 }
 
@@ -1683,11 +1727,11 @@ section.pitchus {
   border: none !important;
   border-radius: 23px !important;
 }
-.modal-dialog{
-  top: 10% !important;
+.videos-container .modal-dialog{
+  top: 0% !important;
   left: 10% !important;
   right: 10% !important;
-  min-width: 80% !important;
+  min-width: 50% !important;
   background: transparent !important;
   box-shadow: none !important;
   
@@ -2176,9 +2220,13 @@ section.innerpages{
 .faqs .panel-heading a {
   display: block;
   position: var(--pos-rltv);
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--font-color);
 }
 .faqs .panel-heading a::after {
   content: "";
@@ -2293,19 +2341,28 @@ img.playbtn {
 /*--------------------------------------------------------------
 # Careers
 ---------------------------------------------------------------*/
+.careers .result-sec {
+  width: 76%;
+}
+.m-b-c{
+  margin-bottom: 148px;
+}
 .careers-container {
   padding: 32px;
-  background: #FFFFFF;
   box-shadow: 0px 4px 12px rgb(48 57 66 / 8%);
   border-radius: 16px;
   margin-top: 34px;
+  background-color: #fff;
 }
 .careers-container img {
   float: left;
 }
-.careers-container ul {
-  display: block;
+.careers-container ul{
   padding-left: 0;
+}
+.careers-container ul.c-list1 {
+  display: block;  
+  margin-bottom: 20px;
 }
 .careers-container ul li {
   display: inline-block;
@@ -3019,8 +3076,8 @@ span.rmore {
 .cus-card-body.nlcard-container {
   padding: 0 11px 11px 11px;
 }
-.margin-top60{
-  margin-top: 60px;
+.margin-top100{
+  margin-top: 100px;
 }
 select.custom-form-select {
   background: #FFFFFF;
@@ -3029,9 +3086,7 @@ select.custom-form-select {
   border-radius: 8px;
   padding: 8px 16px;
 }
-.careers-container .result-sec {
-  width: 76%;
-}
+
 .form-select {
     display: inline-block;
     margin-right: 40px;
@@ -3436,15 +3491,19 @@ section.press-rel {
   letter-spacing: -0.01em;
   color: var(--font-white);
 }
-body.fintech-body{
-  background-image: url(../images/fintech/fintechBg.svg); 
+body.fintech-bg{
+  background-image: url(../images/fintech/fintechBg.svg);   
+}
+body.health-fintech-bg{
+  background-image: url(../images/healthfintech/unsplash_9vnACvX2748.svg);
+}
+body.gaming-bg{
+  background-image: url(../images/gaming/unsplash_MxVkWPiJALs.svg);
+}
+body.top-bg{
   background-size: cover;
   width: 100%;
   height: 100vh;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
   background-repeat: no-repeat;
 }
 .fintech-home-banner-inner{
