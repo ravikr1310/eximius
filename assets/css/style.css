@@ -1883,6 +1883,32 @@ form label.checkbox-inline {
 .box1{
   position: var(--pos-rltv);
 }
+.jar-inner{
+  position: relative;
+ 
+}
+.jar-inner .btn-main-fund{
+  position: absolute;
+  top: 8%;
+  left: 7%;
+  padding: 7px 7px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #272b3ad1;
+  color: white;
+}
+.jar-inner .main-fund-img{
+  position: absolute;
+    top: 77%;
+    left: 7%;
+    width: 104px;
+    padding: 6px 7px;
+    background-color: white;
+    border-radius: 9px;
+}
 .jar-inner .overlay img {
   width: 26%;
 }
