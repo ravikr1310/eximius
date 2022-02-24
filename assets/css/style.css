@@ -2143,6 +2143,34 @@ form label.checkbox-inline {
   font-size: 16px;
   padding-right: 40px;
 }
+.modal-dialog2{
+  width: 31% !important;
+  margin: auto;
+}
+.modal-dialog2 .modal-content{
+  padding:15px;
+}
+.modal-dialog2 .modal-content img{
+  width: 40% !important;
+  margin: auto;
+}
+.modal-dialog2 p{
+  color: #030632;
+    font-size: 16px;
+}
+#modal-body2 .jar-left{
+  width: 69%;
+}
+.modal-dialog2 .btn-jar-view{
+  width: 100%;
+  color: #030632;
+  text-align: center;
+  padding: 10px 1px;
+  font-weight: 600;
+  background-color: #dee2e67a;
+  border-radius: 16px;
+}
+
 .jar-inner:hover .overlay {
   height: auto;
   top: 0px;
@@ -2174,8 +2202,35 @@ form label.checkbox-inline {
 .box1{
   position: var(--pos-rltv);
 }
-.jar-inner .overlay img {
-  width: 26%;
+.jar-inner{
+  position: relative;
+ 
+}
+.jar-inner .btn-main-fund,
+.modal-dialog2 .btn-main-fund{
+  position: absolute;
+  top: 8%;
+  left: 7%;
+  padding: 7px 7px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #272b3ad1;
+  color: white;
+}
+.modal-dialog2 .btn-main-fund{
+  background-color: #202455b4;
+} 
+.jar-inner .main-fund-img{
+  position: absolute;
+    top: 77%;
+    left: 7%;
+    width: 104px;
+    padding: 6px 7px;
+    background-color: white;
+    border-radius: 9px;
 }
 .jar-inner .overlay p {
   flex: none;
