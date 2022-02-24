@@ -145,7 +145,7 @@ nav#navbar {
 span.side-menu-cross {
   position: relative;
   top: 0;
-  right: -74px;
+  right: -101px;
   cursor: pointer;
   display: block;
 }
@@ -634,6 +634,9 @@ section .home-banner-sec {
 /*------------------------------------------------------------
 # Innovation
 --------------------------------------------------------------*/
+section.home {
+  margin-top: 217px;
+}
 .invo .section-title p,.invo h5 {
     padding-right: 100px;
 }
@@ -691,13 +694,34 @@ section.invo.pd {
 section.invo{
   background-image: url(../images/icons/Group22.png),url(../images/icons/Group23.png),url(../images/icons/Polygon29.svg);  
   background-position: top 143px left 38px,bottom 88px right 0,top 120px right 297px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+}
+section.invo.inner-inov{
+  background-position: top 3px left 138px,bottom 72px right 44px,top 0px right 297px;
   margin-top: 230px;
 }
 
-
-
-
+.redwing-subhead {
+  margin-top: 40px;
+}
+.redwing-subhead a.btn-jar-btn {
+  float: left;
+}
+.redwing-subhead label.head {
+  padding-left: 24px;
+  margin-bottom: 0;
+  display: inline;
+  line-height: 2.6;
+  font-size: 16px;
+}
+.redwing-subhead p {
+  padding: 40px 0;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+.redwing-subhead .other-invst {
+  display: inline-block;
+}
 
 /*--------------------------------------------------------------
 # exis Section
@@ -1593,6 +1617,13 @@ section.pitchus {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.inner-inov .ino .section-title {
+  padding-bottom: 9px;
+  text-align: left;
+  color: var(--font-white);
+  position: relative;
+  top: 121px;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
