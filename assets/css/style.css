@@ -22,12 +22,12 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--font-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #ef7f4d;
+  color: var(--font-white);
   text-decoration: none;
 }
 
@@ -115,6 +115,9 @@ nav#navbar {
   background-color: var(--font-white);
   padding: 5px 40px;
   display: none;
+  transition: all 0.5s;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 8%);
+  border-radius: 15px;
   transition: all 0.5s;
 }
 .header-side-menu li {
@@ -341,6 +344,13 @@ h2.global-sub-title{
 /*----------------------------------------------------------
 # Gaming
 -----------------------------------------------------------*/
+.fintech-header .navbar li:nth-child(-n+6) a:hover, .fintech-header .navbar li:nth-child(-n+6) a.active, .fintech-header .navbar li:nth-child(-n+6) .active:focus{
+  color: var(--primary-color);
+  background-color: var(--font-white);
+  padding: 10px 25px;
+  margin-left: 30px;
+  border-radius: 12px;
+}
 .gaming-btns li {
   font-family: 'Inter';
   font-style: normal;
@@ -460,7 +470,7 @@ section.testimonial{
   display: inline-block;
 }
 .position-relative{
-  position: var(--pos-rltv)
+  position: var(--pos-rltv) !important
 }
 .position-absolute{
   position: var(--pos-abst)
@@ -470,18 +480,20 @@ section.testimonial{
 }
 .banner-1{
   position: var(--pos-abst);
-  top: 29px;
+  top: -27px;
   right: 0;
 }
 .banner-2{
   position: relative;
   right: -79px;
   top: 12px;
+  width: 492px;
+  height: 608px;
 }
 .banner-3{
   position: var(--pos-abst);
-  top: 400px;
-  left: 76px;
+  top: 354px;
+  left: 41px;
 }
 section.marq-1 {
   margin-top: 88px;
@@ -632,14 +644,28 @@ section .home-banner-sec {
   height: 377px;
   bottom: 0;
 }
-.ino .section-title {
+.home .ino .section-title {
   padding-bottom: 9px;
   text-align: left;
-  margin-top: 259px;
-  color: var(--font-white);
+  color: var(--font-white);  
+  position: relative;
+  top: 224px;
 }
-section.invo {
-  margin-top: 61px;
+.pd .section-title {
+  padding-top: 229px;
+  position: relative;
+  bottom: 36px;
+}
+.ino .invo.pd .section-title {
+  padding-bottom: 9px;
+  text-align: left;
+  /* margin-top: 229px; */
+  color: var(--font-white);
+  position: relative;
+    top: -38px;
+}
+section.invo.pd {
+  /* padding-top: 230px !important; */
 }
 .invo h5 {
   font-family: 'Inter';
@@ -651,7 +677,7 @@ section.invo {
   color:var(--font-white)
 }
 .invo img {
-  padding-left: 75px;
+  margin-left: -15px;
 }
 .invo a.btn-get-started {
   font-family: 'Inter';
@@ -666,6 +692,7 @@ section.invo{
   background-image: url(../images/icons/Group22.png),url(../images/icons/Group23.png),url(../images/icons/Polygon29.svg);  
   background-position: top 143px left 38px,bottom 88px right 0,top 120px right 297px;
   background-repeat: no-repeat;
+  margin-top: 230px;
 }
 
 
@@ -1282,6 +1309,7 @@ label.port-lbl {
   font-size: 18px;
   line-height: 135%;
   letter-spacing: -0.01em;
+  padding-top: 24px;
 }
 .right-port img{
   /* float: left; */
@@ -2084,19 +2112,34 @@ form label.checkbox-inline {
   font-size: 16px;
   padding-right: 40px;
 }
+.jar-inner:hover .overlay {
+  height: auto;
+  top: 0px;
+  z-index: 26;
+  bottom: -24px;
+  background: var(--font-white);
+  width: 93%;
+  border-radius: 24px 24px;
+  box-shadow: 0px 8px 24px rgb(26 35 42 / 15%);
+  color: #000;
+  padding: 16px 38px 38px;
+  position: absolute;
+}
 .overlay {
   position: absolute;
-  left: 97%;
-  top: 100%;
-  overflow: hidden;
-  width: 93%;
-  height: 0;
-  transition: .1s ease;
-  -webkit-transform: translate(-100%, 0);
-  -ms-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
+    left: 97%;
+    top: 100%;
+    overflow: hidden;
+    width: 93%;
+    height: 0;
+    transition: .1s ease;
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
 }
-
+.onhover-show:hover > .overlay{
+  display: block;
+}
 .box1{
   position: var(--pos-rltv);
 }
@@ -2134,7 +2177,10 @@ a.btn-jar-btn {
   padding: 8px 16px;
   float: right;
 }
-.jar-inner:hover .overlay {
+
+/* .onhover-show:hover ::before .overlay{
+  content: "";
+  display: block;
   height: auto;
   top: 0px;
   bottom: 0;
@@ -2144,7 +2190,20 @@ a.btn-jar-btn {
   box-shadow: 0px 8px 24px rgb(26 35 42 / 15%);
   color: #000;
   padding: 16px 38px 38px;
-}
+  z-index: 999;
+} */
+/* .onhover-show:hover .overlay {
+  height: auto;
+  top: 0px;
+  bottom: 0;
+  background: var(--font-white);
+  width: 93%;
+  border-radius: 24px 24px;
+  box-shadow: 0px 8px 24px rgb(26 35 42 / 15%);
+  color: #000;
+  padding: 16px 38px 38px;
+  z-index: 999;
+} */
 .sub-container div:nth-child(2) div:nth-child(5) {
   /* margin-top: 26px; */
 }
@@ -2681,9 +2740,10 @@ a.readmore-btn {
 }
 .modal-dialog {
   position: absolute;
-  width: 100%;
-  min-width: 100%;
+  width: 80%;
+  min-width: 80%;
   right: 0;
+  left: 0;
   top: 20%;
   z-index: 999;
   background: #FFFFFF;
@@ -3038,8 +3098,24 @@ a.readmore-btn {
   justify-content: center;
   align-items: center; */
 }
-.pf-details img:nth-child(1) {
+.pd .ino {
+  padding-top: 43px;
+}
+.invo.pd img {
+  margin-left: -12px;
+  position: absolute;
+  bottom: 0;
+}
+.pf-details-subhead {
+  margin-top: 144px;
+}
+.custome-center{
+  display: flex;
+  justify-content: center;
+}
+.pf-details > img{
   padding-bottom: 56px;
+  padding-top: 98px;
 }
 .pf-details img:nth-child(2) {
   padding-bottom: 40px;
@@ -3464,6 +3540,13 @@ section.press-rel {
 /*--------------------------------------------------------------
 # fintech
 --------------------------------------------------------------*/
+.fintech-header .navbar li:nth-child(-n+6) a:hover, .fintech-header .navbar li:nth-child(-n+6) a.active, .fintech-header .navbar li:nth-child(-n+6) .active:focus{
+  color: var(--primary-color);
+  background-color: var(--font-white);
+  padding: 10px 25px;
+  margin-left: 30px;
+  border-radius: 12px;
+}
 .fintech-header{
   background: rgba(0,0,0,0.0)!important;
   color: white;
