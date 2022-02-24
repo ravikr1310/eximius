@@ -2175,7 +2175,8 @@ form label.checkbox-inline {
   position: relative;
  
 }
-.jar-inner .btn-main-fund{
+.jar-inner .btn-main-fund,
+.modal-dialog2 .btn-main-fund{
   position: absolute;
   top: 8%;
   left: 7%;
@@ -2183,11 +2184,14 @@ form label.checkbox-inline {
   font-weight: 600;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
   background-color: #272b3ad1;
   color: white;
 }
+.modal-dialog2 .btn-main-fund{
+  background-color: #202455b4;
+} 
 .jar-inner .main-fund-img{
   position: absolute;
     top: 77%;
