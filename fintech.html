@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Eximius</title>
+  <title>Eximius - Fintech</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -34,29 +34,34 @@
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 </head>
 
-<body>
+<body class="fintech-bg top-bg">
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center fintech-header">
     <div class="container align-items-center">
       <div class="main-logo">
-        <a href="index.html"><img src="./assets/images/fintech/white_logo.svg" alt="Main Logo" /></a>
+        <a href="index.html"><img class="whitelogo" src="./assets/images/fintech/white_logo.svg" alt="Main Logo" /></a>
+        <a href="index.html"><img class="primarylogo hide" src="./assets/images/logo/mainLogo.svg"
+            alt="Main Logo" /></a>
       </div>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="portfolio.html">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="team.html">Team</a></li>
-          <li><a class="nav-link scrollto" href="#services">Sectors of focus</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Career</a></li>
+          <li><a class="nav-link scrollto" href="#sectoroffocus">Sectors of focus</a></li>
+          <li><a class="nav-link scrollto" href="careers.html">Career</a></li>
           <li><a class="nav-link scrollto" href="#founder">Founder's Forum</a></li>
-          <li><a class="getstarted scrollto" href="#about">Pitch Us</a></li>
-          <li><a id="sidemenuicon" class="nav-link" href="#"><img src="./assets/images/fintech/menu-btn.svg" alt="menu btn" /></a></li>
+          <li><a class="nav-link scrollto" href="pitchus.html">Pitch Us</a></li>
+          <li><a id="sidemenuicon" class="nav-link" href="#"><img class="whitelogo"
+                src="./assets/images/fintech/menu-btn.svg" alt="menu btn" /><img class="primarylogo hide"
+                src="./assets/images/body/menu-btn.png" alt="menu btn" /></a></li>
         </ul>
         <div class="header-side-menu">
-          <a id="sidecrossbtn" href="#" class="side-menu-cross"><img src="./assets/images/icons/menu-cross-btn.svg"/></a>
+          <a id="sidecrossbtn" href="#" class="side-menu-cross"><img
+              src="./assets/images/icons/menu-cross-btn.svg" /></a>
           <ul>
             <li><a href="./blog.html">Blogs</a></li>
             <li><a href="./pressrelease.html">Press Releases</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="./aboutus.html">About us</a></li>
             <li><a href="./faq.html">FAQs</a></li>
             <li><a href="./contact.html">Contact us</a></li>
             <li><a href="./provacypolicy.html">Privacy Policy</a></li>
@@ -64,44 +69,9 @@
           </ul>
         </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->      
-    </div>    
-  </header><!-- End Header -->
-  <!-- ======= Header 2======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header_black hide">
-    <div class="container align-items-center">
-
-      <div class="main-logo">
-        <a href="index.html"><img src="./assets/images/logo/mainLogo.svg" alt="Main Logo" /></a>
-      </div>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="portfolio.html">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
-          <li><a class="nav-link scrollto" href="#services">Sectors of focus</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Career</a></li>
-          <li><a class="nav-link scrollto" href="#founder">Founder's Forum</a></li>
-          <li><a class="getstarted scrollto" href="#about">Pitch Us</a></li>
-          <li><a id="sidemenuicon" class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png" alt="menu btn" /></a></li>
-        </ul>
-        <div class="header-side-menu">
-          <a id="sidecrossbtn" href="#" class="side-menu-cross"><img src="./assets/images/icons/menu-cross-btn.svg"/></a>
-          <ul>
-            <li><a href="./blog.html">Blogs</a></li>
-            <li><a href="./pressrelease.html">Press Releases</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="./faq.html">FAQs</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
-            <li><a href="./provacypolicy.html">Privacy Policy</a></li>
-            <li><a href="./terms-0f-use.html">Terms of Use</a></li>
-          </ul>
-        </div>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->      
+      </nav><!-- .navbar -->
     </div>
-    
-  </header>
-  <!-- End Header 2-->
+  </header><!-- End Header -->
 
   <!-- ======= Value Time Section ======= -->
   <section id="exis" class="d-flex align-items-center home-banner fintech-home-banner">
@@ -109,352 +79,349 @@
       <div class="row gy-4 fintech-home-banner-inner">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center home-banner-sec">
           <h1>Fintech</h1>
-            <h3>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br>Venenatis ultrices felis tellus facilisi <br>donec quam.<h3>
+          <h3>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br>Venenatis ultrices felis tellus facilisi
+            <br>donec quam.<h3>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 exis-img pos polygonBig fintech">
-          <img class="banner-1" src="./assets/images//body/banner1.png" alt="Banner 1" />
+          <img class="banner-1" src="./assets/images//body/unsplash_A3MleA0jtoE.svg" alt="Banner 1" />
           <img class="banner-2" src="./assets/images/fintech/unsplash_pfmKvWLDGoc.png" alt="Banner 2" />
           <img class="banner-3" src="./assets/images/body/banner-3.png" alt="Banner 3" />
         </div>
       </div>
     </div>
   </section><!-- End Value Time Section -->
-  </div>
+  <!-- ======= Invesment Section ======= -->
+  <section id="investment" class="investment">
+    <div class="section-title">
+      <h2 class="global-sub-title">THESIS</h2>
+      <p>Investment</p>
+    </div>
+    <div class="container center">
+      <div class="inner-para">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eget fermentum a magna ut lectus mi lacus,
+          vulputate.Sit vel vel it
+          vulputate ut turpis. Nisi varius vitae nullam feugiat egestas morbi eu lobortis lacinia.Nulla vulputate
+          laoreet sit iaculis tincidunt
+          sapien,est.
+        </p>
+        <p>
+          Massa vel vestibulum diam. Pellentesque vitae magna quis velit posuere mollis.
+          Ut risus nulla, fermentum quis convallis id, pellentesque a quam. Integer nec
+          augue non purus pretium maximus tempor non tortor. Cras et mollis augue. Pellentesque
+          accumsan dui nec vulputate elementum. Et harum quidem rerum facilis est et expedita distinctio.
+          Praesent quis felis laoreet, rhoncus elit eu, s
+          odales turpis. Aenean at ligula vel neque finibus faucibus sit amet non nunc.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ======= End Invesment Section ======= -->
 
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="bigpolygon-left"></div>
+    <!-- <div class="bigpolygon-right"></div> -->
+    <div class="container" data-aos="fade-up">
 
+      <div class="section-title">
+        <h2 class="global-sub-title">PORTFOLIO</h2>
+        <p>Companies We Support <br>and Why</p>
+      </div>
+      <div class="container">
+        <div id="myCarousel" class="carousel slide caro1" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                  <img src="./assets/images/icons/mob.jpg" alt="Los Angeles">
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 right-port">
+                  <img src="./assets/images/icons/Jar1.png" alt="Jar">
+                  <ul>
+                    <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                    <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                    <li><img src="./assets/images/icons/ci_instagram.svg" alt="" /></li>
+                    <li><img src="./assets/images/icons/whatsAppIcon.svg" alt="" /></li>
+                  </ul>
+                  <a href="#about" class="btn-fintech">FinTech</a>
+                  <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the cumulative
+                    advantages of savings.</h3>
+                  <label class="port-lbl">Founders:</label>
+                  <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
+                  <label class="port-lbl">Other Investors :</label>
+                  <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
+                </div>
+              </div>
 
-  <main id="main"> 
-      <!-- ======= Invesment Section ======= -->
-       <section id="investment" class="investment">
-        <div class="section-title">
-            <h2 class="global-sub-title">THESIS</h2>
-            <p>Investment</p>
-        </div>
-        <div class="container center">
-           <div class="inner-para">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus eget fermentum a magna ut lectus mi lacus, vulputate.Sit vel vel it
-                vulputate ut turpis. Nisi varius vitae nullam feugiat egestas morbi eu lobortis lacinia.Nulla vulputate laoreet sit iaculis tincidunt
-                sapien,est.
-            </p>
-            <p>    
-                Massa vel vestibulum diam. Pellentesque vitae magna quis velit posuere mollis. 
-                Ut risus nulla, fermentum quis convallis id, pellentesque a quam. Integer nec 
-                augue non purus pretium maximus tempor non tortor. Cras et mollis augue. Pellentesque 
-                accumsan dui nec vulputate elementum. Et harum quidem rerum facilis est et expedita distinctio.
-                Praesent quis felis laoreet, rhoncus elit eu, s
-                odales turpis. Aenean at ligula vel neque finibus faucibus sit amet non nunc.
-            </p>
             </div>
-        </div>               
-       </section>
-      <!-- ======= End Invesment Section ======= -->  
-       
-      <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-        <div class="bigpolygon-left"></div>
-        <div class="bigpolygon-right"></div>
-        <div class="container" data-aos="fade-up">
-  
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                  <img src="./assets/images/icons/mob.jpg" alt="Los Angeles">
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 right-port">
+                  <img src="./assets/images/icons/Jar1.png" alt="Jar">
+                  <ul>
+                    <li><img src="./assets/images/icons/v1.jpg" alt="" /></li>
+                    <li><img src="./assets/images/icons/v2.png" alt="" /></li>
+                    <li><img src="./assets/images/icons/v4.png" alt="" /></li>
+                    <li><img src="./assets/images/icons/v2.png" alt="" /></li>
+                  </ul>
+                  <a href="#about" class="btn-fintech">FinTech</a>
+                  <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the cumulative
+                    advantages of savings.</h3>
+                  <label class="port-lbl">Founders:</label>
+                  <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
+                  <label class="port-lbl">Other Investors :</label>
+                  <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="btn-cont">
+          <a href="#about" class="btn-get-started">See More</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Our Strength Section ======= -->
+  <section id="services" class="services section-bg our-str">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2 class="global-sub-title">Our Strength</h2>
+        <p>What Defines Us</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><img src="./assets/images/icons/img1.png" class="img-fluid" alt="" /></div>
+            <h4 class="title"><a href="">First institutional cheque</a></h4>
+            <p class="description">
+              We are among your earliest supporters</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><img src="./assets/images/icons/img1.png" class="img-fluid" alt="" /></div>
+            <h4 class="title"><a href="">Peer investors</a></h4>
+            <p class="description">
+              We're not your mentor or advisor but a friend for good times and bad.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><img src="./assets/images/icons/img1.png" class="img-fluid" alt="" /></div>
+            <h4 class="title"><a href="">Speed of execution</a></h4>
+            <p class="description">
+              We value your time, we’ll give a term sheet in less than 15 days.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Our Strength Section -->
+
+  <!-- ======= Testimonial Section ======= -->
+  <section id="faq" class="section-bg testimonial">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2 class="global-sub-title">Testimonials</h2>
+        <p>What They Say About Us</p>
+      </div>
+      <div class="carousel slide caro1">
+        <div class="row">
+          <section class="regular1 slider">
+            <div>
+              <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
+                <img src="./assets/images/icons/doublecot.png" alt="" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
+                  lorem
+                  convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
+                  fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
+                  vitae.
+                </p>
+              </div>
+              <div class="col-xl-5 col-lg-5 col-md-5 two" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./assets/images/body/banner-3.png" alt="" />
+                <p>Jane Doe</p>
+                <p>Founder & CEO Big Company</p>
+                <p>www.therecompany.com</p>
+              </div>
+            </div>
+            <div>
+              <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
+                <img src="./assets/images/icons/doublecot.png" alt="" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
+                  lorem
+                  convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
+                  fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
+                  vitae.
+                </p>
+              </div>
+              <div class="col-xl-5 col-lg-5 col-md-5 two" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./assets/images/body/banner-3.png" alt="" />
+                <p>Jane Doe</p>
+                <p>Founder & CEO Big Company</p>
+                <p>www.therecompany.com</p>
+              </div>
+            </div>
+            <div>
+              <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
+                <img src="./assets/images/icons/doublecot.png" alt="" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
+                  lorem
+                  convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
+                  fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
+                  vitae.
+                </p>
+              </div>
+              <div class="col-xl-5 col-lg-5 col-md-5 two" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./assets/images/body/banner-3.png" alt="" />
+                <p>Jane Doe</p>
+                <p>Founder & CEO Big Company</p>
+                <p>www.therecompany.com</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Testimonial Section -->
+
+
+  <!-- ======= Innovation Section ======= -->
+  <section id="innovation" class="contact invo">
+    <div class="container" data-aos="fade-up">
+      <div class="row ino">
+        <div class="innovation"></div>
+        <div class="col-xl-3 col-lg-5 col-md-5" data-aos="zoom-out" data-aos-delay="5">
+          <img src="./assets/images/body/rafiki.svg" alt="" />
+        </div>
+        <div class="col-xl-3 col-lg-7 col-md-7" data-aos="zoom-out" data-aos-delay="5">
           <div class="section-title">
-            <h2 class="global-sub-title">PORTFOLIO</h2>
-            <p>Companies We Support <br>and Why</p>
-          </div>
-          <div class="container">
-            <div id="myCarousel" class="carousel slide caro1" data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="row">
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                      <img src="./assets/images/icons/mob.jpg" alt="Los Angeles">
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 right-port">
-                      <img src="./assets/images/icons/Jar1.png" alt="Jar">
-                      <ul>
-                        <li><img src="./assets/images/icons/v1.jpg" alt="" /></li>
-                        <li><img src="./assets/images/icons/v2.png" alt="" /></li>
-                        <li><img src="./assets/images/icons/v4.png" alt="" /></li>
-                        <li><img src="./assets/images/icons/v2.png" alt="" /></li>
-                      </ul>
-                      <a href="#about" class="btn-fintech">FinTech</a>
-                      <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the cumulative
-                        advantages of savings.</h3>
-                      <label class="port-lbl">Founders:</label>
-                      <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
-                      <label class="port-lbl">Other Investors :</label>
-                      <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
-                    </div>
-                  </div>
-  
-                </div>
-  
-                <div class="item">
-                  <div class="row">
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                      <img src="./assets/images/icons/mob.jpg" alt="Los Angeles">
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 right-port">
-                      <img src="./assets/images/icons/Jar1.png" alt="Jar">
-                      <ul>
-                        <li><img src="./assets/images/icons/v1.jpg" alt="" /></li>
-                        <li><img src="./assets/images/icons/v2.png" alt="" /></li>
-                        <li><img src="./assets/images/icons/v4.png" alt="" /></li>
-                        <li><img src="./assets/images/icons/v2.png" alt="" /></li>
-                      </ul>
-                      <a href="#about" class="btn-fintech">FinTech</a>
-                      <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the cumulative
-                        advantages of savings.</h3>
-                      <label class="port-lbl">Founders:</label>
-                      <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
-                      <label class="port-lbl">Other Investors :</label>
-                      <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
-                    </div>
-                  </div>
-                </div>
-  
-              </div>
-  
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            <div class="btn-cont">
-              <a href="#about" class="btn-get-started">See More</a>
-            </div>
-          </div>
-        </div>
-      </section><!-- End Portfolio Section -->
-
-    <!-- ======= Our Strength Section ======= -->
-    <section id="services" class="services section-bg our-str">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 class="global-sub-title">Our Strength</h2>
-          <p>What Defines Us</p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/img1.png" class="img-fluid" alt="" /></div>
-              <h4 class="title"><a href="">First institutional cheque</a></h4>
-              <p class="description">
-                We are among your earliest supporters</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/img1.png" class="img-fluid" alt="" /></div>
-              <h4 class="title"><a href="">Peer investors</a></h4>
-              <p class="description">
-                We're not your mentor or advisor but a friend for good times and bad.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/img1.png" class="img-fluid" alt="" /></div>
-              <h4 class="title"><a href="">Speed of execution</a></h4>
-              <p class="description">
-                We value your time, we’ll give a term sheet in less than 15 days.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Our Strength Section -->    
-
-    <!-- ======= Testimonial Section ======= -->
-    <section id="faq" class="section-bg testimonial">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 class="global-sub-title">Testimonials</h2>
-          <p>What They Say About Us</p>
-        </div>
-        <div class="carousel slide caro1">
-          <div class="row">
-            <section class="regular1 slider">
-              <div>
-                <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
-                  <img src="./assets/images/icons/doublecot.png" alt="" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
-                    lorem
-                    convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
-                    fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
-                    vitae.
-                  </p>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 two" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="./assets/images/body/banner-3.png" alt="" />
-                  <p>Jane Doe</p>
-                  <p>Founder & CEO Big Company</p>
-                  <p>www.therecompany.com</p>
-                </div>
-              </div>
-              <div>
-                <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
-                  <img src="./assets/images/icons/doublecot.png" alt="" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
-                    lorem
-                    convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
-                    fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
-                    vitae.
-                  </p>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 two" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="./assets/images/body/banner-3.png" alt="" />
-                  <p>Jane Doe</p>
-                  <p>Founder & CEO Big Company</p>
-                  <p>www.therecompany.com</p>
-                </div>
-              </div>
-              <div>
-                <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
-                  <img src="./assets/images/icons/doublecot.png" alt="" />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
-                    lorem
-                    convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
-                    fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
-                    vitae.
-                  </p>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 two" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="./assets/images/body/banner-3.png" alt="" />
-                  <p>Jane Doe</p>
-                  <p>Founder & CEO Big Company</p>
-                  <p>www.therecompany.com</p>
-                </div>
-              </div>
-            </section>
+            <p>Let’s go from innovation to growth together.</p>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra lorem
+              convallis adipiscing sapien nulla.</h5>
+            <a href="#about" class="btn-get-started">Pitch Us</a>
           </div>
         </div>
       </div>
-    </section><!-- End Testimonial Section -->
 
-    
-    <!-- ======= Innovation Section ======= -->
-    <section id="innovation" class="contact invo fintech">
-      <div class="container" data-aos="fade-up">
-        <div class="row ino fintech">
-          <div class="innovation"></div>
-          <div class="col-xl-3 col-lg-5 col-md-5" data-aos="zoom-in" data-aos-delay="100">
-            <img src="./assets/images/body/girlpic.svg" alt="" />
+    </div>
+  </section><!-- End Innovation Section -->
+
+  <!-- ======= Press Release Section ======= -->
+  <section id="contact" class="contact press-rel">
+    <div class="pressreleases"></div>
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2 class="global-sub-title">Press Releases</h2>
+        <p>We are in News</p>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="50">
+          <div class="inner-press-cont">
+            <img src="./assets/images/pr/pr1.png" alt="" />
+            <img src="./assets/images//pr/pr1icon.png" alt="" />
+            <p class="pr-desc">Looking to Make Your Startup the Next Unicorn? Here’s How to Get Seed Funding in Place
+            </p>
+            <span class="pr-date">July 2021</span>
           </div>
-          <div class="col-xl-3 col-lg-7 col-md-7" data-aos="zoom-in" data-aos-delay="200">
-            <div class="section-title">
-              <p>Let’s go from innovation to growth together.</p>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra lorem
-                convallis adipiscing sapien nulla.</h5>
-              <a href="#about" class="btn-get-started">Pitch Us</a>
-            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="60">
+          <div class="inner-press-cont">
+            <img src="./assets/images/pr/pr2.png" alt="" />
+            <img src="./assets/images//pr/pr2icon.png" alt="" />
+            <p class="pr-desc">HealthTech Startup Eka.Care Raises $4.5M from Angel and Early-stage Investors</p>
+            <span class="pr-date">July 2021</span>
           </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="70">
+          <div class="inner-press-cont">
+            <img src="./assets/images/pr/pr3.png" alt="" />
+            <img src="./assets/images//pr/pr3icon.png" alt="" />
+            <p class="pr-desc">Emerging Opportunities in the Online Gaming Space for Indian Entrepreneurs</p>
+            <span class="pr-date">July 2021</span>
+          </div>
+        </div>
+        <div class="btn-cont">
+          <a href="#about" class="btn-get-started">See More</a>
         </div>
 
       </div>
-    </section><!-- End Innovation Section -->
+    </div>
+  </section><!-- End Press Release Section -->
 
-    <!-- ======= Press Release Section ======= -->
-    <section id="contact" class="contact press-rel">
-      <div class="pressreleases"></div>
-      <div class="container" data-aos="fade-up">
+  <!-- ======= More to offer Section ======= -->
+  <section id="contact" class="contact offer">
+    <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2 class="global-sub-title">Press Releases</h2>
-          <p>We are in News</p>
-        </div>
-        <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="50">
-            <div class="inner-press-cont">
-              <img src="./assets/images/pr/pr1.png" alt="" />
-              <img src="./assets/images//pr/pr1icon.png" alt="" />
-              <h4>Looking to Make Your Startup the Next Unicorn? Here’s How to Get Seed Funding in Place</h4>
-              <h5>July 2021</h5>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="60">
-            <div class="inner-press-cont">
-              <img src="./assets/images/pr/pr2.png" alt="" />
-              <img src="./assets/images//pr/pr2icon.png" alt="" />
-              <h4>HealthTech Startup Eka.Care Raises $4.5M from Angel and Early-stage Investors</h4>
-              <h5>July 2021</h5>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in" data-aos-delay="70">
-            <div class="inner-press-cont">
-              <img src="./assets/images/pr/pr3.png" alt="" />
-              <img src="./assets/images//pr/pr3icon.png" alt="" />
-              <h4>Emerging Opportunities in the Online Gaming Space for Indian Entrepreneurs</h4>
-              <h5>July 2021</h5>
-            </div>
-          </div>
-          <div class="btn-cont">
-            <a href="#about" class="btn-get-started">See More</a>
-          </div>
-
-        </div>
-
+      <div class="section-title">
+        <h2 class="mo-head">MORE TO OFFER</h2>
+        <p>Find informative<br> insights in our library</p>
       </div>
-    </section><!-- End Press Release Section -->
-
-    <!-- ======= More to offer Section ======= -->
-    <section id="contact" class="contact offer">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 class="mo-head">MORE TO OFFER</h2>
-          <p>Find informative<br> insights in our library</p>
+      <div class="row pr-cont">
+        <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="50">
+          <div class="offer-bg">
+            <img src="./assets/images/offer/offer1.png" alt="" />
+          </div>
+          <h4>Case Studies</h4>
+          <h5>View All</h5>
         </div>
-        <div class="row pr-cont">
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="50">
-            <div class="offer-bg">
-              <img src="./assets/images/offer/offer1.png" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <h5>View All</h5>
+        <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="60">
+          <div class="offer-bg">
+            <img src="./assets/images/icons/fluent_video-recording-20-regular.png" alt="" />
           </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="60">
-            <div class="offer-bg">
-              <img src="./assets/images/offer/offer2.png" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <h5>View All</h5>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="70">
-            <div class="offer-bg">
-              <img src="./assets/images/offer/offer3.png" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <h5>View All</h5>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="80">
-            <div class="offer-bg">
-              <img src="./assets/images/offer/offer4.png" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <h5>View All</h5>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="90">
-            <div class="offer-bg">
-              <img src="./assets/images/offer/offer5.png" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <h5>View All</h5>
-          </div>
+          <h4>Case Studies</h4>
+          <h5>View All</h5>
         </div>
-
+        <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="70">
+          <div class="offer-bg">
+            <img src="./assets/images/icons/fluent_mic-sparkle-24-regular.svg" alt="" />
+          </div>
+          <h4>Case Studies</h4>
+          <h5>View All</h5>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="80">
+          <div class="offer-bg">
+            <img src="./assets/images/icons/fluent_document-edit-24-regular.svg" alt="" />
+          </div>
+          <h4>Case Studies</h4>
+          <h5>View All</h5>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="90">
+          <div class="offer-bg">
+            <img src="./assets/images/icons/fluent_document-table-cube-24-regular.svg" alt="" />
+          </div>
+          <h4>Case Studies</h4>
+          <h5>View All</h5>
+        </div>
       </div>
-    </section><!-- End More to offer Section -->
 
-  </main><!-- End #main -->
+    </div>
+  </section><!-- End More to offer Section -->
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -466,9 +433,9 @@
             <img src="./assets/images/logo/footerLogo.png" alt="" />
             <div class="social-links mt-3 mt-01">
               <a href="#" class="twitter"><img src="./assets/images/icons/twiter.png" alt="" /></a>
-              <a href="#" class="instagram"><img src="./assets/images/icons/instagram.png" alt="" /></a>
-              <a href="#" class="google-plus"><img src="./assets/images/icons/m.png" alt="" /></a>
-              <a href="#" class="google-plus"><img src="./assets/images/icons/m.png" alt="" /></a>
+              <a href="#" class="instagram"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a>
+              <a href="#" class="google-plus"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a>
+              <a href="#" class="google-plus"><img src="./assets/images/icons/iconoir_youtube.svg" alt="" /></a>
             </div>
             <h4 class="cop-rt">© 2022 Eximius Capital Ventures Pvt. Ltd.</h4>
           </div>
@@ -476,9 +443,9 @@
             <h4>Quick Links</h4>
             <ul>
               <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="#">Sector of focus</a></li>
+              <li><a href="#sectoroffocus">Sector of focus</a></li>
               <li><a href="#">Resources</a></li>
-              <li><a href="#">Career</a></li>
+              <li><a href="careers.html">Career</a></li>
               <li><a href="#">Founder Forum</a></li>
             </ul>
 
@@ -487,11 +454,11 @@
           <div class="col-lg-2 col-md-2 footer-links">
             <h4>Resources</h4>
             <ul>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Podcasts</a></li>
+              <li><a href="case-studies.html">Case Studies</a></li>
+              <li><a href="videos.html">Videos</a></li>
+              <li><a href="podcasts.html">Podcasts</a></li>
               <li><a href="blog.html">Blogs</a></li>
-              <li><a href="#">Reports</a></li>
+              <li><a href="reports.html">Reports</a></li>
             </ul>
           </div>
 
@@ -537,26 +504,30 @@
         slidesToShow: 1,
         slidesToScroll: 1
       });
-      $("#sidemenuicon").on("click",function(){
+      $("#sidemenuicon").on("click", function () {
         $('.header-side-menu').show();
       })
-      $("#sidecrossbtn").on("click",function(){
+      $("#sidecrossbtn").on("click", function () {
         $('.header-side-menu').hide();
       })
     });
 
-    document.addEventListener("DOMContentLoaded", function(){
-      window.addEventListener('scroll', function() {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener('scroll', function () {
         console.log(window.scrollY)
-          if (window.scrollY > 140) {
-            $(".header_black").fadeIn();
-            $(".header_black").addClass('show')
-            $(".header_black").removeClass('hide')
-          }  
-          if (window.scrollY < 140) {
-            $(".header_black").addClass('hide')
-            $(".header_black").removeClass('show')
-          }  
+        if (window.scrollY > 140) {
+          $(".header_black").fadeIn();
+          $(".whitelogo").addClass('hide')
+          //$('#pitchbg').removeClass("addbg")
+          $(".primarylogo").addClass('show')
+          $("#header").removeClass('fintech-header')
+        }
+        if (window.scrollY < 140) {
+          $("#header").addClass('fintech-header')
+          $(".whitelogo").removeClass('hide')
+          $(".primarylogo").removeClass('show')
+          //$('#pitchbg').addClass("addbg")
+        }
       });
     });
   </script>
@@ -565,6 +536,7 @@
   .header_black .hide {
     display: none !important;
   }
+
   .header_black .show {
     display: block !important;
   }
