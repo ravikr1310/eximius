@@ -120,6 +120,7 @@ nav#navbar {
   border-radius: 15px;
   transition: all 0.5s;
 }
+
 .header-side-menu li {
   font-family: 'inter';
   font-style: normal;
@@ -2203,8 +2204,10 @@ form label.checkbox-inline {
   position: var(--pos-rltv);
 }
 .jar-inner{
-  position: relative;
- 
+  position: relative; 
+}
+.jar-inner  img{
+  cursor: pointer;
 }
 .jar-inner .btn-main-fund,
 .modal-dialog2 .btn-main-fund{
