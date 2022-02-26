@@ -22,12 +22,14 @@ body {
 }
 
 a {
-  color: var(--font-color);
+  /* color: var(--font-color); */
   text-decoration: none;
 }
-
+ul.innertabs li a{
+  color: var(--primary-color);
+}
 a:hover {
-  color: var(--font-white);
+  /* color: var(--font-white); */
   text-decoration: none;
 }
 
@@ -209,7 +211,7 @@ h2.global-sub-title{
   color: var(--font-white);
   background-color: var(--primary-color);
   padding: 10px 25px;
-  margin-left: 30px;
+  margin-left: 10px;
   border-radius: 12px;
 }
 .wrap-menu{
@@ -387,7 +389,7 @@ ul.gaming-btns {
 }
 .polygonBig {
   background-image: url(../images/icons/union3.png), url(../images/icons/groupDot.png);
-  background-position: right 362px top 146px, bottom 18px right -2px;
+  background-position: right 362px top 101px, bottom 67px right -105px;
   background-repeat: no-repeat;
 }
 section.our-str{
@@ -479,17 +481,34 @@ section.testimonial{
 .pos-last{
   margin-top: 48px;
 }
+section.marq-1 .container {
+  padding-top: 89px;
+}
 .banner-1{
   position: var(--pos-abst);
-  top: -27px;
+  top: -21px;
   right: 0;
+}
+.inner-subinn-invo .section-title {
+  top: 131px;
+}
+section.inner-subinn-invo {
+  margin-top: 172px;
+}
+section.invo.inner-subinn-invo {
+  background-position: top 0px left 239px,bottom 88px right 199px,top 0px right 300px;
+}
+
+.inner-invo .section-title {
+  top: 255px;
+}
+section.inner-invo {
+  margin-top: 193px;
 }
 .banner-2{
   position: relative;
-  right: -79px;
-  top: 12px;
-  width: 492px;
-  height: 608px;
+  right: -87px;
+  top: 77px;
 }
 .banner-3{
   position: var(--pos-abst);
@@ -542,7 +561,14 @@ section .home-banner-sec {
     margin-top: 32rem !important;
   }
 }
-
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  .container {
+      width: 1036px;
+  }
+}
 /**
 * Mobile Navigation 
 */
@@ -648,11 +674,13 @@ section.home {
   height: 377px;
   bottom: 0;
 }
-.home .ino .section-title {
+.ino .section-title {
   padding-bottom: 9px;
   text-align: left;
   color: var(--font-white);  
   position: relative;
+}
+.home .ino .section-title {
   top: 224px;
 }
 .pd .section-title {
@@ -694,7 +722,7 @@ section.invo.pd {
 }
 section.invo{
   background-image: url(../images/icons/Group22.png),url(../images/icons/Group23.png),url(../images/icons/Polygon29.svg);  
-  background-position: top 143px left 38px,bottom 88px right 0,top 120px right 297px;
+  background-position: top 105px left 218px,bottom 88px right 199px,top 120px right 297px;
   background-repeat: no-repeat;  
 }
 section.invo.inner-inov{
@@ -885,7 +913,7 @@ margin: 0px 12px;
   font-size: 20px;
   line-height: 24px;
 }
-.pr h5 {
+.pr a {
   font-family: 'Inter';
   background: #EFF4FF;
   border-radius: 8px;
@@ -1373,6 +1401,9 @@ label.port-lbl {
   align-items: center;
 }
 .portfolio .carousel-inner {
+  /* padding: 13px; */
+}
+.carousel-inner .item{
   padding: 13px;
 }
 .glyphicon-chevron-right:before {
@@ -1405,10 +1436,9 @@ label.port-lbl {
   width: 35%;
   margin-top: 6%;
   margin-bottom: 6%;
-  background-color: #93ccf526;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  background-color: #EFF4FF;
   color:var(--font-color);
+  border-radius: 24px 0px 0px 24px;
 }
 .contact-into-inner{
   width: 80%;
@@ -1425,10 +1455,17 @@ label.port-lbl {
 }
 .contact-into-inner p{
   font-size: 16px;
-  font-weight: 600;
 }
 .contact-into-inner .para{
   margin-bottom: 40px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: left;
+  letter-spacing: -0.01em;
+  color: #251238;
 }
 
 .contact-into-inner img{
@@ -1462,9 +1499,13 @@ label.port-lbl {
   margin-bottom: 14px;
 }
 .inner-part-form label{
-  font-weight: 600;
-  font-size: 16px;
+  color: #000000;
   margin-top: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 .inner-part-form input{
   padding: 22px 5px 22px 5px;
@@ -1623,7 +1664,7 @@ section.pitchus {
   text-align: left;
   color: var(--font-white);
   position: relative;
-  top: 121px;
+  top: 257px;
 }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -2120,6 +2161,9 @@ ul.innertabs li.active,ul.innertabs li:hover{
   background: var(--primary-color);
   color: var(--font-white);
 }
+ul.innertabs li.active,ul.innertabs li:hover a{
+  color:var(--font-white);
+}
 .result-sec {
   background: #EFF4FF;
   border: 1px solid rgba(101, 112, 241, 0.2);
@@ -2145,31 +2189,41 @@ form label.checkbox-inline {
   padding-right: 40px;
 }
 .modal-dialog2{
-  width: 31% !important;
+  width: 21% !important;
   margin: auto;
 }
 .modal-dialog2 .modal-content{
-  padding:15px;
+  padding:24px 16px;
 }
 .modal-dialog2 .modal-content img{
-  width: 40% !important;
-  margin: auto;
+  margin: auto 90px;
 }
 .modal-dialog2 p{
   color: #030632;
-    font-size: 16px;
+  font-size: 16px;
+  padding-top: 24px;
 }
-#modal-body2 .jar-left{
+/* #modal-body2 .jar-left{
   width: 69%;
+} */
+.pf-main .modal-body {
+  padding: 39px 32px !important;
+}
+.modal-dialog-centered img.portfolio-img{
+  margin: 0;
+  width: 102px;
+  height: 38px;
 }
 .modal-dialog2 .btn-jar-view{
   width: 100%;
-  color: #030632;
+  color: #6570F1;
   text-align: center;
   padding: 10px 1px;
   font-weight: 600;
-  background-color: #dee2e67a;
+  background-color: #EFF4FF;
   border-radius: 16px;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 8%);
+  border-radius: 15px;
 }
 
 .jar-inner:hover .overlay {
@@ -2225,7 +2279,16 @@ form label.checkbox-inline {
   color: white;
 }
 .modal-dialog2 .btn-main-fund{
-  background-color: #202455b4;
+  background: rgba(37, 18, 56, 0.55);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  position: absolute;
+  top: 12px;
 } 
 .jar-inner .main-fund-img{
   position: absolute;
@@ -3341,7 +3404,7 @@ section.press-release {
 }
 section.ourteam-sec{
   background-image: url(../images/icons/Group25.png);  
-  background-position: bottom 95px right 107px;
+  background-position: bottom 82px right 280px;
   background-repeat: no-repeat;
   margin-top: 184px;
   position: var(--pos-rltv)
@@ -3361,7 +3424,7 @@ section.press-rel {
   padding-bottom: 150px;
   position: var(--pos-rltv);
   background-image: url(../images/icons/Group33.png),url(../images/icons/Group25.png);  
-  background-position: bottom 218px left 29px,top 346px right 110px;
+  background-position: bottom 218px left 150px,top 351px right 247px;
   background-repeat: no-repeat;
 }
 .pressreleases{
@@ -3478,6 +3541,12 @@ section.press-rel {
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
+.contact-inner-container .form-group {
+  margin-bottom: 32px;
+}
+section#contactmain {
+  margin-bottom: 177px;
+}
 .contact .info {
   border-top: 3px solid var(--primary-color);
   border-bottom: 3px solid var(--primary-color);
@@ -3634,7 +3703,7 @@ section.press-rel {
   color: var(--primary-color);
   background-color: var(--font-white);
   padding: 10px 25px;
-  margin-left: 30px;
+  margin-left: 10px;
   border-radius: 12px;
 }
 .fintech-header{
@@ -3922,4 +3991,28 @@ section.offer{
     text-align-last: center;
     padding: 3px 0;
   }
+}
+
+/*------------------------------------------------------
+# Responsive
+-------------------------------------------------------*/
+@media only screen and (max-width:300px){
+
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+
+}
+@media only screen and (min-width: 769px) and (max-width:1024px){
+
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+  
+}
+@media only screen and (min-width: 1201px){
+  .polygonBig {
+    background-position: right 272px top 105px, bottom 67px right -106px;
+ } 
 }
