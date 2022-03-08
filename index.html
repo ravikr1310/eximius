@@ -33,6 +33,41 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style>
+    .tab {
+      height: 100%;
+      /* overflow-y: scroll; */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      opacity: 0.3;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      opacity: 1;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      opacity: 1;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+    }
+  </style>
 </head>
 
 <body>
@@ -48,7 +83,7 @@
           <li><a class="nav-link scrollto" href="team.html">Team</a></li>
           <li><a class="nav-link scrollto" href="#sectoroffocus">Sectors of focus</a></li>
           <li><a class="nav-link scrollto" href="#Resources">Resources</a></li>
-          <li><a class="nav-link scrollto" href="careers.html">Career</a></li>         
+          <li><a class="nav-link scrollto" href="careers.html">Career</a></li>
           <li><a class="nav-link scrollto active" href="pitchus.html">Pitch Us</a></li>
           <li><a id="sidemenuicon" class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png"
                 alt="menu btn" /></a></li>
@@ -87,38 +122,43 @@
 
     <div class="container">
       <div class="row gy-4">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center home-banner-sec">
-          <h1>We value your time,<br>
-            we’ll give a term<br> sheet in <span class="p-color">
-              < 15 days</span>
-          </h1>
-          <div>
+        <div class="col-lg-12 order-lg-12 home-banner-sec text-align-center">
+          <h1>Partners for <span class="p-color">Scale</span></h1>
+          <p class="sub-head">We add <span class="p-color">Value</span> more than money and <span
+              class="p-color">Termsheet</span> less than 15 days</p>
+          <div class="btn-container">
             <a href="./pitchus.html" class="btn-get-started scrollto">Join the Family</a>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 exis-img pos polygonBig">
-          <img class="banner-1" src="./assets/images//body/home-banner-img1.svg" alt="Banner 1" />
-          <img class="banner-2" src="./assets/images/body/MisbahAshraf.svg" alt="Misbah Ashraf" />
-          <img class="groupDot-bg" src="./assets/images/icons/groupDot.png" />
-          <img class="banner-3" src="./assets/images/body/home-banner-img3.svg" alt="Banner 3" />
+        <div class="col-lg-12 order-lg-12 exis-img pos polygonBig text-align-center">
+          <div class="hex-5-container">
+            <ul>
+              <li><img class="hex1" src="./assets/images/body/home2.png" alt="Hexagon 2" /></li>
+              <li><img class=" hex2" src="./assets/images/body/home1.png" alt="Hexagon 1" /></li>
+              <li><img class="hex3" src="./assets/images/body/home3.png" alt="Hexagon 3" /></li>
+              <li><img class="hex4" src="./assets/images/body/home4.png" alt="Hexagon 4" /></li>
+              <li><img class="hex6" src="./assets/images/body/home2.png" alt="Hexagon 6" /></li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
     </div>
 
   </section><!-- End Value Time Section -->
 
   <main id="main">
+
     <!-- ======= Our Strength Section ======= -->
     <section id="services" class="services section-bg our-str">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2 class="global-sub-title">Eximius Advantage</h2>
-          <p>Value>Money/Termsheet<15 Days</p>
+          <p class="pf-header">The Eximius advantage</p>
         </div>
 
         <div class="row">
-          <div class="col-md-6 col-lg-6 align-items-stretch" data-aos-delay="100">
+          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><img src="./assets/images/icons/fluent_money-24-regular.svg" class="img-fluid" alt="" />
               </div>
@@ -127,7 +167,7 @@
                 We are among your earliest supporters</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 d-flex align-items-stretch" data-aos-delay="100">
+          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><img src="./assets/images/icons/fluent_chart-multiple-24-regular.svg" class="img-fluid"
                   alt="" /></div>
@@ -136,7 +176,15 @@
                 We value your time, we’ll give a term sheet in<br> less than 15 days.</p>
             </div>
           </div>
-
+          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="./assets/images/icons/fluent_money-24-regular.svg" class="img-fluid" alt="" />
+              </div>
+              <h4 class="title"><a href="">First institutional cheque</a></h4>
+              <p class="description">
+                We are among your earliest supporters</p>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -150,80 +198,147 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2 class="global-sub-title">OUR PORTFOLIO</h2>
-          <p>The Gamechangers We <br>Support and Why</p>
+          <!-- <h2 class="global-sub-title">OUR PORTFOLIO</h2> -->
+          <p>The Gamechangers We Support </p>
         </div>
         <div class="container position-relative">
           <img src="./assets/images/icons/dot8.png" class="opf-design1" alt="" data-aos="zoom-in" data-aos-delay="20" />
-          <div id="myCarousel" class="carousel slide caro1">
+          <div id="myCarousel">
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-              <div class="item active">
+              <div class="">
                 <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="./assets/images/body/bigMImg.svg" class="img-responsive" alt="Los Angeles">
-                  </div>
-                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 custom-align-middle">
-                    <div class="sub-contaner">
-                      <img src="./assets/images/icons/Jar1.png" alt="Jar">
-                      <ul>
-                        <li><a href=""><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                        <li><a href=""><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                        <li><a href=""><img src="./assets/images/icons/ci_instagram.svg" alt="" /></a></li>
-                        <li><a href=""><img src="./assets/images/icons/whatsAppIcon.svg" alt="" /></a></li>
-                      </ul>
-                      <p class="ivtd-year">Invested in 2021</p>
-                      <a href="./fintech.html" class="btn-fintech">FinTech</a>
-                      <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the cumulative
-                        advantages of savings.</h3>
-                      <label class="port-lbl">Founders:</label>
-                      <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
-                      <label class="port-lbl">Other Investors :</label>
-                      <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-10 col-md-10 col-lg-10 col-sm-10 gamesec-box">
+                        <div id="London" class="tabcontent">
+                          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <img src="./assets/images/body/bigMImg.svg" style="height: 430px" class="img-responsive"
+                              alt="Los Angeles">
+                          </div>
+                          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 custom-align-middle">
+                            <div class="sub-contaner">
+                              <img src="./assets/images/icons/Jar1.png" alt="Jar">
+                              <ul>
+                                <li><a href=""><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
+                                <li><a href=""><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
+                                <li><a href=""><img src="./assets/images/icons/ci_instagram.svg" alt="" /></a></li>
+                                <li><a href=""><img src="./assets/images/icons/whatsAppIcon.svg" alt="" /></a></li>
+                              </ul>
+                              <p class="ivtd-year">Invested in 2021</p>
+                              <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                              <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the
+                                cumulative
+                                advantages of savings.</h3>
+                              <label class="port-lbl">Founders:</label>
+                              <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
+                              <label class="port-lbl">Other Investors :</label>
+                              <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
+                              <label class="port-lbl">Reason of investment:</label>
+                              <h3 class="port-para">Solves a very important problem and have a futuristic idea.</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="Paris" class="tabcontent">
+                          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <img src="./assets/images/body/bigMimg1.svg" style="height: 430px" class="img-responsive"
+                              alt="Los Angeles">
+                          </div>
+                          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 custom-align-middle">
+                            <div class="sub-contaner">
+                              <img src="./assets/images/icons/Jar1.png" alt="Jar">
+                              <ul>
+                                <li><a href=""><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
+                                <li><a href=""><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
+                                <li><a href=""><img src="./assets/images/icons/ci_instagram.svg" alt="" /></a></li>
+                                <li><a href=""><img src="./assets/images/icons/whatsAppIcon.svg" alt="" /></a></li>
+                              </ul>
+                              <p class="ivtd-year">Invested in 2021</p>
+                              <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                              <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the
+                                cumulative
+                                advantages of savings.</h3>
+                              <label class="port-lbl">Founders:</label>
+                              <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
+                              <label class="port-lbl">Other Investors :</label>
+                              <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
+                              <label class="port-lbl">Reason of investment:</label>
+                              <h3 class="port-para">Solves a very important problem and have a futuristic idea.</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="Tokyo" class="tabcontent">
+                          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <img src="./assets/images/body/bigMImg.svg" style="height: 430px" class="img-responsive"
+                              alt="Los Angeles">
+                          </div>
+                          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 custom-align-middle">
+                            <div class="sub-contaner">
+                              <img src="./assets/images/icons/Jar1.png" alt="Jar">
+                              <ul>
+                                <li><a href=""><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
+                                <li><a href=""><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
+                                <li><a href=""><img src="./assets/images/icons/ci_instagram.svg" alt="" /></a></li>
+                                <li><a href=""><img src="./assets/images/icons/whatsAppIcon.svg" alt="" /></a></li>
+                              </ul>
+                              <p class="ivtd-year">Invested in 2021</p>
+                              <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                              <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the
+                                cumulative
+                                advantages of savings.</h3>
+                              <label class="port-lbl">Founders:</label>
+                              <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
+                              <label class="port-lbl">Other Investors :</label>
+                              <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
+                              <label class="port-lbl">Reason of investment:</label>
+                              <h3 class="port-para">Solves a very important problem and have a futuristic idea.</h3>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                          <img src="./assets/images/body/bigMImg.svg" class="img-responsive" alt="Los Angeles">
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 custom-align-middle">
+                          <div class="sub-contaner">
+                            <img src="./assets/images/icons/Jar1.png" alt="Jar">
+                            <ul>
+                              <li><a href=""><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
+                              <li><a href=""><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
+                              <li><a href=""><img src="./assets/images/icons/ci_instagram.svg" alt="" /></a></li>
+                              <li><a href=""><img src="./assets/images/icons/whatsAppIcon.svg" alt="" /></a></li>
+                            </ul>
+                            <p class="ivtd-year">Invested in 2021</p>
+                            <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                            <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the
+                              cumulative
+                              advantages of savings.</h3>
+                            <label class="port-lbl">Founders:</label>
+                            <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
+                            <label class="port-lbl">Other Investors :</label>
+                            <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
+                            <label class="port-lbl">Reason of investment:</label>
+                            <h3 class="port-para">Solves a very important problem and have a futuristic idea.</h3>
+                          </div>
+                        </div> -->
+                      </div>
+                      <div class="col-xs-2 col-md-2 col-lg-2 col-sm-2">
+                        <div class="tab">
+                          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><img
+                              src="./assets/images/body/f1.png" alt="" /></button>
+                          <button class="tablinks" onclick="openCity(event, 'Paris')"><img
+                              src="./assets/images/body/f2.png" alt="" /></button>
+                          <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img
+                              src="./assets/images/body/f3.png" alt="" /></button>
+                          <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img
+                              src="./assets/images/body/f4.png" alt="" /></button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-
               </div>
-
-              <div class="item">
-                <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                    <img src="./assets/images/body/bigMImg.svg" class="img-responsive" alt="Los Angeles">
-                  </div>
-                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 custom-align-middle">
-                    <div class="sub-contaner">
-                      <img src="./assets/images/icons/Jar1.png" alt="Jar">
-                      <ul>
-                        <li><a href=""><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                        <li><a href=""><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                        <li><a href=""><img src="./assets/images/icons/ci_instagram.svg" alt="" /></a></li>
-                        <li><a href=""><img src="./assets/images/icons/whatsAppIcon.svg" alt="" /></a></li>
-                      </ul>
-                      <p class="ivtd-year">Invested in 2021</p>
-                      <a href="#about" class="btn-fintech">FinTech</a>
-                      <h3 class="port-para">Jar is helping users invest in digital gold and rediscover the cumulative
-                        advantages of savings.</h3>
-                      <label class="port-lbl">Founders:</label>
-                      <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
-                      <label class="port-lbl">Other Investors :</label>
-                      <h3 class="port-para">3one4 Capital, Speciale Invest, Kunal Shah, Deep Kalra, & more.</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
           <div class="btn-cont">
             <a href="./jar.html" class="btn-get-started">See More</a>
@@ -232,79 +347,21 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Testimonial Section ======= -->
-    <section id="faq" class="section-bg testimonial position-relative">
-      <img src="./assets/images/body/halfPolyRight.svg" class="polog-right-home" alt="" data-aos="zoom-in"
-        data-aos-delay="20" />
-      <img src="./assets/images/icons/dots10.png" class="test-desg-2" alt="" data-aos="zoom-in" data-aos-delay="20" />
-      <img src="./assets/images/icons/plg1.svg" class="test-desg-3" alt="" data-aos="zoom-in" data-aos-delay="20" />
+    <!-- ======= Our Team Section ======= -->
+    <section id="contact" class="contact ourteam-sec">
+      <div class="ourteam-sec-dots"></div>
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
-          <h2 class="global-sub-title">Testimonials</h2>
-          <p>What They Say About Us</p>
-        </div>
-        <div class="carousel slide caro1">
-          <div class="row position-relative">
-            <img src="./assets/images/icons/groupDot.png" class="test-desg-1" alt="" data-aos="zoom-in"
-              data-aos-delay="20" />
-            <section class="regular1 slider">
-              <div>
-                <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
-                  <img src="./assets/images/icons/doublecot.png" alt="" data-aos="zoom-in" data-aos-delay="20" />
-                  <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
-                    lorem
-                    convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
-                    fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
-                    vitae.
-                  </p>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 two" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="./assets/images/body/Polygon5.svg" alt="" data-aos="zoom-in" data-aos-delay="20" />
-                  <p>Jane Doe</p>
-                  <p>Founder & CEO Big Company</p>
-                  <p>www.therecompany.com</p>
-                </div>
-              </div>
-              <div>
-                <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
-                  <img src="./assets/images/icons/doublecot.png" alt="" data-aos="zoom-in" data-aos-delay="20" />
-                  <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
-                    lorem
-                    convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
-                    fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
-                    vitae.
-                  </p>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 two" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="./assets/images/body/Polygon5.svg" alt="" data-aos="zoom-in" data-aos-delay="20" />
-                  <p>Jane Doe</p>
-                  <p>Founder & CEO Big Company</p>
-                  <p>www.therecompany.com</p>
-                </div>
-              </div>
-              <div>
-                <div class="col-xl-7 col-lg-7 col-md-7 one" data-aos="zoom-in" data-aos-delay="100">
-                  <img src="./assets/images/icons/doublecot.png" alt="" data-aos="zoom-in" data-aos-delay="20" />
-                  <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar iaculis pharetra
-                    lorem
-                    convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse vitae sit eros, praesent
-                    fringilla. Placerat velit, ut at volutpat mi malesuada vel lacus, ipsum. At consequat vehicula ac,
-                    vitae.
-                  </p>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 two" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="./assets/images/body/Polygon5.svg" alt="" data-aos="zoom-in" data-aos-delay="20" />
-                  <p>Jane Doe</p>
-                  <p>Founder & CEO Big Company</p>
-                  <p>www.therecompany.com</p>
-                </div>
-              </div>
-            </section>
-          </div>
+          <!-- <h2 class="global-sub-title">Our Team</h2> -->
+          <p>We are hustlers just like you</p>
+          <img src="./assets/images/body/hustlers.png" class="img-responsive width-100" alt="" data-aos="zoom-in" />
         </div>
       </div>
-    </section><!-- End Testimonial Section -->
+      <div class="btn-cont">
+        <a href="./pressrelease.html" class="btn-get-started">See More</a>
+      </div>
+    </section><!-- End Our Team Section -->
+
 
     <!-- ======= focus Section ======= -->
     <section id="sectoroffocus" class="focus">
@@ -312,33 +369,30 @@
       <div class="focus-bg1"></div>
       <div class="container">
         <div class="section-title">
-          <h2 class="global-sub-title">Sectors</h2>
-          <p>Building for tommorow</p>
+          <p>Sectors Building For Tomorrow</p>
         </div>
         <div class="row position-relative">
           <img src="./assets/images/icons/Group22.png" class="foc-des-1" alt="" data-aos="zoom-in" />
           <img src="./assets/images/icons/Group23.png" class="foc-des-2" alt="" data-aos="zoom-in" />
 
-          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" data-aos="zoom-in">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4" data-aos="zoom-in">
             <div class="pos">
-              <img src="./assets/images/body/sector1.jpg" class="img-responsive" alt="" />
+              <img src="./assets/images/body/media.svg" class="img-responsive" alt="" />
               <a href="gaming.html" class="btn-get-started pos-abs">Media and entertainment </a>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 text-align-right" data-aos="zoom-in">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4" data-aos="zoom-in">
             <div class="pos">
-              <img src="./assets/images/body/sector2.jpg" class="img-responsive" alt="" />
+              <img src="./assets/images/body/fintech.svg" class="img-responsive" alt="" />
               <a href="fintech.html" class="btn-get-started pos-abs">Fintech</a>
             </div>
           </div>
-
-          <div class="col-xl-3 col-lg-12 col-md-12 text-align-center img-responsive position-relative"
-            data-aos="zoom-in" data-aos-delay="70">
-            <div class="pos pos-last">
-              <img src="./assets/images/body/sector3.png" alt="" />
-              <a href="healthtech.html" class="btn-get-started pos-abs">Health Tech</a>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4" data-aos="zoom-in">
+            <div class="pos">
+              <img src="./assets/images/body/health.svg" class="img-responsive" alt="" />
+              <a href="fintech.html" class="btn-get-started pos-abs">Health Tech</a>
+              <img src="./assets/images/icons/smallPoly.svg" class="foc-des-3" alt="" data-aos="zoom-in" />
             </div>
-            <img src="./assets/images/icons/smallPoly.svg" class="foc-des-3" alt="" data-aos="zoom-in" />
           </div>
 
         </div>
@@ -347,185 +401,164 @@
     </section><!-- End focus Section -->
 
 
-
-    <!-- ======= Our Team Section ======= -->
-    <section id="contact" class="contact ourteam-sec">
-      <div class="ourteam-sec-dots"></div>
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Testimonial Section ======= -->
+    <section id="faq" class="section-bg testimonial position-relative">
+      <img src="./assets/images/body/halfPolyRight.svg" class="polog-right-home" alt="" data-aos="zoom-in"
+        data-aos-delay="20" />
+      <img src="./assets/images/icons/dots10.png" class="test-desg-2" alt="" data-aos="zoom-in" data-aos-delay="20" />
+      <img src="./assets/images/icons/plg1.svg" class="test-desg-3" alt="" data-aos="zoom-in" data-aos-delay="20" />
+      <div class="container">
         <div class="section-title">
-          <h2 class="global-sub-title">Our Team</h2>
-          <p>The Hustlers Behind the Scenes</p>
+          <p>What They Say About Us</p>
         </div>
-        <div class="carousel slide caro1">
-          <img src="./assets/images/icons/Group25.png" class="g-ot-dost-1" alt="" data-aos="zoom-in" />
-          <div class="row ourteam">
-            <section class="regular slider">
-              <div>
-                <img src="./assets/images/body/team1.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Pearl Agarwal</p>
-                  <p class="ot-desig">Founder & Managing Director</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
+        <div class="row position-relative">
+          <img src="./assets/images/icons/groupDot.png" class="test-desg-1" alt="" data-aos="zoom-in"
+            data-aos-delay="20" />
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="inne-containre">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="t-h-box">
+                    <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-2 p-zero p-b-19">
+                        <img src="./assets/images/body/Misbah.svg" alt="Misbah Ashraf" class="pull-right"
+                          data-aos="zoom-in" data-aos-delay="20" />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-8 col-md-8 col-sm-8 text-align-center p-zero pull-left d-flex align-items-center">
+                        <div class="pull-left p-l-14">
+                          <p class="head">Misbah Ashraf</p>
+                          <p class="desig">Founder & CEO Jar</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div>
-                <img src="./assets/images/body/team2.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Sanjiv Saklani</p>
-                  <p class="ot-desig">Advisor</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
+              <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-sm-2" data-aos="zoom-in" data-aos-delay="200">
+                  <img src="./assets/images/icons/Vector.svg" alt="" data-aos="zoom-in" data-aos-delay="20" />
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 p-l-zero" data-aos="zoom-in" data-aos-delay="200">
+                  <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse
+                    vitae sit eros, praesent fringilla.
+                  </p>
                 </div>
               </div>
-              <div>
-                <img src="./assets/images/body/team3.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Jasveer Singh</p>
-                  <p class="ot-desig">Advisor</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/images/body/team4.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Vikram Qanungo</p>
-                  <p class="ot-desig">Advisor</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/images/body/team5.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Jane Doe</p>
-                  <p class="ot-desig">CEO</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/images/body/team6.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Jane Doe</p>
-                  <p class="ot-desig">CEO</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/images/body/team7.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Jane Doe</p>
-                  <p class="ot-desig">CEO</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/images/body/team8.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Jane Doe</p>
-                  <p class="ot-desig">CEO</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/images/body/team9.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Jane Doe</p>
-                  <p class="ot-desig">CEO</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/images/body/team10.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Jane Doe</p>
-                  <p class="ot-desig">CEO</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/images/body/team11.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Jane Doe</p>
-                  <p class="ot-desig">CEO</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <img src="./assets/images/body/team12.svg" alt="" />
-                <div class="ot-container">
-                  <p class="ot-ttle">Jane Doe</p>
-                  <p class="ot-desig">CEO</p>
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a></li>
-                    <li><a href="#"><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></a></li>
-                  </ul>
-                </div>
-              </div>
-
-            </section>
-            <div class="btn-cont">
-              <a href="./team.html" class="btn-get-started">See More</a>
             </div>
-
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="inne-containre">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="t-h-box">
+                    <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-2 p-zero p-b-19">
+                        <img src="./assets/images/body/vikalp.svg" alt="" class="pull-right" data-aos="zoom-in"
+                          data-aos-delay="20" />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-8 col-md-8 col-sm-8 text-align-center p-zero pull-left d-flex align-items-center">
+                        <div class="pull-left p-l-14">
+                          <p class="head">Vikalp Sahni</p>
+                          <p class="desig">Founder & CEO Eka.care</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-sm-2" data-aos="zoom-in" data-aos-delay="200">
+                  <img src="./assets/images/icons/Vector.svg" alt="" data-aos="zoom-in" data-aos-delay="20" />
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 p-l-zero" data-aos="zoom-in" data-aos-delay="200">
+                  <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse
+                    vitae sit eros, praesent fringilla.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="inne-containre">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="t-h-box">
+                    <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-2 p-zero p-b-19">
+                        <img src="./assets/images/body/Jasveer.svg" alt="Jasveer Singh" class="pull-right"
+                          data-aos="zoom-in" data-aos-delay="20" />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-8 col-md-8 col-sm-8 text-align-center p-zero pull-left d-flex align-items-center">
+                        <div class="pull-left p-l-14">
+                          <p class="head">Jasveer Singh</p>
+                          <p class="desig">Founder & CEO Zorro</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-sm-2" data-aos="zoom-in" data-aos-delay="200">
+                  <img src="./assets/images/icons/Vector.svg" alt="" data-aos="zoom-in" data-aos-delay="20" />
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 p-l-zero" data-aos="zoom-in" data-aos-delay="200">
+                  <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse
+                    vitae sit eros, praesent fringilla.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="inne-containre">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="t-h-box">
+                    <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-2 p-zero p-b-19">
+                        <img src="./assets/images/body/Nikhil.svg" alt="Nikhil K" class="pull-right" data-aos="zoom-in"
+                          data-aos-delay="20" />
+                      </div>
+                      <div
+                        class="col-xl-8 col-lg-8 col-md-8 col-sm-8 text-align-center p-zero pull-left d-flex align-items-center">
+                        <div class="pull-left p-l-14">
+                          <p class="head">Nikhil K.</p>
+                          <p class="desig">Founder & CEO Finarkein Analytics</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-sm-2" data-aos="zoom-in" data-aos-delay="200">
+                  <img src="./assets/images/icons/Vector.svg" alt="" data-aos="zoom-in" data-aos-delay="20" />
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 p-l-zero" data-aos="zoom-in" data-aos-delay="200">
+                  <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet sed amet libero suspendisse
+                    vitae sit eros, praesent fringilla.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section><!-- End Our Team Section -->
+    </section><!-- End Testimonial Section -->
+
+
+
+
+
+
 
     <!-- ======= Innovation Section ======= -->
     <!-- <section id="innovation" class="contact invo home position-relative">
@@ -558,7 +591,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2 class="global-sub-title">Press Releases</h2>
+          <!-- <h2 class="global-sub-title">Press Releases</h2> -->
           <p>We are in the News</p>
         </div>
         <div class="row position-relative">
@@ -598,7 +631,7 @@
       </div>
     </section><!-- End Press Release Section -->
 
-    
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -607,7 +640,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 footer-links">
+          <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
             <img src="./assets/images/logo/footerLogo.png" alt="" />
             <div class="social-links mt-3 mt-01">
               <a href="#" class="twitter"><img src="./assets/images/icons/twiter.png" alt="" /></a>
@@ -622,7 +655,6 @@
             <ul>
               <li><a href="portfolio.html">Portfolio</a></li>
               <li><a href="#sectoroffocus">Sector of focus</a></li>
-              <li><a href="#">Resources</a></li>
               <li><a href="careers.html">Career</a></li>
               <li><a href="#">Founder Forum</a></li>
             </ul>
@@ -639,8 +671,15 @@
               <li><a href="reports.html">Reports</a></li>
             </ul>
           </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 footer-links">
+            <h4>Offices</h4>
+            <p class="f-abt"><span style="font-weight: bold;">Gurgaon -</span> The Solitaire Plaza, F-101, Sector 26.
+            </p>
+            <p class="f-abt"><span style="font-weight: bold;">Bengaluru -</span> Harlur Main road, HSR layout</p>
+            </ul>
+          </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-4 footer-links">
+          <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
             <h4>About us</h4>
             <h4 class="f-abt">Eximius Ventures is a SEBI registered (Cat 1 AIF) micro venture fund looking to create a
               thriving global
@@ -670,18 +709,18 @@
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).on('ready', function () {
-      $(".regular").slick({
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4
-      });
-      $(".regular1").slick({
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
+      // $(".regular").slick({
+      //   dots: false,
+      //   infinite: true,
+      //   slidesToShow: 4,
+      //   slidesToScroll: 4
+      // });
+      // $(".regular1").slick({
+      //   dots: false,
+      //   infinite: true,
+      //   slidesToShow: 1,
+      //   slidesToScroll: 1
+      // });
       $("#sidemenuicon").on("click", function () {
         $('.header-side-menu').show();
       })
@@ -689,6 +728,22 @@
         $('.header-side-menu').hide();
       })
     });
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 
   </script>
 </body>
