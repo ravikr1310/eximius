@@ -32,9 +32,66 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style>
+    body {
+      position: relative;
+    }
+    .nav-pills {
+      top: 0px;
+      position: fixed;
+      z-index: 99;
+    }
+    .pos-top{
+      top: 167px !important;
+    }
+    /* div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+    } */
+
+    /* #tab1 {
+      color: #fff;
+      background-color: #1E88E5;
+    }
+
+    #tab2 {
+      color: #fff;
+      background-color: #673ab7;
+    }
+
+    #tab3 {
+      color: #fff;
+      background-color: #ff9800;
+    }
+
+    #tab4 {
+      color: #fff;
+      background-color: #00bcd4;
+    }
+
+    #tab5 {
+      color: #fff;
+      background-color: #009688;
+    } */
+    .fixed-side-menu{
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    @media screen and (max-width: 810px) {
+
+      #tab1,
+      #tab2,
+      #tab3,
+      #tab4,
+      #tab5 {
+        margin-left: 150px;
+      }
+    }
+  </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container align-items-center">
@@ -53,7 +110,8 @@
                 alt="menu btn" /></a></li>
         </ul>
         <div class="header-side-menu">
-          <span id="sidecrossbtn" href="#" class="side-menu-cross"><img src="./assets/images/icons/menu-cross-btn.svg"/></span>
+          <span id="sidecrossbtn" href="#" class="side-menu-cross"><img
+              src="./assets/images/icons/menu-cross-btn.svg" /></span>
           <ul>
             <li><a href="./blog.html">Blogs</a></li>
             <li><a href="./pressrelease.html">Press Releases</a></li>
@@ -79,12 +137,206 @@
             <div class="section-title">
               <h5 class="innter-main-head">Team</h5>
             </div>
+            <img src="./assets/images/body/hustlers.png" style="width: 100%;" alt="" />
           </div>
         </div>
-        <div class="row sub-container">
-          <div>
+      </div>
+    </section>
+    <!-- ======= Funders ======= -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+            <nav id="myScrollspy" data-aos="zoom-in" data-aos-delay="50">
+              <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a data-toggle="pill" href="#tab1">Founder</a></li>
+                <li><a data-toggle="pill" href="#tab2">Advisor</a></li>
+                <li><a data-toggle="pill" href="#tab3">Investment Team</a></li>
+                <li><a data-toggle="pill" href="#tab4">Portfolio Growth</a></li>
+                <li><a data-toggle="pill" href="#tab5">Operations</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 tab-content team-tab-container" data-aos="zoom-in"
+            data-aos-delay="100">
+            <div id="tab1" class="pb-104">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                  <h2 class="founder-head">Founder</h2>
+                  <div class="team-tab-box">
+                    <img class="pearl-1" src="./assets/images/team/photo.svg" alt="" />
+                    <div class="pearl-2">
+                      <p class="team-head">Pearl Agarwal</p>
+                      <p class="team-designation">Founder & Managing Director</p>
+                      <p class="team-parag">Prior to Eximius, Pearl spent a decade across various investment roles
+                        in
+                        the US and UK, helping companies raise capital, facilitating multi-billion dollar mergers
+                        and acquisitions, and ensuring business development.<br><br>Alongside Eximius, Pearl is also
+                        the
+                        co-founder of DotReview, a platform for founders to get authentic and trusted reviews of
+                        investors.</p>
+                      <div class="team-social-cont">
+                        <ul>
+                          <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                          <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                          <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                          <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                        </ul>
+                        <a href="#" class="readmore-btn" data-toggle="modal" data-target="#myModal1">Know more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab2" class="pb-104">
+              <h2 class="founder-head">Advisor</h2>
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 ">
+                  <div class="team-tab-box-inner">
+                    <img src="./assets/images/team/unsplash_Zz5LQe-VSMY.svg" alt="" />
+                    <p>Jasveer Singh<br><span>Advisor</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <div class="team-tab-box-inner">
+                    <img src="./assets/images/team/photo-2.png" alt="" />
+                    <p>Sanjiv Saklani<br><span>Advisor</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <div class="team-tab-box-inner">
+                    <img src="./assets/images/team/photo-3.png" alt="" />
+                    <p>Vikram Qanungo<br><span>Advisor</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab3" class="pb-104">
+              <h2 class="founder-head">Investment Team</h2>
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <div class="team-tab-box-inner">
+                    <img src="./assets/images/team/photo-4.png" alt="" />
+                    <p>Raunak Bhiwal<br><span>Investment Associate</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <div class="team-tab-box-inner">
+                    <img src="./assets/images/team/photo-5.png" alt="" />
+                    <p>Vidhi Doshi<br><span>Investment Associate</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <div class="team-tab-box-inner">
+                    <img src="./assets/images/team/photo-6.png" alt="" />
+                    <p>Hunny Pal<br><span>Investment Associate</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab4" class="pb-104">
+              <h2 class="founder-head">Portfolio Growth</h2>
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <div class="team-tab-box-inner">
+                    <img src="" alt="" />
+                    <p>Sumit<br><span>Portfolio & Growth Manager</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <div class="team-tab-box-inner">
+                    <img src="" alt="" />
+                    <p>Aditya<br><span>Marketing Lead</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <div class="team-tab-box-inner">
+                    <img src="./assets/images/team/photo11.png" alt="" />
+                    <p>Amrita Saini<br><span>Human Resources Lead</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab5" class="pb-104">
+              <h2 class="founder-head">Operations</h2>
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <div class="team-tab-box-inner">
+                    <img src="./assets/images/team/photo-8.png" alt="" />
+                    <p>Unnati Tak<br><span>Operations Manager</span></p>
+                    <ul>
+                      <li><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/iconoir_twitter.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></li>
+                      <li><img src="./assets/images/icons/fluent_mail-24-regular.svg" alt="" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="sub-container">
+        <div class="container">
+          <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-3" data-aos="zoom-in" data-aos-delay="50">
-              <div class="team-inner">
+              <div class="team-inner nav nav-pills nav-stacked" id="myScrollspy">
                 <ul class="nav nav-pills">
                   <li class="active"><a data-toggle="pill" href="#tab1">Founder</a></li>
                   <li><a data-toggle="pill" href="#tab2">Advisor</a></li>
@@ -97,9 +349,10 @@
             <div class="col-xl-9 col-lg-9 col-md-9" data-aos="zoom-in" data-aos-delay="100">
 
               <div class="tab-content team-tab-container">
-                <div id="tab1" class="tab-pane fade in active">
+                <div id="tab1" class="pb-104">
                   <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12">
+                      <h2 class="founder-head">Founder</h2>
                       <div class="team-tab-box">
                         <img class="pearl-1" src="./assets/images/team/photo.svg" alt="" />
                         <div class="pearl-2">
@@ -126,7 +379,8 @@
                     </div>
                   </div>
                 </div>
-                <div id="tab2" class="tab-pane fade">
+                <div id="tab2" class="pb-104">
+                  <h2 class="founder-head">Advisor</h2>
                   <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4 ">
                       <div class="team-tab-box-inner">
@@ -166,7 +420,8 @@
                     </div>
                   </div>
                 </div>
-                <div id="tab3" class="tab-pane fade">
+                <div id="tab3" class="pb-104">
+                  <h2 class="founder-head">Investment Team</h2>
                   <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4">
                       <div class="team-tab-box-inner">
@@ -206,7 +461,8 @@
                     </div>
                   </div>
                 </div>
-                <div id="tab4" class="tab-pane fade">
+                <div id="tab4" class="pb-104">
+                  <h2 class="founder-head">Portfolio Growth</h2>
                   <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4">
                       <div class="team-tab-box-inner">
@@ -246,7 +502,8 @@
                     </div>
                   </div>
                 </div>
-                <div id="tab5" class="tab-pane fade">
+                <div id="tab5" class="pb-104">
+                  <h2 class="founder-head">Operations</h2>
                   <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4">
                       <div class="team-tab-box-inner">
@@ -266,15 +523,14 @@
             </div>
           </div>
         </div>
-      </div>
-      </div>
-    </section>
+      </div> -->
+    </section> <!-- ======= End of Funders ======= -->
     <!-- Modal 1 -->
     <div class="modal fade" id="myModal1" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-content">            
+          <div class="modal-content">
             <div class="modal-body">
               <div class="row">
                 <div class="col-xl-7 col-lg-7 col-md-7">
@@ -282,9 +538,12 @@
                     <h4 class="modal-title">Pearl Agarwal</h4>
                   </div>
                   <p>
-                    Prior to Eximius, Pearl spent a decade across various investment roles in the US and UK, helping companies raise capital, facilitating multi-billion dollar mergers and acquisitions, and ensuring business development.</p>
-                  <p>Alongside Eximius, Pearl is also the co-founder of DotReview, a platform for founders to get authentic and trusted reviews of investors.</p>
-                  
+                    Prior to Eximius, Pearl spent a decade across various investment roles in the US and UK, helping
+                    companies raise capital, facilitating multi-billion dollar mergers and acquisitions, and ensuring
+                    business development.</p>
+                  <p>Alongside Eximius, Pearl is also the co-founder of DotReview, a platform for founders to get
+                    authentic and trusted reviews of investors.</p>
+
                   <ul>
                     <li>Investment Banker – Merrill Lynch</li>
                     <li>PE Investor – GlP ($70bn US-based fund)</li>
@@ -302,54 +561,7 @@
 
       </div>
     </div> <!-- End of Modal -->
-    <!-- ======= More to offer Section ======= -->
-    <section id="contact" class="contact offer">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2 class="mo-head">MORE TO OFFER</h2>
-          <p>Find informative<br> insights in our library</p>
-        </div>
-        <div class="row pr-cont">
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="50">
-            <div class="offer-bg">
-              <img src="./assets/images/offer/offer1.png" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <a href="./case-studies.html" alt="Case Studies">View All</a>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="60">
-            <div class="offer-bg">
-              <img src="./assets/images/icons/fluent_video-recording-20-regular.png" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <a href="./case-studies.html" alt="Case Studies">View All</a>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="70">
-            <div class="offer-bg">
-              <img src="./assets/images/icons/fluent_mic-sparkle-24-regular.svg" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <a href="./case-studies.html" alt="Case Studies">View All</a>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="80">
-            <div class="offer-bg">
-              <img src="./assets/images/icons/fluent_document-edit-24-regular.svg" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <a href="./case-studies.html" alt="Case Studies">View All</a>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 pr" data-aos="zoom-in" data-aos-delay="90">
-            <div class="offer-bg">
-              <img src="./assets/images/icons/fluent_document-table-cube-24-regular.svg" alt="" />
-            </div>
-            <h4>Case Studies</h4>
-            <a href="./case-studies.html" alt="Case Studies">View All</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End More to offer Section -->
 
   </main><!-- End #main -->
 
@@ -359,29 +571,28 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-md-5 footer-links">
+          <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
             <img src="./assets/images/logo/footerLogo.png" alt="" />
             <div class="social-links mt-3 mt-01">
               <a href="#" class="twitter"><img src="./assets/images/icons/twiter.png" alt="" /></a>
-              <a href="#" class="instagram"><img src="./assets/images/icons/instagram.png" alt="" /></a>
-              <a href="#" class="google-plus"><img src="./assets/images/icons/m.png" alt="" /></a>
-              <a href="#" class="google-plus"><img src="./assets/images/icons/m.png" alt="" /></a>
+              <a href="#" class="instagram"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a>
+              <a href="#" class="google-plus"><img src="./assets/images/icons/akar-icons_medium-fill.svg" alt="" /></a>
+              <a href="#" class="google-plus"><img src="./assets/images/icons/iconoir_youtube.svg" alt="" /></a>
             </div>
             <h4 class="cop-rt">© 2022 Eximius Capital Ventures Pvt. Ltd.</h4>
           </div>
-          <div class="col-lg-2 col-md-2 footer-links">
+          <div class="col-lg-2 col-md-2 col-sm-2 footer-links">
             <h4>Quick Links</h4>
             <ul>
               <li><a href="portfolio.html">Portfolio</a></li>
               <li><a href="#sectoroffocus">Sector of focus</a></li>
-              <li><a href="#">Resources</a></li>
               <li><a href="careers.html">Career</a></li>
               <li><a href="#">Founder Forum</a></li>
             </ul>
 
           </div>
 
-          <div class="col-lg-2 col-md-2 footer-links">
+          <div class="col-lg-2 col-md-2 col-sm-2 footer-links">
             <h4>Resources</h4>
             <ul>
               <li><a href="case-studies.html">Case Studies</a></li>
@@ -391,10 +602,18 @@
               <li><a href="reports.html">Reports</a></li>
             </ul>
           </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 footer-links">
+            <h4>Offices</h4>
+            <p class="f-abt"><span style="font-weight: bold;">Gurgaon -</span> The Solitaire Plaza, F-101, Sector 26.
+            </p>
+            <p class="f-abt"><span style="font-weight: bold;">Bengaluru -</span> Harlur Main road, HSR layout</p>
+            </ul>
+          </div>
 
-          <div class="col-lg-3 col-md-3 footer-links">
+          <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
             <h4>About us</h4>
-            <h4 class="f-abt">Eximius Ventures is a SEBI registered (Cat 1 AIF) micro venture fund looking to create a
+            <h4 class="f-abt" style="padding: 0; margin: 0;">Eximius Ventures is a SEBI registered (Cat 1 AIF) micro
+              venture fund looking to create a
               thriving global
               entrepreneurial community and nurture young talent in India.</h4>
           </div>
@@ -428,6 +647,19 @@
       $("#sidecrossbtn").on("click", function () {
         $('.header-side-menu').hide();
       })
+      $(window).scroll(function() {    
+          var scroll = $(window).scrollTop();
+
+          //>=, not <=
+          if (scroll >= 580) {
+              //clearHeader, not clearheader - caps H
+              $("#myScrollspy").addClass("fixed-side-menu");
+              $('.nav-pills').addClass("pos-top");
+          }else{
+              $("#myScrollspy").removeClass("fixed-side-menu");
+              $('.nav-pills').removeClass("pos-top");
+          }
+      }); //missing );
     });
 
   </script>

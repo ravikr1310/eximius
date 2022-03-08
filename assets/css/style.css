@@ -23,6 +23,10 @@
   font-family: 'Inter-SemiBold'; 
   src: url('../fonts/Inter/static/Inter-Medium.ttf');
 }
+@font-face {
+  font-family: 'Inter-Regular'; 
+  src: url('../fonts/Inter/static/Inter-Regular.ttf');
+}
 body {
   font-family: "Montserrat";
   color: var(--font-color2);
@@ -44,7 +48,9 @@ a:hover {
 h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Montserrat";
 }
-
+.width-100{
+  width:100%
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -944,12 +950,22 @@ section.invo.inner-inov{
   width: 100%;
   margin: 200px 0 0 0;
 }
+.home-banner-sec p.sub-head {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.home-banner .btn-container{
+  padding-bottom: 91px;
+}
 .home-banner h1 {
   margin: 0;
-  font-size: 53px;
+  font-size: 56px;
   line-height: 68px;
   color: var(--font-head-color);
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 .home-banner h2 {
   color: #a08f86;
@@ -964,7 +980,7 @@ section.invo.inner-inov{
   font-weight: 600;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 14.5px 61px;
+  padding: 12.5px 42px;
   border-radius: 3px;
   transition: 0.5s;
   margin-top: 4px;
@@ -972,20 +988,24 @@ section.invo.inner-inov{
   background: var(--primary-color);
   box-shadow: 0px 3px 4px rgb(0 0 0 / 8%);
   border-radius: 15px;
+  font-size: 16px;
 }
 .pos .pos-abs {
+  font-family: 'Inter-SemiBold';
   position: absolute;
-  bottom: 26px;
-  left: 50px;
-  background: #FAFAFA;
-  border-radius: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 16px 32px;
-  color: var(--primary-color);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  right: 9;
+  background: rgba(76, 76, 76, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  padding: 18px 20px;
+  color: white;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
 }
 .third-img {
   text-align: center;
@@ -1277,10 +1297,16 @@ section {
 }
 .section-title p {
   font-family: 'Montserrat-ExtraBold';
-  font-size: 40px;
-  line-height: 49px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  /* font-family: 'Inter-SemiBold'; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 160%;
+  /* text-transform: uppercase; */
+}
+.section-title p.pf-header{
+  font-family: 'Inter-SemiBold';
+  text-transform: uppercase;
 }
 .section-title p::after {
   /* content: "";
@@ -1489,6 +1515,20 @@ section {
 .services .title a {
   color: var(--font-color);
   font-family: 'Inter';
+  letter-spacing: -0.01em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+}
+.hex-5-container ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hex-5-container ul li:nth-child(2),.hex-5-container ul li:nth-child(4) {
+  position: relative;
+  bottom: 51px;
 }
 .services .description {
   font-size: 15px;
@@ -1508,12 +1548,39 @@ section {
   position: var(--pos-rltv);
   width: 100%;
   overflow: hidden;
+  /* background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgb(26 35 42 / 15%);
+  border-radius: 24px; */
+}
+.gamesec-box{
   background: #FFFFFF;
   box-shadow: 0px 8px 24px rgb(26 35 42 / 15%);
   border-radius: 24px;
+  /* margin: 27px 0px 45px 45px; */
 }
 .fintech-header .navbar a {
   color: #fff;
+}
+h2.founder-head {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0 0 32px 0;
+  margin: 0;
+}
+p.f-abt {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: none;
+  line-height: 29px;
 }
 .btn-fintech:hover{
   background: linear-gradient(145.4deg, #9aa2f7 -36.56%, #56426b 135.06%);
@@ -1524,11 +1591,12 @@ section {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
-  display: inline-block;
+  /* display: inline-block; */
   color: var(--font-white);
   padding: 7px 16px;
-  margin-top: 23px;
+  margin-top: -14px;
   margin-bottom: 20px;
+  float: right;
 }
 .testimonial .carousel-inner {
   position: var(--pos-rltv);
@@ -1542,9 +1610,39 @@ section {
 .testimonial .aos-animate {
   /* height: 390px; */
 }
-section.testimonial .one {
+.d-block{
+  display: block;
+}
+section.testimonial .inne-containre {
   background: #F4F7F9;
-  padding: 56px 40px 0 40px;
+  padding: 32px 24px 48px;
+  margin: 32px 16px;
+}
+.t-h-box p.head {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+.t-h-box p.desig {
+  font-family: 'Inter-SemiBold';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #251238;
+}
+p.desc {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
 }
 h3.port-para {
   margin-top: 0;
@@ -3127,9 +3225,11 @@ a.readmore-btn {
   border-radius: 32px;
 }
 .team .innerpages {
-  margin-bottom: 280px;
+  margin-bottom: 64px;
 }
-
+.pb-104{
+  padding-bottom: 104px
+}
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -4075,15 +4175,34 @@ body.top-bg{
 ol, ul{
   list-style: none;
 }
+.t-h-box{
+  text-align: center;
+  margin: 0 64px;
+}
+.p-zero{
+  padding: 0;
+}
+.p-l-zero{
+  padding-left:0
+}
+.p-l-14{
+  padding-left:14px;
+}
+.p-b-19{
+  padding-bottom: 19px;
+}
+.align-items-center{
+  align-items: center;
+}
 .testimonial .one p {
   font-family: 'Inter';
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 150%;
-  padding-top: 20px;
-  padding-left: 20px;
   color: var(--font-color);
+  padding: 0;
+  margin: 0;
 }
 .testimonial .two{
   margin: 0 auto;
@@ -4097,9 +4216,11 @@ ol, ul{
   font-weight: bold;
   font-size: 20px;
   padding-top: 10px;
+  display: inline-block;
 }
 .testimonial .two p:nth-child(3){
   font-size: 16px;
+  display: inline-block;
 }
 .testimonial .two p:nth-child(4){
   color: #2836DD;
@@ -4116,9 +4237,9 @@ ol, ul{
   color: #c1c1c1;
   font-weight: bold;
 }
-.testimonial .one img{
+/* .testimonial .one img{
   padding-left: 20px;
-}
+} */
 section.offer{
   background: var(--bg-color);
   padding-bottom: 155px;
