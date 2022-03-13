@@ -87,10 +87,10 @@
     float: right;
 }
 .slick-prev:before{
-    content: url('../assets/images/icons/leftArror.png') !important;
+    content: url('../assets/images/home/light-left-arrow.svg') !important;
 }
 .slick-next:after{
-    content: url('../assets/images/icons/rightArror.png') !important;
+    content: url('../assets/images/home/light-right-arrow.svg') !important;
 }
 .slick-slide img
 {

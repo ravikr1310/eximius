@@ -16,6 +16,10 @@
   src: url('../fonts/Manrope/static/Manrope-SemiBold.ttf');
 }
 @font-face {
+  font-family: 'Manrope-ExtraBold'; 
+  src: url('../fonts/Manrope/static/Manrope-ExtraBold.ttf');
+}
+@font-face {
   font-family: 'Manrope-Medium'; 
   src: url('../fonts/Manrope/static/Manrope-Medium.ttf');
 }
@@ -643,13 +647,17 @@ p.ivtd-year {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  color: #413E49;
+  font-size: 16px;
+  color: #4971F6;
   letter-spacing: -0.01em;
   display: block;
-  text-align: right;
-  position: relative;
-  top: -21px
+  padding-top: 28px;
+  padding-bottom: 35px;
+}
+img.rounder-arrow {
+  position: absolute;
+  right: 103px;
+  top: 93px;
 }
 img.inov-g-3 {
   position: absolute;
@@ -1168,7 +1176,7 @@ img.green-polygon {
   margin-top: 60px;
 }
 .inner-press-cont img:nth-child(2) {
-  padding: 34px 0px 11px;
+  padding: 40px 0px 24px;
 }
 .pr-desc{
   font-family: 'Inter';
@@ -1201,13 +1209,19 @@ span.pr-date {
   text-transform: uppercase;
 }
 .inner-press-cont .pr-desc {
-  font-family: 'Manrope-Regular';
+  font-family: 'Manrope-SemiBold';
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
-  opacity: 0.4;
+  padding-bottom: 24px;
+  margin-bottom: 0;
+}
+.width100{
+  width:100%
+}
+.section-title.pb-64{
+  padding-bottom: 64px;
 }
 .home-banner .btn-get-started:hover {
   background: var(--button-hover);
@@ -1362,7 +1376,19 @@ transition: all ease-in-out .3s;
 /* opacity: .2; */
 }
 .slick-slider{
-  font-family: 'Inter';
+  font-family: 'Manrope';
+}
+.testimonial .slick-prev {
+  left: 920px;
+  top: -91px;
+  background: rgba(37, 18, 56, 1);
+  border: 2px solid rgba(37, 18, 56, 0.2);
+}
+.testimonial .slick-next {
+  right: 24px;
+  top: -91px;
+  background: rgba(37, 18, 56, 1);
+  border: 2px solid rgba(37, 18, 56, 0.2);
 }
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
@@ -1484,6 +1510,7 @@ img.green-border-line {
 }
 .section-title p {
   font-family: 'Manrope-Regular';
+  font-style: normal;  
   font-size: 48px;
   line-height: 140%;
   display: inline;
@@ -1503,13 +1530,13 @@ img.green-border-line {
   left: calc(50% - 30px); */
 }
 .inner-press-cont {
-  background: #FFFFFF;
+  /* background: #FFFFFF;
   box-shadow: 0px 8px 16px rgb(48 57 66 / 8%);
   border-radius: 16px;
   padding: 16px 16px 26px 16px;
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  height: 100%; */
 }
 .our-str .img-fluid {  
   border-radius: 16px;  
@@ -1784,17 +1811,33 @@ p.f-abt {
   background: linear-gradient(145.4deg, #9aa2f7 -36.56%, #56426b 135.06%);
 }
 .btn-fintech{
-  background: linear-gradient(145.4deg, #2836DD -36.56%, #E0C0FF 135.06%);
   border-radius: 18.9445px;
-  font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
-  /* display: inline-block; */
-  color: var(--font-white);
-  padding: 7px 16px;
-  margin-top: -14px;
-  margin-bottom: 20px;
-  float: right;
+  color: rgba(73, 113, 246, 1);
+  padding: 8px 24px;
+  border-radius: 8px;
+  border: 1px solid rgba(165, 176, 232, 1);
+  margin-left: 25px;
+  font-family: 'Manrope-SemiBold';
+}
+.pd-l-0{
+  padding-left: 0;
+}
+.pd-r-0{
+  padding-right: 0;;
+}
+.fd-sec {
+  display: flex;
+  align-items: center;
+  padding-bottom: 32px
+}
+.fd-left {
+  display: inline-block;
+}
+.fd-right {
+  display: inline-block;
+  padding-left: 24px;
 }
 .testimonial .carousel-inner {
   position: var(--pos-rltv);
@@ -1843,23 +1886,32 @@ p.desc {
   letter-spacing: -0.01em;
 }
 h3.port-para {
-  margin-top: 0;
-  margin-bottom: 28px;
-  font-family: 'Inter';
+  font-family: 'Manrope-Regular';
   font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 150%;
+  letter-spacing: 0.005em;
+  margin: 0;
+}
+h3.jar-desc {
+  font-family: 'Manrope-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+}
+img.blue-callender {
+  padding-right: 12px;
 }
 label.port-lbl {
   margin-bottom: 0;
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: 'Manrope-Regular';
   font-weight: 600;
   font-size: 18px;
   line-height: 135%;
   letter-spacing: -0.01em;
-  padding-top: 24px;
 }
 .custom-align-middle img{
   /* float: left; */
@@ -1920,16 +1972,20 @@ label.port-lbl {
   width: auto;
   height: auto;
 }
-.image_off, #prev:hover .image_on{
+.carousel-prev-next-btn-container .image_off, #prev:hover .image_on,#prev:focus .image_on{
   display:none
 }
-.image_on, #prev:hover .image_off{
+.carousel-prev-next-btn-container .image_on, #prev:hover .image_off,#prev:focus .image_off{
   display:block
 }
-.image_off, #next:hover .image_on{
+img.position-absolute.green-below {
+  width: 75%;
+  bottom: 0;
+}
+.carousel-prev-next-btn-container .image_off, #next:hover .image_on,#next:focus .image_on{
   display:none
 }
-.image_on, #next:hover .image_off{
+.carousel-prev-next-btn-container .image_on, #next:hover .image_off,#next:focus .image_off{
   display:block
 }
 p.footer-para {
@@ -4042,7 +4098,7 @@ img.g-ot-dost-1 {
   right: 0;
 }
 section.press-rel {
-  padding-top: 215px;
+  padding-top: 112px;
   padding-bottom: 150px;
   position: var(--pos-rltv);
   /* background-image: url(../images/icons/Group33.png),url(../images/icons/Group25.png);  
@@ -4393,10 +4449,15 @@ body.top-bg{
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: var(--font-white);
+  /* background: var(--font-white); */
   color: var(--font-color2);
   font-size: 14px;
-  background: #fef8f5;
+  /* background: #fef8f5; */
+}
+img.hus3 {
+  position: absolute;
+  top: -17px;
+  left: -13px;
 }
 #footer .footer-newsletter {
   padding: 50px 0;
@@ -4446,7 +4507,7 @@ body.top-bg{
 }
 #footer .footer-top {
   padding: 102px 0 30px 0;
-  background: #FCFCFC;
+  /* background: #FCFCFC; */
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -4616,12 +4677,13 @@ p.parag {
 }
 img.hus2 {
   position: absolute;
-  top: 185px;
+  top: 228px;
+    right: 99px;
 }
 img.hus1 {
   position: absolute;
   left: 0;
-  top: 354px;
+  top: 370px;
 }
 .hus-img-conts {
   position: relative;
@@ -4669,6 +4731,9 @@ section.hustlers {
     display: inline-block; 
     width: 1em;
     margin-left: 1em;
+}
+.footer-bottom ul.round	li:nth-child(3)::after {
+  content: " ";
 }
 .ot-container li a,#footer .footer-top .social-links a{
   opacity: 0.5;
