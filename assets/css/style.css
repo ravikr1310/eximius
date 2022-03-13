@@ -1384,6 +1384,22 @@ transition: all ease-in-out .3s;
   background: rgba(37, 18, 56, 1);
   border: 2px solid rgba(37, 18, 56, 0.2);
 }
+.copyright-cont p {
+  font-family: 'Manrope-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #FCFCFC;
+  margin: 0;
+  display: inline-block;
+  padding: 15px 0;
+}
+.copyright-section {
+  background: rgba(37, 18, 56, 1);
+  padding: 15px 0;
+}
 .testimonial .slick-next {
   right: 24px;
   top: -91px;
@@ -4721,6 +4737,7 @@ section.hustlers {
 }
 .row.footer-bottom {
   padding-top: 30px;
+  padding-bottom: 53px;
 }
 .footer-bottom ul.round	li {
   display: inline-block;
