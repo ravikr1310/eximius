@@ -92,186 +92,234 @@
 
 
   <style>
- 
+    section.portfolio-mid-section {
+      padding-top: 152px;
+      padding-bottom: 150px;
+      position: var(--pos-rltv);
+    }
 
-section.portfolio-mid-section {
-    padding-top: 215px;
-    padding-bottom: 150px;
-    position: var(--pos-rltv);
-}
+    .section-title {
 
-.section-title {
-    padding-bottom: 16px;
-    color: var(--font-color);
-}
+      color: var(--font-color);
+    }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
+    .row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
 
-.inner-press-cont {
-    background: #FFFFFF;
-    box-shadow: 0px 8px 16px rgb(48 57 66 / 8%);
-    border-radius: 16px;
-    padding: 16px 16px 26px 16px;
+    .inner-press-cont {
+      background: #FFFFFF;
+      box-shadow: 0px 8px 16px rgb(48 57 66 / 8%);
+      border-radius: 16px;
+      padding: 16px 16px 26px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+
+    .inner-press-cont .pr-desc {
+      font-family: 'Manrope-Regular';
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 160%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      opacity: 0.4;
+    }
+
+    .inner-press-cont .pr-date {
+      font-family: 'Manrope-Regular';
+      font-size: 14px;
+      line-height: 160%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .btn-view-more {
+      font-family: 'Manrope-Regular';
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+      padding: 10px 14px;
+      color: var(--color-palette6);
+      background: var(--button-background);
+      border-radius: var(--button-radius);
+    }
+
+    .btn {
+      background: var(--btn-bg-color);
+      color: var(--primary-color);
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .bottum_section .social-links img {
+      margin-right: 9px;
+    width: 49px;
+    }
+
+    /* --------------------tools get started */
+    .tools-getstarted section.our-str {
+      padding-top: 96px;
+    }
+
+    .tools-getstarted .section-title {
+      padding-bottom: 16px;
+      color: var(--font-color);
+    }
+
+
+    .tools-getstarted .icon-box {
+      padding: 30px 50px;
+    }
+
+    .tools-getstarted .title {
+      font-family: 'Manrope-SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 135%;
+      letter-spacing: 0.005em;
+    }
+
+    .tools-getstarted .title a {
+      color: var(--font-color);
+      letter-spacing: -0.01em;
+    }
+
+    .tools-getstarted .img-fluid-tools {
+      border-radius: 16px;
+      height: 90px;
+    }
+
+    .tools-getstarted .description {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+
+    /* -----------------------------checkbox */
+    .result-sec-cb {
+      box-sizing: border-box;
+      padding: 10px 16px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      margin-top: 32px;
+    }
+    /* .bottum_section {
     display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-}
+    justify-content: space-between;
+} */
+    input[type=checkbox],
+    input[type=radio] {
+      /* margin: 4px 0 0; */
+      margin-top: 0;
+      line-height: normal;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 13px;
+    }
 
-.inner-press-cont .pr-desc {
-    font-family: 'Manrope-Regular';
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 160%;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    opacity: 0.4;
-}
+    label.checkbox-inline-cb {
+      font-family: 'Manrope-Regular';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      /* display: flex; */
+      align-items: center;
+      letter-spacing: 0.005em;
+      text-transform: capitalize;
+      color: #251238;
+      margin-bottom: 0;
+      padding: 0;
+    }
 
-.inner-press-cont .pr-date {
-    font-family: 'Manrope-Regular';
-    font-size: 14px;
-    line-height: 160%;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
+    .pf-checkboxes {
+      padding-top: 34px;
+    }
 
-.btn-view-more {
-    font-family: 'Manrope-Regular';
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.005em;
-    padding: 10px 14px;
-    color: var(--color-palette6);
-    background: var(--button-background);
-    border-radius: var(--button-radius);
-}
+    .result-sec-cb>label {
+      font-family: 'Manrope-Medium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.005em;
+      text-transform: capitalize;
+      color: #4971F6;
+      margin-right: 37px;
+      margin-bottom: 0;
+    }
 
-.btn {
-  background: var(--btn-bg-color);
-    color: var(--primary-color);
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-}
+    .filter-label img {
+      margin-left: 37px;
+    }
 
-.bottum_section .social-links img {
-  height: 30px;
-  padding-right: 10px;
-}
+    .pf-checkboxes form label.checkbox-inline-cb {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 16px;
+      padding-right: 40px;
+      background-color: #C8CFF5;
+      padding-left: 30px;
+      padding-right: 20px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      margin-right: 20px;
+      border-radius: 7px;
+    }
 
-/* --------------------tools get started */
-.tools-getstarted section.our-str {
-    padding-top: 96px;
-}
+    .checkbox-inline-cb input[type=checkbox] {
+      width: 20px;
+      height: 20px;
+    }
 
-.tools-getstarted .section-title {
-    padding-bottom: 16px;
-    color: var(--font-color);
-}
- 
+    #portfoliomain .team_details {
+      background: rgba(177, 234, 193, 0.1);
+      border-radius: 8px;
+      width: 80%;
+      padding: 12px 24px;
+    }
 
-.tools-getstarted .icon-box {
-    padding: 30px 50px;
-}
 
-.tools-getstarted .title {
-    font-family: 'Manrope-SemiBold';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 135%;
-    letter-spacing: 0.005em;
-}
+    .portfolio-mid-section .card {
+      background: #FFFFFF;
+border: 1px solid rgba(200, 207, 245, 0.8);
+box-sizing: border-box;
+border-radius: 8px;
+    }
 
-.tools-getstarted .title a {
-    color: var(--font-color);
-    letter-spacing: -0.01em;
-}
+    .portfolio-mid-section .card-img-top {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px
+    }
 
-.tools-getstarted .img-fluid-tools {
-    border-radius: 16px;
-    height: 90px;
-}
+    /* .portfolio-mid-section .card-body-left {
+      margin-bottom: 15px;
+    } */
 
-.tools-getstarted .description {
-  font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 0;
-}
+    .portfolio-mid-section .card-body-left img {
+      /* width: 76px; */
+    }
 
-/* -----------------------------checkbox */
-.result-sec-cb {
-    margin-left: 60px;
-    box-sizing: border-box;
-    padding: 12px 24px;
-    background: rgba(255, 255, 255, 0.3);
+    .portfolio-mid-section .card-body-left a {
+      padding: 8px 16px;
     border-radius: 8px;
-}
-.pf-checkboxes{
-  padding-top: 34px;
-}
+    }
 
-.result-sec-cb > label {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    padding-right: 40px;
-}
-
-.pf-checkboxes form label.checkbox-inline-cb {
-    color: var(--primary-color);
-    font-weight: 600;
-    font-size: 16px;
-    padding-right: 40px;
-    background-color: #C8CFF5;
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-right: 20px;
-    border-radius: 7px;
-}
-
-.checkbox-inline-cb input[type=checkbox] {
-    position: absolute;
-    margin-top: 4px\9;
-    margin-left: -20px;
-}
-
-#portfoliomain .team_details{
-  background: rgba(177, 234, 193, 0.1);
-  border-radius: 8px;
-  padding: 12px 24px;
-}
-.portfolio-mid-section .card{
-  width: 30rem;
-  border-radius: 15px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-.portfolio-mid-section .card-img-top{
-  border-top-left-radius: 15px;
-    border-top-right-radius: 15px
-}
-.portfolio-mid-section .card-body-left{
-  margin-bottom: 15px;
-}
-.portfolio-mid-section .card-body-left img{
-  width: 76px;
-}
-.portfolio-mid-section .card-body-left a{
-  padding: 4px 18px;
-}
-.Gaming-section-title,.founder-section-title{
-  margin-top: 103px;
-}
-
-
+    .Gaming-section-title,
+    .founder-section-title {
+      margin-top: 103px;
+    }
   </style>
 </head>
 
@@ -321,9 +369,10 @@ section.portfolio-mid-section {
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
- 
+
   <main id="main">
-    <section id="portfoliomain" class="innerpages home-banner common-header common-greenblue-bg">
+    <section id="portfoliomain" class="innerpages common-header common-greenblue-bg position-relative">
+      <img src="./assets/images/portfolio_new/right-helf-poly-green.svg" class="green-big-helf-poly" alt="">
       <div class="container">
         <div class="row">
           <div class="pfolio-pattern"></div>
@@ -331,191 +380,191 @@ section.portfolio-mid-section {
             <div class="section-title">
               <h1>Portfolio</h1>
             </div>
-            <div class="navbar team_details">
-                <ul>
-                    <li><a class="inner-main-team active" href="#">All</a></li>
-                    <li><a class="inner-main-team" href="#">Eximius I</a></li>
-                    <li><a class="inner-main-team" href="#">The Gaming Lounge</a></li>
-                    <li><a class="inner-main-team" href="#">Founder's Fund</a></li>
-                </ul>
+            <div class="team_details">
+              <ul>
+                <li class="active"><a class="inner-main-team" href="#">All</a></li>
+                <li><a class="inner-main-team" href="#">Eximius I</a></li>
+                <li><a class="inner-main-team" href="#">The Gaming Lounge</a></li>
+                <li><a class="inner-main-team" href="#">Founder's Fund</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="result-sec-cb">
+              <label class="filter-label">Filter <img src="./assets/images/portfolio_new/blue-right-arror.svg" />
+              </label>
+              <form>
+                <div class="form-container">
+                  <input type="checkbox" value="">
+                  <label class="checkbox-inline-cb">Fintech</label>
+                </div>
+                <div class="form-container">
+                  <input type="checkbox" value="">
+                  <label class="checkbox-inline-cb">Health Tech</label>
+                </div>
+                <div class="form-container">
+                  <input type="checkbox" value="">
+                  <label class="checkbox-inline-cb">Medical & Entertainment</label>
+                </div>
+                <div class="form-container">
+                  <input type="checkbox" value="">
+                  <label class="checkbox-inline-cb">Other</label>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="portfolio-checkboxes" class="pf-checkboxes">       
-      <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="50">
-          <div class="result-sec-cb">
-            <label>Filter > </label>
-            <form>
-              <label class="checkbox-inline-cb">
-                <input type="checkbox" value="">Fintech
-              </label>
-              <label class="checkbox-inline-cb">
-                <input type="checkbox" value="">Health Tech
-              </label>
-              <label class="checkbox-inline-cb">
-                <input type="checkbox" value="">Medical & Entertainment
-              </label>
-              <label class="checkbox-inline-cb">
-                <input type="checkbox" value="">Other
-              </label>
-            </form>
-          </div>
-      </div>
-</section>
-
-    
-
 
     <!-- ======= Press Release Section ======= -->
     <section id="ourportfolio" class="contact portfolio-mid-section">
-      <div class="container" data-aos="fade-up">        
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
-           <p>Eximius I</p>
-        <h3>$10M SEBI Registered Fund</h3>
+          <p>Eximius I</p>
+          <h3>$10M SEBI Registered Fund</h3>
         </div>
-        <div class="row position-relative mt-5">
+        <div class="row position-relative">
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/first.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/Jar 1.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More<img
+                      src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div>           
+              </div>
+            </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/second.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/image 29.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                      src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div> 
+              </div>
+            </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/third.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/image 28.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div> 
-          </div>    
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container " data-aos="fade-up">        
+      <div class="container " data-aos="fade-up">
         <div class="section-title Gaming-section-title">
-           <p>The Gaming Lounge</p>
-        <h3>Syndicate For Selected Gaming Investments</h3>
+          <p>The Gaming Lounge</p>
+          <h3>Syndicate For Selected Gaming Investments</h3>
         </div>
-        <div class="row position-relative mt-5">
+        <div class="row position-relative">
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/gaming-first.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/Jar 1.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div>           
+              </div>
+            </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/gaming-second.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/image 29.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div> 
+              </div>
+            </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/gaming-three.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/image 28.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div> 
-          </div>    
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row position-relative mt-5">
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
@@ -523,73 +572,73 @@ section.portfolio-mid-section {
               <img class="card-img-top" src="./assets/images/portfolio_new/gaming-forth.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/Jar 1.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div>           
+              </div>
+            </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/gaming-five.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/image 29.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div> 
+              </div>
+            </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/gaming-six.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/image 28.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div> 
-          </div>    
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container" data-aos="fade-up">        
+      <div class="container" data-aos="fade-up">
         <div class="section-title founder-section-title">
-           <p>Founder's Fund</p>
-        <h3>General Partner's Personal Investment</h3>
+          <p>Founder's Fund</p>
+          <h3>General Partner's Personal Investment</h3>
         </div>
         <div class="row position-relative mt-5">
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
@@ -597,71 +646,71 @@ section.portfolio-mid-section {
               <img class="card-img-top" src="./assets/images/portfolio_new/founder-first.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/Jar 1.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div>           
+              </div>
+            </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/founder-second.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/image 29.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
-            </div> 
+              </div>
+            </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/founder-third.svg" alt="Card image cap">
               <div class="card-body">
                 <div class="card-body-left d-flex justify-content-between">
-                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <img src="./assets/images/portfolio_new/image 28.svg" alt="Jar">
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
                   Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
-                <div class="bottum_section"> 
+                <div class="bottum_section">
                   <span class="social-links mt-3">
-                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                    <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
+                    <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
-                    alt="Right" /></a>
-                 </div>
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right"></a> 
                 </div>
-            </div> 
-          </div>    
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section><!-- End Press Release Section -->
-    
+
 
     <!-- ======= Testimonial Section ======= -->
     <section id="testimonial" class="testimonial">
@@ -812,70 +861,82 @@ section.portfolio-mid-section {
     </section><!-- End Testimonial Section -->
 
 
-    
+
     <!-- ======= Our Strength Section ======= -->
     <section id="services" class="tools-getstarted section-bg our-str">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <p><b>Tools</b> To Get You Started</p>
-            <a href="#" class="btn-get-started pull-right">See More <img src="./assets/images/home/right-indicator.svg"
-            alt="Right" /></a>
+          <p><b>Tools</b> To Get You Started</p>
+          <a href="#" class="btn-get-started pull-right">See More <img src="./assets/images/home/right-indicator.svg"
+              alt="Right" /></a>
         </div>
 
         <div class="row">
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" />
+              </div>
               <h4 class="title"><a href="">Notion</a></h4>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" />
+              </div>
               <h4 class="title"><a href="">Razorpay</a></h4>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
           <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" />
+              </div>
               <h4 class="title"><a href="">Mixpanel</a></h4>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
 
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" />
+              </div>
               <h4 class="title"><a href="">Google cloud</a></h4>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" />
+              </div>
               <h4 class="title"><a href="">Freshworks</a></h4>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
           <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" />
+              </div>
               <h4 class="title"><a href="">Amajon web services</a></h4>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
@@ -884,7 +945,7 @@ section.portfolio-mid-section {
 
       </div>
     </section><!-- End Our Strength Section -->
-    
+
 
     <!-- ======= News Letter Section ======= -->
     <section id="newsletter" class="newsletter">
