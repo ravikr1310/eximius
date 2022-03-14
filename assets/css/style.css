@@ -1534,9 +1534,6 @@ transition: all ease-in-out .3s;
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
-  font-family: 'Inter';
-}
 
 .section-bg {
   /* background-color: #fef8f5; */
