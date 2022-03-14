@@ -294,6 +294,7 @@ span.side-menu-cross {
 }
 .navbar a{
   padding: 8px 24px;
+  color: black;
 }
 .navbar .side-menu-footer a{
   opacity: 0.5;
@@ -1067,7 +1068,7 @@ section.invo.inner-inov{
 .hex5 img{
   width: 207px;
 }
-.home-banner {
+.home-banner,#portfoliomain {
   background-image: url('../images/home/greenspreadbg.svg'),url('../images/home/bluespreadbg.svg');
   background-position: top 0 right -84px ,right 0 top 0px, right 0 bottom 0;
   background-repeat: no-repeat;
@@ -1805,12 +1806,11 @@ h2.founder-head {
   font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 35px;
   line-height: 160%;
   display: flex;
   align-items: center;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   padding: 0 0 32px 0;
   margin: 0;
 }
@@ -2761,9 +2761,8 @@ h5.innter-main-head {
   font-weight: bold;
   font-size: 56px;
   line-height: 68px;
-  text-align: center;
-  padding-bottom: 117px;
-  margin-top: 153px;
+  padding-bottom: 20px;
+  margin-top: 0px;
 }
 ul.innertabs {
   display: flex;
@@ -3018,7 +3017,7 @@ h3.jar-subhead {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.innerpage-common{
+/* .innerpage-common{
   background-image: url(../images/icons/Polygon10.png);
   background-repeat: no-repeat;
   width: 140px;
@@ -3026,15 +3025,15 @@ h3.jar-subhead {
   position: absolute;
   top: 418px;
   left:-22px
-}
+} */
 img.polog-right-home {
   position: absolute;
   right: 0;
   top: -261px;
 }
 section.innerpages{
-  background-image: url(../images/icons/thickDots.png),url(../images/icons/PolygonRight.png),url(../images/icons/thickDots.png);
-  background-position: left 0 top 206px,right 87px top 195px,right 64px top 344px;
+  /* background-image: url(../images/icons/thickDots.png),url(../images/icons/PolygonRight.png),url(../images/icons/thickDots.png); */
+  /* background-position: left 0 top 206px,right 87px top 195px,right 64px top 344px; */
   background-repeat: no-repeat;
   background-size: auto;
   padding-top: 108px;
@@ -3411,12 +3410,11 @@ h2.c-h2 {
 }
 .team .team-tab-box,.team .team-tab-box-inner {
   text-align: center;
-  background: #FFFFFF;
-  box-shadow: 0px 6px 16px rgb(0 0 0 / 8%);
-  border-radius: 16px;
-  padding: 24px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border: 1px solid rgb(236, 235, 235);
 }
-.team .team-tab-box ul li,.team .team-tab-box-inner ul li {
+.team .team-tab-box ul li,.team .team-tab-box-inner-bottom ul li {
   text-decoration: none;
   list-style: none;
   padding: 0 16px 0 0;
@@ -3466,18 +3464,20 @@ a.readmore-btn {
   /* display: inline-block; */
   float: right;
 }
-.team .team-tab-box-inner p span {
-  font-weight: 500;
-  font-size: 14px;
+.team .team-tab-box-inner p span,.team .team-tab-box-inner-bottom p span {
+  font-weight: 600;
+  font-size: 16px;
   color: var(--primary-color);
   padding-top: 4px;
   display: block;
+  margin-left: -38px;
 }
 .team-tab-box-inner > img {
   vertical-align: middle;
-  min-height: 268px;
-  height: 268px;
+  min-height: 262px;
+  height: 242px;
   border-radius: 10px;
+  margin-top: -68%;
 }
 .team .team-tab-box ul {
   margin-bottom: 0;
@@ -3485,7 +3485,7 @@ a.readmore-btn {
   padding-left: 0;
   margin-top: 10px;
 }
-.team-tab-box-inner p {
+.team-tab-box-inner p,.team-tab-box-inner-bottom p {
   font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
@@ -4788,6 +4788,88 @@ section.hustlers {
     padding: 3px 0;
   }
 }
+/*------------------------------------------------------
+# Team_new
+-------------------------------------------------------*/
+.team_details{
+  background-color: rgba(226, 252, 221, 0.945);
+    width: 69%;
+    
+}
+.team_details a{  
+  border: 1px solid green;
+  margin: 2px 7px 2px 7px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.team_details .active{
+  border: 1px solid transparent;
+}
+#portfoliomain{
+  background-image: url('../images/home/greenspreadbg.svg'),url('../images/home/bluespreadbg.svg');
+  background-position: top 0 right -84px ,right 0 top 0px, right 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 52% 100%, 75% 100%, auto;
+  width: 100%;
+  margin: 87px 0 0 0;
+  position: relative
+}
+.team .team-tab-box{
+  padding: 45px;
+  border-radius: 18px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+}
+.team-tab-box .pearl-2{
+  width: 87%;
+  padding-bottom: 42px;
+}
+.Advisor-team{
+  width: 100%;
+  margin-left: 283px;
+}
+.team-tab-box-inner{
+  border: 1px solid rgb(236, 235, 235);
+}
+.team-tab-box-inner:hover{
+    box-shadow: 0px 6px 16px rgba(96, 241, 157, 0.08);
+}
+.team-tab-box-inner img{
+  width: 136%;
+  padding: 16px 11px 0px 11px;
+  margin-left: -25px;
+  margin-top: -83px;
+}
+.team-tab-box-inner-bottom p{
+  width: 60%;
+  padding-bottom: 0px;
+}
+.team-tab-box-inner ul{
+  display: flex;
+  margin-top: 57px
+}
+
+.team-tab-box-inner-bottom hr{
+  width: 80%;
+  margin: 20px auto;
+}
+.team .team-tab-box-inner-bottom{
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: 1px solid rgb(236, 235, 235);
+}
+
+.team-member-1{
+background-color: rgb(130, 231, 231);
+}
+.team-member-2{
+  background-color: rgb(245, 245, 117);
+}
+.team-member-3{
+  background-color: #9ebbd6;
+  }
+
+
 
 /*------------------------------------------------------
 # Responsive
