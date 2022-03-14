@@ -331,7 +331,7 @@ h2.global-sub-title{
 }
 .navbar li:nth-child(-n+6) a:hover, .navbar li:nth-child(-n+6) a.active, .navbar li:nth-child(-n+6) .active:focus{
   color: var(--color-palette6);
-  padding: 8px 16px;
+  padding: 12px 16px;
   margin-left: 8px;
   background: var(--button-background);
   border-radius: var(--button-radius);
@@ -1139,7 +1139,7 @@ img.green-polygon {
 .home-banner .btn-container{
   padding-bottom: 91px;
 }
-.home-banner h1 {
+.common-header h1 {
   font-family: 'Manrope-Bold';
   font-size: var(--font-size72);
   line-height: 120%;
@@ -1841,16 +1841,25 @@ img.green-border-line {
   color: #fff;
 }
 h2.founder-head {
-  font-family: 'Inter';
+  font-family: 'Manrope-Bold';
   font-style: normal;
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 160%;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.05em;
-  padding: 0 0 32px 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  text-transform: capitalize;
+  padding: 80px 0 57px 0;
   margin: 0;
+}
+img.design3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+img.design4 {
+  position: absolute;
+  width: 80%;
+  right: 0;
 }
 .padding-left100{
   padding-left: 100px;
@@ -3492,34 +3501,63 @@ h2.c-h2 {
   display: inline-block;
 }
 p.team-head {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 34px;
-  padding-bottom: 18px;
-  margin-bottom: 0;
-}
-p.team-designation {
-  font-family: 'Inter';
+  font-family: 'Manrope-SemiBold';
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 135%;
-  letter-spacing: -0.01em;
+  font-size: 24px;
+  line-height: 160%;
+/* or 38px */
+
+  letter-spacing: 0.005em;
+  margin-bottom: 0;
+}
+.team-social-cont li {
+  display: inline-block;
+  padding-right: 16px;
+}
+.team-social-cont ul {
+  padding: 0;
+}
+div#tab1 {
+  padding: 56px 58px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+.hori-line{
+  border: 1px solid rgba(200, 207, 245, 0.8);
+  margin: 24px 0;
+}
+.team-tab-box-inner-bottom ul {
+  padding-bottom: 24px;
+}
+.box-seperator{
+  border: 1px solid rgba(200, 207, 245, 0.8);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 24px;
+}
+p.team-designation {
+  font-family: 'Manrope-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  text-transform: capitalize;
   color: var(--menu-active);
-  padding-bottom: 18px;
+  padding: 4px 0 16px 0;
   margin-bottom: 0;
   display: block;
 }
 p.team-parag{
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 150%;
+  font-family: 'Manrope-Regular';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 160%;
   color: var(--font-color1);
   display: inline;
+  opacity: 0.6;
 }
 .team-tab-box > a.readmore-btn {
   margin-top: 27px;
@@ -3540,7 +3578,6 @@ a.readmore-btn {
   color: var(--primary-color);
   padding-top: 4px;
   display: block;
-  margin-left: -38px;
 }
 .team-tab-box-inner > img {
   vertical-align: middle;
@@ -3574,7 +3611,16 @@ a.readmore-btn {
 }
 .pearl-2 {
   text-align: left;
-  padding-top: 17px;
+  padding-top: 30px;
+  margin-left: 24px;
+}
+img.design2 {
+  position: absolute;
+  left: 0;
+}
+img.design1 {
+  position: absolute;
+  left: 0;
 }
 .space-between-box{
   display: flex;
@@ -4784,6 +4830,12 @@ h2.contact-address {
   font-size: 18px;
   line-height: 25px;
   font-weight: bold;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.contact-address img.location-icon{
+  padding-right: 8px;
 }
 section.hustlers {
   padding-top: 112px;
@@ -4823,10 +4875,14 @@ section.hustlers {
   content: " ";
 }
 .ot-container li a,#footer .footer-top .social-links a{
-  opacity: 0.5;
+  opacity: 1;
 }
 .ot-container li a:hover,#footer .footer-top .social-links a:hover{
-  opacity: 1;
+  opacity: 0.5;
+}
+.team-tab-box-inner-bottom ul li a:hover,.team-social-cont ul li a:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 /* .ourteam ul li a:hover{
   background: var(--primary-color);
@@ -4862,7 +4918,8 @@ section.hustlers {
 # Team_new
 -------------------------------------------------------*/
 .team_details{
-  background-color: rgba(226, 252, 221, 0.945);
+  background: rgba(177, 234, 193, 0.1);
+border-radius: 8px;
     width: 69%;
     
 }
@@ -4870,7 +4927,13 @@ section.hustlers {
   border: 1px solid green;
   margin: 2px 7px 2px 7px;
   border-radius: 5px;
-  font-weight: bold;
+  padding: 12px 16px;
+  font-family: 'Manrope-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
 }
 .team_details .active{
   border: 1px solid transparent;
@@ -4896,7 +4959,7 @@ section.hustlers {
 }
 .Advisor-team{
   width: 100%;
-  margin-left: 283px;
+  /* margin-left: 283px; */
 }
 .team-tab-box-inner{
   border: 1px solid rgb(236, 235, 235);
@@ -4911,8 +4974,15 @@ section.hustlers {
   margin-top: -83px;
 }
 .team-tab-box-inner-bottom p{
-  width: 60%;
   padding-bottom: 0px;
+  font-family: 'Manrope-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 0.005em;
+  padding: 24px 0 4px 16px;
+  text-align: left;
 }
 .team-tab-box-inner ul{
   display: flex;
@@ -4927,6 +4997,7 @@ section.hustlers {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border: 1px solid rgb(236, 235, 235);
+  background-color: #fff;
 }
 
 .team-member-1{
