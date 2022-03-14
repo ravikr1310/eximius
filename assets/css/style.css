@@ -1182,8 +1182,7 @@ img.green-polygon {
 .pr-desc{
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.01em;
   color: var(--font-color);
@@ -4806,8 +4805,8 @@ section.hustlers {
   border: 1px solid transparent;
 }
 #portfoliomain{
-  background-image: url('../images/home/greenspreadbg.svg'),url('../images/home/bluespreadbg.svg');
-  background-position: top 0 right -84px ,right 0 top 0px, right 0 bottom 0;
+  background-image: url('../images/home/greenspreadbg.svg'),url('../images/home/bluespreadbg.svg'),url('../images/home/green-polygon.svg');
+  background-position: top 0 right -84px ,right 0 top 0px, right 0 bottom 0, right 5 top 10;
   background-repeat: no-repeat;
   background-size: 52% 100%, 75% 100%, auto;
   width: 100%;
