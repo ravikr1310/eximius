@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Eximius</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/images/icons/favicon.png" rel="icon">
+  <link href="assets/images/icons/favicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style>
+    .tab {
+      height: 100%;
+      /* overflow-y: scroll; */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      opacity: 0.3;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      opacity: 1;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      opacity: 1;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      background: #FFFFFF;
+      box-shadow: 0px 8px 24px rgb(26 35 42 / 15%);
+      border-radius: 24px;
+      margin: 30px;
+    }
+
+    form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 52%;
+      background: #f1f1f1;
+    }
+
+
+
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+
+
+  <style>
+ 
+
+section.portfolio-mid-section {
+    padding-top: 215px;
+    padding-bottom: 150px;
+    position: var(--pos-rltv);
+}
+
+.section-title {
+    padding-bottom: 16px;
+    color: var(--font-color);
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.inner-press-cont {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgb(48 57 66 / 8%);
+    border-radius: 16px;
+    padding: 16px 16px 26px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.inner-press-cont .pr-desc {
+    font-family: 'Manrope-Regular';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.4;
+}
+
+.inner-press-cont .pr-date {
+    font-family: 'Manrope-Regular';
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.btn-view-more {
+    font-family: 'Manrope-Regular';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    padding: 10px 14px;
+    color: var(--color-palette6);
+    background: var(--button-background);
+    border-radius: var(--button-radius);
+}
+
+.btn {
+  background: var(--btn-bg-color);
+    color: var(--primary-color);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.bottum_section .social-links img {
+  height: 30px;
+  padding-right: 10px;
+}
+
+/* --------------------tools get started */
+.tools-getstarted section.our-str {
+    padding-top: 96px;
+}
+
+.tools-getstarted .section-title {
+    padding-bottom: 16px;
+    color: var(--font-color);
+}
+ 
+
+.tools-getstarted .icon-box {
+    padding: 30px 50px;
+}
+
+.tools-getstarted .title {
+    font-family: 'Manrope-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: 0.005em;
+}
+
+.tools-getstarted .title a {
+    color: var(--font-color);
+    letter-spacing: -0.01em;
+}
+
+.tools-getstarted .img-fluid-tools {
+    border-radius: 16px;
+    height: 90px;
+}
+
+.tools-getstarted .description {
+  font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+/* -----------------------------checkbox */
+.result-sec-cb {
+    background: #f9f9f9;
+    width: 69%;
+    margin-left: 60px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;    
+    padding: 13px 50px;
+}
+.pf-checkboxes{
+  padding-top: 34px;
+}
+
+.result-sec-cb > label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 40px;
+}
+
+.pf-checkboxes form label.checkbox-inline-cb {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 40px;
+    background-color: #C8CFF5;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+
+.checkbox-inline-cb input[type=checkbox] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -20px;
+}
+
+#portfoliomain .team_details{
+  width: 53%;
+  
+}
+.portfolio-mid-section .card{
+  width: 30rem;
+  border-radius: 15px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.portfolio-mid-section .card-img-top{
+  border-top-left-radius: 15px;
+    border-top-right-radius: 15px
+}
+.portfolio-mid-section .card-body-left{
+  margin-bottom: 15px;
+}
+.portfolio-mid-section .card-body-left img{
+  width: 76px;
+}
+.portfolio-mid-section .card-body-left a{
+  padding: 4px 18px;
+}
+.Gaming-section-title,.founder-section-title{
+  margin-top: 103px;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container align-items-center">
+      <div class="main-logo">
+        <a href="index.html"><img src="./assets/images/home/logo.svg" alt="Main Logo" /></a>
+      </div>
+      <nav id="navbar" class="navbar pull-right">
+        <ul>
+          <li><a class="nav-link scrollto" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+          <li><a class="nav-link scrollto" href="#sectoroffocus">Sectors of focus</a></li>
+          <li><a class="nav-link scrollto" href="#Resources">Resources</a></li>
+          <li><a class="nav-link scrollto" href="careers.html">Career</a></li>
+          <li><a class="nav-link scrollto active" href="pitchus.html">Pitch Us</a></li>
+          <!-- <li><a id="sidemenuicon" class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png"
+                alt="menu btn" /></a></li> -->
+        </ul>
+        <div class="header-side-menu">
+          <span id="sidecrossbtn" href="#" class="side-menu-cross"><img
+              src="./assets/images/icons/menu-cross-btn.svg" /></span>
+          <ul>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./pressrelease.html">Press Releases</a></li>
+            <li><a href="./pressrelease.html">Founder Forum</a>
+            <li><a href="./faq.html">FAQs</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+            <li><a href="./provacypolicy.html">Privacy Policy</a></li>
+            <li><a href="./terms-0f-use.html">Terms of Use</a></li>
+          </ul>
+          <div class="side-menu-footer">
+            <img src="./assets/images/body/gray-logo.svg" alt="logo" />
+            <div class="social-links">
+              <a href="#home" class="twitter"><img src="./assets/images/icons/twiter.png" alt="" /></a>
+              <a href="#home" class="instagram"><img src="./assets/images/icons/linkendinIcon.svg" alt="" /></a>
+              <a href="#home" class="google-plus"><img src="./assets/images/icons/akar-icons_medium-fill.svg"
+                  alt="" /></a>
+              <a href="#home" class="google-plus"><img src="./assets/images/icons/iconoir_youtube.svg" alt="" /></a>
+            </div>
+            <h4 class="cop-rt">© 2022 Eximius Capital Ventures Pvt. Ltd.</h4>
+          </div>
+        </div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+ 
+  <main id="main">
+    <section id="portfoliomain" class="innerpages home-banner">
+      <div class="container">
+        <div class="row">
+          <div class="pfolio-pattern"></div>
+          <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="50">
+            <div class="section-title">
+              <h5 class="innter-main-head">Our Portfolio</h5>
+            </div>
+            <div class="navbar team_details">
+                <ul>
+                    <li><a class="inner-main-team active" href="#">All</a></li>
+                    <li><a class="inner-main-team" href="#">Eximius I</a></li>
+                    <li><a class="inner-main-team" href="#">The Gaming Lounge</a></li>
+                    <li><a class="inner-main-team" href="#">Founder's Fund</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio-checkboxes" class="pf-checkboxes">       
+      <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="50">
+          <div class="result-sec-cb">
+            <label>Filter > </label>
+            <form>
+              <label class="checkbox-inline-cb">
+                <input type="checkbox" value="">Fintech
+              </label>
+              <label class="checkbox-inline-cb">
+                <input type="checkbox" value="">Health Tech
+              </label>
+              <label class="checkbox-inline-cb">
+                <input type="checkbox" value="">Medical & Entertainment
+              </label>
+              <label class="checkbox-inline-cb">
+                <input type="checkbox" value="">Other
+              </label>
+            </form>
+          </div>
+      </div>
+</section>
+
+    
+
+
+    <!-- ======= Press Release Section ======= -->
+    <section id="ourportfolio" class="contact portfolio-mid-section">
+      <div class="container" data-aos="fade-up">        
+        <div class="section-title">
+           <p>Eximius I</p>
+        <h3>$10M SEBI Registered Fund</h3>
+        </div>
+        <div class="row position-relative mt-5">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/first.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div>           
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/second.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div> 
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/third.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div> 
+          </div>    
+        </div>
+      </div>
+      <div class="container " data-aos="fade-up">        
+        <div class="section-title Gaming-section-title">
+           <p>The Gaming Lounge</p>
+        <h3>Syndicate For Selected Gaming Investments</h3>
+        </div>
+        <div class="row position-relative mt-5">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/gaming-first.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div>           
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/gaming-second.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div> 
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/gaming-three.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div> 
+          </div>    
+        </div>
+        <div class="row position-relative mt-5">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/gaming-forth.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div>           
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/gaming-five.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div> 
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/gaming-six.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div> 
+          </div>    
+        </div>
+      </div>
+      <div class="container" data-aos="fade-up">        
+        <div class="section-title founder-section-title">
+           <p>Founder's Fund</p>
+        <h3>General Partner's Personal Investment</h3>
+        </div>
+        <div class="row position-relative mt-5">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/founder-first.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div>           
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/founder-second.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div> 
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
+            <div class="card">
+              <img class="card-img-top" src="./assets/images/portfolio_new/founder-third.svg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card-body-left d-flex justify-content-between">
+                  <img src="./assets/images/home/jarlogo.svg" alt="Jar"> 
+                  <a href="./fintech.html" class="btn-fintech">FinTech</a>
+                </div>
+                <p class="pr-desc">
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
+                </p>
+                <div class="bottum_section"> 
+                  <span class="social-links mt-3">
+                    <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+                    <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+                  </span>
+                  <a href="#" class="btn-view-more pull-right ">View more <img src="./assets/images/home/right-indicator.svg"
+                    alt="Right" /></a>
+                 </div>
+                </div>
+            </div> 
+          </div>    
+        </div>
+      </div>
+    </section><!-- End Press Release Section -->
+    
+
+    <!-- ======= Testimonial Section ======= -->
+    <section id="testimonial" class="testimonial">
+      <div class="container testmonial-subcontainer position-relative" data-aos="fade-up">
+        <div class="section-title pb-56">
+          <p>Testimonials</p>
+        </div>
+        <img src="./assets/images/home/greenshading_below.svg" alt="" class="position-absolute green-below">
+        <div class="carousel slide caro1">
+          <div class="row test-mon">
+            <section class="regular slider">
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder2.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder3.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder2.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder3.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+              <div>
+                <div class="ot-container">
+                  <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
+                  <p class="founder-desc text-align-left">Lorem ipsum dolor sit amet, consectetur adipcing elit. Massa
+                    tellus pulvinar
+                    iaculis pharetra lorem convallis adipiscing sapien nulla. Imperdiet semet libero suspendisse vitae
+                    sit eros, praesent frin.</p>
+                  <p class="founder-name text-align-left">Vikalp Sahni</p>
+                  <p class="founder-desig text-align-left">Founder Eka.care</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Testimonial Section -->
+
+
+    
+    <!-- ======= Our Strength Section ======= -->
+    <section id="services" class="tools-getstarted section-bg our-str">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <p><b>Tools</b> To Get You Started</p>
+            <a href="#" class="btn-get-started pull-right">See More <img src="./assets/images/home/right-indicator.svg"
+            alt="Right" /></a>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <h4 class="title"><a href="">Notion</a></h4>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <h4 class="title"><a href="">Razorpay</a></h4>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <h4 class="title"><a href="">Mixpanel</a></h4>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <h4 class="title"><a href="">Google cloud</a></h4>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <h4 class="title"><a href="">Freshworks</a></h4>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><img src="./assets/images/icons/PolygonRight.png" class="img-fluid-tools" alt="" /></div>
+              <h4 class="title"><a href="">Amajon web services</a></h4>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et aliqua.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Strength Section -->
+    
+
+    <!-- ======= News Letter Section ======= -->
+    <section id="newsletter" class="newsletter">
+      <div class="container inner-container-newsletter" data-aos="fade-up">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in">
+            <h4 class="head">Subscribe to our Newsletter</h4>
+            <p class="parag">Lorem ipsum egongen prening bet att for atande intervall pegisamma. Sorat tepoling. Plar
+              forpappring semisam ningen.</p>
+            <!-- The form -->
+            <form class="example" action="/action_page.php">
+              <input type="text" placeholder="johndoe@gmail.com" name="search2">
+              <button type="submit"><a href="#" class="btn-get-started">See More <img
+                    src="./assets/images/home/right-indicator.svg" alt="Right" /></a></button>
+            </form>
+            <p class="heart-sec"><img src="./assets/images/home/heart.svg" />We take your security seriously</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Press Release Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row bb">
+          <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
+            <img src="./assets/images/home/footerlogo.svg" alt="" />
+            <p class="footer-para">Eximius Ventures is a SEBI registered (Cat 1 AIF) micro venture fund looking to
+              create a thriving global
+              entrepreneurial community and nurture young talent in India.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 footer-links padding-left100">
+            <h4>Contact Us</h4>
+            <h2 class="contact-address">Gurgaon -</h2>
+            <p class="f-abt">The Solitaire Plaza, F-101, Sector 26<br>
+              Support@eximius.com
+            </p>
+            <h2 class="contact-address">Bengaluru -</h2>
+            <p class="f-abt">Harlur Main road, HSR layout<br>
+              Support@eximius.com
+            </p>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 footer-links padding-left100">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="#sectoroffocus">Sector of focus</a></li>
+              <li><a href="careers.html">Career</a></li>
+              <li><a href="#">Founder Forum</a></li>
+              <li><a href="#">Out Team</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 footer-links padding-left100">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="case-studies.html">Case Studies</a></li>
+              <li><a href="videos.html">Videos</a></li>
+              <li><a href="podcasts.html">Podcasts</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+              <li><a href="reports.html">Reports</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row footer-bottom">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h4 class="cop-rt">
+              <ul class="round">
+                <li>FAQ</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+              </ul>
+            </h4>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-align-right">
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><img src="./assets/images/home/social1.svg" alt="" /></a>
+              <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+              <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+              <a href="#" class="google-plus"><img src="./assets/images/home/social4.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      $(".regular").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 2.5,
+        slidesToScroll: 2.5
+      });
+      $(".regular1").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+      $("#sidemenuicon").on("click", function () {
+        $('.header-side-menu').show();
+      })
+      $("#sidecrossbtn").on("click", function () {
+        $('.header-side-menu').hide();
+      })
+    });
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+  </script>
+</body>
+
+</html>
