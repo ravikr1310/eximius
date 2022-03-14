@@ -410,6 +410,9 @@ h2.global-sub-title{
   margin-top: 48px;
   margin-bottom: 48px;
 }
+.pd-zero{
+  padding: 0 !important;
+}
 .section-line{
   opacity: 0.1;
   border: 1px solid #413E49;
@@ -656,8 +659,8 @@ p.ivtd-year {
 }
 img.rounder-arrow {
   position: absolute;
-  right: 103px;
-  top: 93px;
+  right: 39px;
+  top: 78px;
 }
 img.inov-g-3 {
   position: absolute;
@@ -1032,7 +1035,7 @@ section.invo.inner-inov{
   top: 258px;
   left: 22px;
 }
-.hex1 img{
+.hex1 img.img1{
   width: 100px;
 }
 .hex2{
@@ -1045,26 +1048,55 @@ section.invo.inner-inov{
 }
 .hex3{
   position: absolute;
-  right: 84px;
-  top: 156px;
+  right: 70px;
+  top: 164px;
 }
-.hex3 img{
+img.ps5 {
+  position: absolute;
+  width: 18%;
+  bottom: 26px;
+  left: 8px;
+}
+img.ps1 {
+  position: absolute;
+  left: -10px;
+  bottom: 2px;
+}
+img.ps2 {
+  position: absolute;
+  width: 18%;
+  left: 0px;
+  bottom: 34px;
+}
+img.ps4 {
+  position: absolute;
+  width: 30%;
+  left: 0px;
+  bottom: 6px;
+}
+.hex3 img.img3{
   width: 207px;
 }
 .hex4{
   position: absolute;
-  right: -39px;
-  top: 83px;
+  right: -35px;
+  top: 90px;
 }
-.hex4 img{
+img.ps3 {
+  position: absolute;
+  left: 0;
+  bottom: 29px;
+  width: 18%;
+}
+.hex4 .img4{
   width: 100px;
 }
 .hex5{
   position: absolute;
   top: -71px;
-  right: 73px;
+  right: 49px;
 }
-.hex5 img{
+.hex5 .img5{
   width: 207px;
 }
 .home-banner {
@@ -1260,11 +1292,12 @@ margin: 0px 12px;
   width:auto;
 }
 .test-mon .ot-container{
-  background: #FFFFFF;
-  box-shadow: 0px 1px 4px rgb(26 35 42 / 15%);
-  border-radius: 0px 0px 12px 12px;
   padding: 24px;
   margin-top: 64px;
+  background: #FFFFFF;
+  border: 2px solid #A5B0E8;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 img.tf-profile-pic {
   margin-top: -94px;
@@ -1379,7 +1412,7 @@ transition: all ease-in-out .3s;
   font-family: 'Manrope';
 }
 .testimonial .slick-prev {
-  left: 920px;
+  left: 814px;
   top: -91px;
   background: rgba(37, 18, 56, 1);
   border: 2px solid rgba(37, 18, 56, 0.2);
@@ -1399,9 +1432,14 @@ transition: all ease-in-out .3s;
 .copyright-section {
   background: rgba(37, 18, 56, 1);
   padding: 15px 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.mg-r-0{
+  margin-right: 0 !important;
 }
 .testimonial .slick-next {
-  right: 24px;
+  right: 90px;
   top: -91px;
   background: rgba(37, 18, 56, 1);
   border: 2px solid rgba(37, 18, 56, 0.2);
@@ -1724,7 +1762,7 @@ img.green-border-line {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 30px 60px;
+  padding: 30px 24px;
 }
 .services .icon-box:hover {
   /* transform: translateY(-5px);
@@ -1838,10 +1876,31 @@ p.f-abt {
   font-family: 'Manrope-SemiBold';
 }
 .pd-l-0{
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 .pd-r-0{
-  padding-right: 0;;
+  padding-right: 0 !important;
+}
+.pd-t-0{
+  padding-top: 0 !important;
+}
+.pd-b-0{
+  padding-bottom: 0 !important;
+}
+.mg-t-0{
+  margin-top: 0 !important;
+}
+.mg-b-0{
+  margin-bottom: 0 !important;
+}
+.icon-box.bd-left1 {
+  border-left: 1px solid rgba(200, 207, 245, 0.8);
+}
+.icon-box.bd-left2 {
+  border-left: 1px solid rgba(248, 219, 136, 0.6);;
+}
+.icon-box.bd-left3 {
+  border-left: 1px solid rgba(122, 219, 144, 0.6);;
 }
 .fd-sec {
   display: flex;
@@ -1937,7 +1996,11 @@ label.port-lbl {
   align-items: center;
 }
 .sub-contaner {
-  padding: 32px;
+  padding: 27px 32px;
+  margin-left: 32px;
+}
+.sub-contaner ul {
+  display: inline-block;
 }
 .portfolio ul{
   float: right;
@@ -1974,10 +2037,17 @@ label.port-lbl {
   background-color: #ffffff;
 }
 .game-chan-bg{
-  background-image: url('../images/home/blueshed.svg'),url('../images/home/greenshed.svg');
+  background-image: url('../images/home/greenshed.svg');
   background-repeat: no-repeat;
-  background-position: center, right 0;
-  background-size: 47% 100%,47% 76%;
+  background-position: right 0;
+  background-size: 47% 76%;
+}
+img.gamechng {
+  position: absolute;
+  width: 1016px;
+  left: 8%;
+  top: 4%;
+  height: 858px;
 }
 .carousel-control .glyphicon-chevron-right{
   margin-right: 25px;
@@ -4472,7 +4542,7 @@ body.top-bg{
 }
 img.hus3 {
   position: absolute;
-  top: -17px;
+  top: -24px;
   left: -13px;
 }
 #footer .footer-newsletter {
@@ -4522,7 +4592,7 @@ img.hus3 {
   background: #c54811;
 }
 #footer .footer-top {
-  padding: 102px 0 30px 0;
+  padding: 102px 0 0px 0;
   /* background: #FCFCFC; */
 }
 #footer .footer-top .footer-contact {
@@ -4682,7 +4752,7 @@ section.offer{
   opacity: 0.6;
 }
 p.parag {
-  font-family: 'Manrope';
+  font-family: 'Manrope-Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -4693,8 +4763,8 @@ p.parag {
 }
 img.hus2 {
   position: absolute;
-  top: 228px;
-    right: 99px;
+  top: 215px;
+  right: 7px;
 }
 img.hus1 {
   position: absolute;
