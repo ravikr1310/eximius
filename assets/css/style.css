@@ -1214,12 +1214,16 @@ img.green-polygon {
   padding: 40px 0px 24px;
 }
 .pr-desc{
-  font-family: 'Inter';
+  font-family: 'Manrope-Medium';
   font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  letter-spacing: -0.01em;
-  color: var(--font-color);
+  letter-spacing: 0.005em;
+  text-transform: capitalize;
+  padding-top: 28px;
+    padding-bottom: 32px;
+    margin-bottom: 0;
 }
 span.pr-date {
     font-family: 'Inter';
@@ -1542,8 +1546,13 @@ transition: all ease-in-out .3s;
 }
 
 .section-title {
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
   color:var(--font-color);
+}
+img.green-big-helf-poly {
+  position: absolute;
+  right: 0;
+  bottom: -12px;
 }
 .section-title h2.head {
   font-weight: 500;
@@ -1561,8 +1570,17 @@ img.green-border-line {
   z-index: -9;
   width: 585px;
 }
+.portfolio-mid-section .section-title h3 {
+  font-family: 'Manrope-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.015em;
+  padding: 24px 0 58px 0;
+}
 .section-title p {
-  font-family: 'Manrope-Regular';
+  font-family: 'Manrope-Bold';
   font-style: normal;  
   font-size: 48px;
   line-height: 140%;
@@ -1869,7 +1887,8 @@ p.f-abt {
   line-height: 29px;
 }
 .btn-fintech:hover{
-  background: linear-gradient(145.4deg, #9aa2f7 -36.56%, #56426b 135.06%);
+  /* background: var(--button-hover); */
+  color: var(--color-palette4);
 }
 .btn-fintech{
   border-radius: 18.9445px;
@@ -3588,6 +3607,21 @@ a.readmore-btn {
 .team_details a {
   color: #251238;
 }
+.form-container {
+  display: inline-block;
+  background: rgba(73, 113, 246, 0.2);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-style: normal;
+      padding-right: 40px;
+      /* padding: 10px 16px; */
+      font-family: 'Manrope-Regular';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.005em;
+      text-transform: capitalize;
+}
 .team .team-tab-box ul {
   margin-bottom: 0;
   display: inline-block;
@@ -3685,7 +3719,7 @@ img.design1 {
   padding-bottom: 25px;
 } */
 .card-body {
-  padding: 1.8rem 1rem;
+  padding: 16px;
 }
 .blog input[type="search"] {
   font-size: 17px;
@@ -4325,7 +4359,7 @@ section.press-rel {
   transition: left ease-in-out 0.3s;
 }
 a.btn-fintech:hover{
-  color: #fff;
+  
 }
 /*--------------------------------------------------------------
 # Clients
