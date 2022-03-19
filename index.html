@@ -79,6 +79,7 @@
       float: left;
       width: 52%;
       background: #f1f1f1;
+      color: rgb(148,148,148,0.3);
     }
 
 
@@ -105,7 +106,7 @@
           <li><a class="nav-link scrollto" href="#sectoroffocus">Sectors of focus</a></li>
           <li><a class="nav-link scrollto" href="#Resources">Resources</a></li>
           <li><a class="nav-link scrollto" href="careers.html">Career</a></li>
-          <li><a class="nav-link scrollto active" href="pitchus.html">Pitch Us</a></li>
+          <li class="pitch-menu"><a class="scrollto active" href="pitchus.html">Pitch Us</a></li>
           <!-- <li><a id="sidemenuicon" class="nav-link" href="#"><img src="./assets/images/body/menu-btn.png"
                 alt="menu btn" /></a></li> -->
         </ul>
@@ -190,7 +191,7 @@
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
             <div class="icon-box text-align-left pd-t-0 bd-left1">
               <h4 class="title mg-t-0"><a href="">First institutional<br> cheque</a></h4>
-              <p class="semi-para">Lorem ipsum dolor sit amet, consectetur elitr.</p>
+              <p class="semi-para">Lorem ipsum dolor sit amet,<br> consectetur elitr.</p>
               <div class="icon"><img src="./assets/images/home/checkq.svg" class="img-fluid adv-bg" alt="" />
               </div>
             </div>
@@ -198,14 +199,14 @@
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
             <div class="icon-box pd-t-0 bd-left2">
               <h4 class="title mg-t-0"><a href="">Speed of Idea<br> Execution</a></h4>
-              <p class="semi-para">Lorem ipsum dolor sit amet, consectetur elitr.</p>
+              <p class="semi-para">Lorem ipsum dolor sit amet,<br> consectetur elitr.</p>
               <div class="icon"><img src="./assets/images/home/Discount.svg" class="img-fluid adv-bg1" alt="" /></div>
             </div>
           </div>
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
             <div class="icon-box pd-t-0 bd-left3">
               <h4 class="title mg-t-0"><a href="">Shorter Turn<br> around Time</a></h4>
-              <p class="semi-para">Lorem ipsum dolor sit amet, consectetur elitr.</p>
+              <p class="semi-para">Lorem ipsum dolor sit amet,<br> consectetur elitr.</p>
               <div class="icon"><img src="./assets/images/home/checkq.svg" class="img-fluid adv-bg2" alt="" /></div>
             </div>
           </div>
@@ -218,10 +219,12 @@
     <section id="portfolio" class="portfolio our-portfolio position-relative game-chan-bg ">
       <img src="./assets/images/home/blueshed.svg" alt="" class="gamechng">
       <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <p>The <b>gamechangers</b><br> we support </p>
-          <a href="./pitchus.html" class="btn-get-started pull-right">See More <img
+        <div class="section-title pb-49 space-between-box">
+          <p class="mg-zero">The <span class="subpart">gamechangers</span><br> we support </p>
+          <p class="mg-zero">
+            <a href="./pitchus.html" class="btn-get-started">See More <img
               src="./assets/images/home/right-indicator.svg" alt="Right" /></a>
+          </p>
         </div>
         <div class="container position-relative">
           <div id="myCarousel" class="carousel slide caro1">
@@ -232,8 +235,9 @@
                     <img src="./assets/images/home/gamechanger.svg" alt="Los Angeles">
                   </div>
                   <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
-                    <div class="sub-contaner">
-                      <img src="./assets/images/home/jarlogo.svg" alt="Jar">
+                    <div class="sub-contaner d-flex h-100">
+                      <div class="flex-box align-self-center">
+                        <img src="./assets/images/home/jarlogo.svg" alt="Jar">
                       <a href="./fintech.html" class="btn-fintech">FinTech</a>
                       <ul>
                         <li><a href=""><img src="./assets/images/home/twitter-with-frame.svg" alt="" /></a></li>
@@ -244,31 +248,26 @@
                       <p class="ivtd-year"><img src="./assets/images/home/blue-Calendar.svg" alt=""
                           class="blue-callender" />Invested in 2021</p>
                       <div class="fd-sec">
-                        <div class="fd-left">
-                          <img src="./assets/images/home/frame1.svg" alt="" class="src">
-                        </div>
+                        <img src="./assets/images/home/frame1.svg" alt="" class="src">
                         <div class="fd-right">
                           <label class="port-lbl">Founders:</label>
                           <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
                         </div>
                       </div>
                       <div class="fd-sec">
-                        <div class="fd-left">
-                          <img src="./assets/images/home/frame2.svg" alt="" class="src">
-                        </div>
+                        <img src="./assets/images/home/frame2.svg" alt="" class="src">
                         <div class="fd-right">
                           <label class="port-lbl">Founders:</label>
                           <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
                         </div>
                       </div>
                       <div class="fd-sec">
-                        <div class="fd-left">
-                          <img src="./assets/images/home/frame3.svg" alt="" class="src">
-                        </div>
+                        <img src="./assets/images/home/frame3.svg" alt="" class="src">
                         <div class="fd-right">
                           <label class="port-lbl">Founders:</label>
                           <h3 class="port-para">Nishchay AG & Misbah Ashraf</h3>
                         </div>
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -363,7 +362,7 @@
         </div>
         <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 position-relative" data-aos="zoom-in">
           <div class="section-title">
-            <p>We are <b>Hustlers</b><br> just like you</p>
+            <p>We are <span class="subpart">Hustlers</span><br>just like you</p>
           </div>
           <p class="parag mb-40">Lorem ipsum egongen prening bet att for atande intervall pegisamma. Sorat tepoling.
             Plar
@@ -382,7 +381,7 @@
       <!-- <div class="focus-bg1"></div> -->
       <div class="container">
         <div class="section-title pb-48">
-          <p>Sectors Building <br><b>For Tomorrow</b></p>
+          <p>Sectors Building <br><span class="subpart">For Tomorrow</span></p>
         </div>
         <div class="row position-relative">
           <img src="./assets/images/home/sectorbulfortomorr.svg" class="foc-des-1" alt="" data-aos-delay="100" data-aos="zoom-out" />
@@ -676,7 +675,7 @@
             <!-- The form -->
             <form class="example" action="/action_page.php">
               <input type="text" placeholder="johndoe@gmail.com" name="search2">
-              <button type="submit"><a href="#" class="btn-get-started">See More <img
+              <button type="submit"><a href="#" class="btn-get-started">Subscribe now<img
                     src="./assets/images/home/right-indicator.svg" alt="Right" /></a></button>
             </form>
             <p class="heart-sec"><img src="./assets/images/home/heart.svg" />We take your security seriously</p>
@@ -692,7 +691,7 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="row bb">
+        <div class="row bb pd-b-40">
           <div class="col-lg-3 col-md-3 col-sm-3 footer-links">
             <img src="./assets/images/home/footerlogo.svg" alt="" />
             <p class="footer-para">Eximius Ventures is a SEBI registered (Cat 1 AIF) micro venture fund looking to
@@ -706,7 +705,7 @@
             <p class="f-abt">The Solitaire Plaza, F-101, Sector 26<br>
               Support@eximius.com
             </p>
-            <h2 class="contact-address"><img src="./assets/images/home/cil_location-pin.svg" class="location-icon"
+            <h2 class="contact-address pd-t-40"><img src="./assets/images/home/cil_location-pin.svg" class="location-icon"
                 alt="" />Bengaluru -</h2>
             <p class="f-abt">Harlur Main road, HSR layout<br>
               Support@eximius.com
@@ -736,8 +735,8 @@
         </div>
         <div class="row footer-bottom">
           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pd-l-0 pd-r-0">
-            <h4 class="cop-rt">
-              <ul class="round pd-l-0 pd-r-0">
+            <h4 class="cop-rt mg-zero">
+              <ul class="round pd-l-0 pd-r-0 mg-zero">
                 <li>FAQ</li>
                 <li>Privacy Policy</li>
                 <li>Terms of Use</li>
@@ -745,7 +744,7 @@
             </h4>
           </div>
           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-align-right pd-l-0 pd-r-0">
-            <div class="social-links mt-3">
+            <div class="social-links">
               <a href="#" class="twitter"><img src="./assets/images/home/social1.svg" alt="" /></a>
               <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
               <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
