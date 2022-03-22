@@ -498,6 +498,63 @@ h2.global-sub-title{
 
 
 
+/*-------------------------------------------------------------
+# Newletter
+--------------------------------------------------------------*/
+.tab {
+  height: 100%;
+  /* overflow-y: scroll; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.3;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  opacity: 1;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  opacity: 1;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgb(26 35 42 / 15%);
+  border-radius: 24px;
+  margin: 30px;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 52%;
+  background: #f1f1f1;
+}
+
+
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 
 
@@ -873,9 +930,17 @@ section .home-banner-sec {
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-  /* .container {
-      width: 1109px;
-  } */
+  .testimonial .test-mon .slick-prev {
+    left: 807px;
+    cursor: pointer;
+  }
+  .testimonial .test-mon .slick-next {
+    right: 113px;
+    cursor: pointer;
+  }
+  .flex-box {
+    padding-left: 67px !important;
+  }
 }
 /**
 * Mobile Navigation 
@@ -2194,8 +2259,9 @@ p.footer-para {
 }
 .carousel-prev-next-btn-container {
   position: relative;
-  right: 0;
+  right: 33px;
   float: right;
+  top: -52px;
 }
 .carousel-inner .item{
   padding: 13px;
@@ -2370,23 +2436,31 @@ img.pitch-icon {
   padding: 8px;
 }
 .pitch-subcomm-head {
-  color: var(--primary-color);
-  font-family: 'Inter';
+  font-family: 'Manrope-SemiBold';
   font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.005em;
+  line-height: 21.6px;
+  text-transform: capitalize;
+}
+.p-r-detail {
+  font-family: 'Manrope-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  letter-spacing: 0.01em;
 }
 .pitch-right-container .pitch-subcomm-head{
   text-transform: uppercase;
 }
 h2.p-m-head {
-  font-family: 'Montserrat';
+  font-family: 'Manrope-SemiBold';
   font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 39px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38.4px;
 }
 .pitch-prof {
   padding-bottom: 37px;
@@ -3998,15 +4072,12 @@ img.design1 {
 }
 
 
-.blog-techstartup p{
-  font-weight: 500;
+.p-para {
+  font-family: 'Manrope-SemiBold';
+  font-style: normal;
+  font-weight: 600;
   font-size: 16px;
-  line-height: 160%;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--font-color);
-  padding-top: 112px;
+  opacity: 0.6;
 }
 .blog-techstartup h3{
   font-weight: 800;
