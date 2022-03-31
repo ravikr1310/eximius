@@ -100,7 +100,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, .font-primary {
-  font-family: "Montserrat";
+  font-family: "Manrope";
 }
 .width-100{
   width:100%
@@ -616,9 +616,18 @@ section.our-str{
   background-position: left 0 top 99px, right 0px bottom 285px, right 0 bottom 1px;
   background-repeat: no-repeat; */
   padding-top: 96px;
+  padding-bottom: 128px;
 }
 .btn-get-started > img {
   padding-left: 16px;
+}
+section.portfolio-mid-section {
+  padding-top: 152px;
+  position: var(--pos-rltv);
+  background-image: url(../images/portfolio_new/greenbg1.svg), url(../images/portfolio_new/bluebg1.svg);
+  background-position: left 26px top 80px, left 0 top 0;
+  background-repeat: no-repeat;
+  background-size: 25% 18%, 35% 45%;
 }
 section.portfolio{
   /* background-image: url(../images/icons/dot8.png);
@@ -671,7 +680,10 @@ section.testimonial{
   background-position: left 240px top 122px;
   background-repeat: no-repeat;
   background-size: auto; */
-  margin-top: 104px;
+  margin-top: 238px;
+}
+section.testimonial.portfoli-test {
+  margin-top: 112px;
 }
 img.test-desg-1 {
   position: absolute;
@@ -1447,7 +1459,7 @@ span.pr-date {
 }
 
 .slick-slide {
-margin: 0px 12px;
+margin: 0px 18px;
 }
 .test-mon ul li img {
   width:auto;
@@ -1492,6 +1504,7 @@ p.founder-desc {
   font-size: 16px;
   line-height: 25.6px;
   letter-spacing: 0.005em;
+  width: 80%;
 }
 .test-mon ul{
   padding:0;
@@ -1600,10 +1613,13 @@ transition: all ease-in-out .3s;
   margin-right: 0 !important;
 }
 .testimonial .slick-next {
-  right: 0;
+  right: 139px;
     top: -86px;
   background: rgba(37, 18, 56, 1);
   border: 2px solid rgba(37, 18, 56, 0.2);
+}
+.row.test-mon {
+  margin-right: -150px;
 }
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
@@ -2460,7 +2476,6 @@ p.footer-para {
 img.pitch-icon {
   background: #EFF4FF;
   border-radius: 8px;
-  padding: 8px;
 }
 .pitch-subcomm-head {
   font-family: 'Manrope-SemiBold';
@@ -2571,12 +2586,17 @@ img.banner2 {
   right: 0;
   top: -141px;
 }
+.autoscroll-section {
+  display: inline-flex;
+  width: 100%;
+  overflow-x: scroll;
+}
 .innovation-growth .box {
   padding: 16px 16px 24px;
   background: #FFFFFF;
   border: 1px solid rgba(200, 207, 245, 0.8);
   box-sizing: border-box;  
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px;
 }
 .m-t-112{
   margin-top: 112px;
@@ -4417,26 +4437,16 @@ select.custom-form-select {
 }
 
 .form-select {
-    display: inline-block;
-    margin-right: 40px;
-    border-radius: 8px;
-    width: 161px;
-    padding: 10px 16px;
-    -moz-padding-start: calc(0.75rem - 3px);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--font-color2);
-    background-color: var(--font-white);
-    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e);
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 16px 12px;
-    border: 1px solid #ced4da;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;    
+  padding: 19px 16px !important;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 4px 0px 0px 4px;  
+}
+.form-select option {
+  font-size: 18px;
+}
+.mg-b-40{
+  margin-bottom: 40px;
 }
 
 
@@ -5167,6 +5177,8 @@ p.parag {
   letter-spacing: 0.005em;
   text-transform: capitalize;
   color: rgba(37, 18, 56, 0.6);
+  padding-top: 16px;
+  width: 75%;
 }
 img.hus2 {
   position: absolute;
