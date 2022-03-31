@@ -92,11 +92,7 @@
 
 
   <style>
-    section.portfolio-mid-section {
-      padding-top: 152px;
-      padding-bottom: 150px;
-      position: var(--pos-rltv);
-    }
+    
 
     .section-title {
 
@@ -362,7 +358,7 @@ border-radius: 8px;
               </ul>
             </div>
           </div>
-          <div class="col-xl-12 col-lg-12 col-md-12">
+          <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in">
             <div class="result-sec-cb">
               <label class="filter-label">Filter <img src="./assets/images/portfolio_new/blue-right-arror.svg" />
               </label>
@@ -686,7 +682,7 @@ border-radius: 8px;
 
 
     <!-- ======= Testimonial Section ======= -->
-    <section id="testimonial" class="testimonial">
+    <section id="testimonial" class="testimonial portfoli-test">
       <div class="container testmonial-subcontainer position-relative" data-aos="fade-up">
         <div class="section-title pb-56">
           <p>Testimonials</p>
@@ -847,7 +843,7 @@ border-radius: 8px;
 
         <div class="row">
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
-            <div class="icon-box">
+            <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 932.svg" class="img-fluid-tools" alt="" /></div>
 
@@ -859,7 +855,7 @@ border-radius: 8px;
             </div>
           </div>
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
-            <div class="icon-box">
+            <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 961.svg" class="img-fluid-tools" alt="" /></div>
 
@@ -871,7 +867,7 @@ border-radius: 8px;
             </div>
           </div>
           <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
-            <div class="icon-box">
+            <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 964.svg" class="img-fluid-tools" alt="" /></div>
 
@@ -884,7 +880,7 @@ border-radius: 8px;
           </div>
 
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
-            <div class="icon-box">
+            <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 968.svg" class="img-fluid-tools" alt="" /></div>
               <h4 class="title"><a href="">Google cloud</a></h4>
@@ -895,7 +891,7 @@ border-radius: 8px;
             </div>
           </div>
           <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
-            <div class="icon-box">
+            <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 969.svg" class="img-fluid-tools" alt="" /></div>
 
@@ -907,7 +903,7 @@ border-radius: 8px;
             </div>
           </div>
           <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
-            <div class="icon-box">
+            <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 970.svg" class="img-fluid-tools" alt="" /></div>
 
@@ -1051,8 +1047,8 @@ border-radius: 8px;
       $(".regular1").slick({
         dots: false,
         infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 2.5,
+        slidesToScroll: 2.5
       });
       $("#sidemenuicon").on("click", function () {
         $('.header-side-menu').show();
