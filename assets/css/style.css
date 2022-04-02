@@ -307,6 +307,9 @@ span.side-menu-cross {
   position: var(--pos-rltv);
   padding: 8px 24px;
 }
+.navbar li:last-child{
+  padding-right: 0;
+}
 .navbar a{
   color: black;
 }
@@ -776,6 +779,9 @@ img.inov-g-2 {
   bottom: 54px;
   right: 0;
 }
+.p-r-45{
+  padding-right: 45px;
+}
 p.ivtd-year {
   font-family: 'Inter-SemiBold';
   font-style: normal;
@@ -784,8 +790,29 @@ p.ivtd-year {
   color: #4971F6;
   letter-spacing: -0.01em;
   display: block;
-  padding-top: 24px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+h3.fnr-header {
+  font-family: 'Manrope-ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.005em;
+  padding-bottom: 16px;
+}
+.comp-container p {
+  font-family: 'Manrope-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135%;
+  letter-spacing: -0.01em;
+  padding-top: 8px;
+}
+.comp-container {
+  display: flex;
 }
 img.rounder-arrow {
   position: absolute;
@@ -2119,7 +2146,7 @@ p.f-abt {
   border-left: 1px solid rgba(122, 219, 144, 0.6);;
 }
 .fd-sec:not(:last-child) {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 .fd-sec img.src {
   float: left;
@@ -2201,11 +2228,12 @@ img.blue-callender {
 }
 label.port-lbl {
   margin-bottom: 4px;
-  font-family: 'Manrope-SemiBold';
-  font-weight: 600;
-  font-size: 18px;
+  font-family: 'Manrope-Regular';
+  font-weight: 400;
+  font-size: 16px;
   line-height: 135%;
   letter-spacing: 0.01em;
+  color: #415E49;
 }
 .custom-align-middle img{
   /* float: left; */
@@ -2215,8 +2243,20 @@ label.port-lbl {
   align-items: center;
 }
 .sub-contaner {
-  padding: 40px 0;
-  
+    
+}
+.fd-sec {
+  display: inline-block;
+}
+.block-container {
+  border-top: 1px solid rgba(200, 207, 245, 0.8);
+  border-bottom: 1px solid rgba(200, 207, 245, 0.8);
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+.p-r-99{
+  padding-right: 99px;
 }
 .sub-contaner ul {
   display: inline-block;
@@ -2723,9 +2763,73 @@ section.pr-i-t {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+.other-invester-container h3.oi-head {
+  margin: 0;
+  padding: 0 0 16px 0;
+  font-family: 'Manrope-ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+}
+.other-invester-container .name{
+  font-family: 'Manrope-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+}
+.p-b-12 {
+  padding-bottom: 12px;
+}
+.p-b-8{
+  padding-bottom: 8px;
+}
+.other-invester-container label {
+  font-family: 'Manrope-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  text-transform: capitalize;
+  padding-left: 8px;
+}
+section.other-invester-container {
+  margin-top: 78px;
+}
+.other-invester-container h3.oi-sub-head {
+  margin: 0;
+    font-family: 'Manrope-ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    padding-bottom: 16px;
+}
+p.oi-para {
+  font-family: 'Manrope-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
 .our-portfolio h3.port-para {
   margin-bottom: 0;
   padding-right: 18px;
+  font-family: 'Manrope-SemiBold';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+}
+section.other-invester-container .inner-container{
+  border-top: 1px solid rgba(200, 207, 245, 0.8);
+  border-bottom: 1px solid rgba(200, 207, 245, 0.8);
+  padding: 32px 0;
 }
 .portfolio #portfolio-flters {
   padding: 0;
