@@ -419,6 +419,12 @@ h2.global-sub-title{
   min-width: 200px;
   border-bottom: 1px solid rgba(37, 18, 56, 0.1);
 }
+.navbar .dropdown ul a.active{
+  color: var(--primary-color);
+}
+.dropdown-item.active{
+  background-color: unset;
+}
 .navbar .dropdown ul a {
   padding: 10px 20px;
   text-transform: none;
@@ -2114,6 +2120,7 @@ p.f-abt {
 .flex-box{
   align-items: center;
   padding-left: 43px;
+  padding-right: 40px;
 }
 .btn-fintech{
   border-radius: 18.9445px;
