@@ -634,7 +634,7 @@ section.our-str{
   background-position: left 0 top 99px, right 0px bottom 285px, right 0 bottom 1px;
   background-repeat: no-repeat; */
   padding-top: 96px;
-  padding-bottom: 128px;
+  padding-bottom: 168px;
 }
 .btn-get-started > img {
   padding-left: 16px;
@@ -647,12 +647,18 @@ section.portfolio-mid-section {
   background-repeat: no-repeat;
   background-size: 25% 18%, 35% 45%;
 }
+.p-t-56{
+  padding-top: 56px;
+}
+.p-t-112{
+  padding-top: 112px;
+}
 section.portfolio{
   /* background-image: url(../images/icons/dot8.png);
   background-position: right 210px top 167px;
   background-repeat: no-repeat;
   background-size: auto; */
-  margin-top: 138px;
+  /* margin-top: 138px; */
   /* position: var(--pos-rltv); */
 }
 img.opf-design2 {
@@ -698,7 +704,7 @@ section.testimonial{
   background-position: left 240px top 122px;
   background-repeat: no-repeat;
   background-size: auto; */
-  margin-top: 238px;
+  /* margin-top: 238px; */
 }
 section.testimonial.portfoli-test {
   margin-top: 112px;
@@ -2113,6 +2119,7 @@ p.f-abt {
   line-height: 29px;
   margin: 0;
 }
+
 .btn-fintech:hover{
   /* background: var(--button-hover); */
   color: var(--color-palette4);
@@ -2162,7 +2169,7 @@ p.f-abt {
   border-left: 1px solid rgba(122, 219, 144, 0.6);;
 }
 .fd-sec:not(:last-child) {
-  /* margin-bottom: 32px; */
+  margin-bottom: 32px;
 }
 .fd-sec img.src {
   float: left;
@@ -2262,7 +2269,7 @@ label.port-lbl {
     
 }
 .fd-sec {
-  display: inline-block;
+  /* display: inline-block; */
 }
 .block-container {
   border-top: 1px solid rgba(200, 207, 245, 0.8);
