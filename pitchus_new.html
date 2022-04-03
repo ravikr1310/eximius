@@ -32,10 +32,75 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style>
+    .pitch-inner .files input {
+      outline: 2px dashed #92b0b3;
+      /* outline-offset: -10px; */
+      -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+      transition: outline-offset .15s ease-in-out, background-color .15s linear;
+      padding: 53px 0px 70px 31% !important;
+      text-align: center !important;
+      margin: 0;
+      width: 100% !important;
+    }
+
+    .pitch-inner .files input:focus {
+      outline: 2px dashed #92b0b3;
+      outline-offset: -10px;
+      -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+      transition: outline-offset .15s ease-in-out, background-color .15s linear;
+      border: 1px solid #92b0b3;
+    }
+
+    .pitch-inner .files {
+      position: relative
+    }
+
+    .pitch-inner .files:after {
+      pointer-events: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 50px;
+      right: 0;
+      height: 56px;
+      content: "";
+      /* background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png); */
+      display: block;
+      margin: 0 auto;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .pitch-inner .color input {
+      background-color: #f1f1f1;
+    }
+
+    .pitch-inner .files:before {
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      right: 0;
+      height: 57px;
+      content: "Supports documents upto 25MB";
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Manrope-Regular';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 16px;
+      color: rgba(37, 18, 56, 0.4);
+
+    }
+  </style>
 </head>
 
 <body>
-   <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container align-items-center">
       <div class="main-logo">
@@ -47,12 +112,14 @@
           <li><a class="nav-link scrollto" href="team1.html">Team</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link scrollto" href="sector-of-focus.html">Sectors of focus</a>
-             <ul class="dropdown-menu">
-             <li class="pd-l-0"><a class="dropdown-item pd-l-0 active" href="sector-of-focus.html">Fintech</a></li>
-             <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-healthTech.html">Healthcare</a></li>
-             <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-mediaAndEntertainment.html">Media & Entertainment</a></li>
-             </ul>
-         </li>
+            <ul class="dropdown-menu">
+              <li class="pd-l-0"><a class="dropdown-item pd-l-0 active" href="sector-of-focus.html">Fintech</a></li>
+              <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-healthTech.html">Healthcare</a>
+              </li>
+              <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-mediaAndEntertainment.html">Media
+                  & Entertainment</a></li>
+            </ul>
+          </li>
           <!-- <li><a class="nav-link scrollto" href="#Resources">Resources</a></li>
           <li><a class="nav-link scrollto" href="careers.html">Career</a></li> -->
           <li class="pitch-menu"><a class="scrollto active" href="pitchus_new.html">Pitch Us</a></li>
@@ -250,16 +317,22 @@
                     </div>
                     <div class="row">
                       <div class="col-xl-5 col-lg-5 col-md-5">
-                        <div class="form-group">
-                          <label for="pwd">Drop in your pitch deck</label>
-                          <input id="input-b1" name="input-b1" type="file" class="file" data-browse-on-zone-click="true">
-                        </div>
+                        <form method="post" action="#" id="#" class="position-relative">
+                          <div class="form-group files">
+                            <label>Drop in your Pitch Deck</label>
+                            <input type="file" class="form-control" multiple="">
+                          </div>
+
+                        </form>
                       </div>
                       <div class="col-xl-5 col-lg-5 col-md-5">
-                        <div class="form-group">
-                          <label for="pwd">Product Demo (Optional)</label>
-                          <input type="file" class="form-control" id="pwd">
-                        </div>
+                        <form method="post" action="#" id="#" class="position-relative">
+                          <div class="form-group files">
+                            <label>Product Demo (Optional)</label>
+                            <input type="file" class="form-control" multiple="">
+                          </div>
+
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -268,8 +341,8 @@
               </form>
             </div>
             <div class="btn-container m-t-64">
-              <a href="#" class="btn-get-started">Submit my pitch <img
-                src="./assets/images/home/right-indicator.svg" alt="Right" /></a>
+              <a href="#" class="btn-get-started">Submit my pitch <img src="./assets/images/home/right-indicator.svg"
+                  alt="Right" /></a>
             </div>
           </div>
         </div>

@@ -699,6 +699,9 @@ section.investment-thesis{
   bottom: -182px;
   right: 0;
 }
+.p-t-238{
+  padding-top: 238px;
+}
 section.testimonial{
   /* background-image: url(../images/icons/groupDot.png);
   background-position: left 240px top 122px;
@@ -1001,11 +1004,11 @@ section .home-banner-sec {
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
   .testimonial .test-mon .slick-prev {
-    left: 825px;
+    left: 740px;
     cursor: pointer;
   }
   .testimonial .test-mon .slick-next {
-    right: 96px;
+    right: 151px;
     cursor: pointer;
   }
   .flex-box {
@@ -1796,7 +1799,7 @@ img.green-border-line {
   font-size: 18px;
   line-height: 160%;
   letter-spacing: 0.015em;
-  padding: 24px 0 58px 0;
+  margin: 24px 0 56px 0;
 }
 .navbar li:nth-child(6){
   padding-right: 0;
@@ -2590,13 +2593,13 @@ h2.p-m-head {
 .pitch-inner input.form-control:focus{
   border: 1px solid #251238
 }
-.pitch-inner input.form-control[type=file]{
+/* .pitch-inner input.form-control[type=file]{
   background: #FFFFFF;
   border: 1px solid #E3E2E2;
   box-sizing: border-box;
   border-radius: 16px;
   padding: 70px 16px !important;
-}
+} */
 .pitch-inner label {
   font-family: 'Manrope-SemiBold';
   font-style: normal;
