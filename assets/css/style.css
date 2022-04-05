@@ -1605,6 +1605,7 @@ img.green-polygon {
   color: var(--color-palette6);
   background: var(--button-background);
   border-radius: var(--button-radius);
+  border: unset;
 }
 
 .btn-get-started:hover {

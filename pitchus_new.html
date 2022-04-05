@@ -192,53 +192,51 @@
     <section id="pitchus" class="p-0 pitchus" data-aos="zoom-in">
       <div class="container">
         <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="50">
-            <div class="pitch-inner">
-              <div class="pitch-prof"><span class="pitch-subcomm-head">Personal
-                  Details</span></div>
-              <form action="/action_page.php">
+          <form action="" id="pitchusForm">
+            <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="50">
+              <div class="pitch-inner">
+                <div class="pitch-prof"><span class="pitch-subcomm-head">Personal
+                    Details</span></div>
                 <div class="row">
                   <div class="col-xl-5 col-lg-5 col-md-5">
                     <div class="form-group">
-                      <label for="email">First Name*</label>
-                      <input type="email" class="form-control mg-b-32" id="email">
+                      <label for="fname">First Name*</label>
+                      <input type="text" class="form-control mg-b-32" id="fname" name="fname">
                     </div>
                     <div class="form-group">
-                      <label for="pwd">Email Address*</label>
-                      <input type="password" class="form-control mg-b-32" id="pwd">
+                      <label for="email">Email Address*</label>
+                      <input type="email" class="form-control mg-b-32" id="email" name="email">
                     </div>
                     <div class="form-group">
-                      <label for="pwd">Linkedln profile*</label>
-                      <input type="password" class="form-control" id="pwd">
+                      <label for="linkeprofile">Linkedln profile*</label>
+                      <input type="text" class="form-control" id="linkeprofile" name="linkeprofile">
                     </div>
                   </div>
                   <div class="col-xl-5 col-lg-5 col-md-5">
                     <div class="form-group">
-                      <label for="email">Last Name*</label>
-                      <input type="email" class="form-control mg-b-32" id="email">
+                      <label for="lname">Last Name*</label>
+                      <input type="text" class="form-control mg-b-32" id="lname" name="lname">
                     </div>
                     <div class="form-group">
-                      <label for="pwd">Contact No*</label>
-                      <input type="password" class="form-control mg-b-32" id="pwd">
+                      <label for="cnumber">Contact No*</label>
+                      <input type="number" class="form-control mg-b-32" id="cnumber" name="cnumber">
                     </div>
                     <div class="form-group">
-                      <label for="pwd">Website (optional)</label>
-                      <input type="password" class="form-control" id="pwd">
+                      <label for="website">Website (optional)</label>
+                      <input type="text" class="form-control" id="website" name="website">
                     </div>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="pitch-inner">
-              <div class="pitch-prof"><span class="pitch-subcomm-head">Pitch Details</span></div>
-              <form action="/action_page.php">
+              </div>
+              <div class="pitch-inner">
+                <div class="pitch-prof"><span class="pitch-subcomm-head">Pitch Details</span></div>
                 <div class="row">
                   <div class="col-xl-12 col-lg-12 col-md-12">
                     <div class="row">
                       <div class="col-xl-10 col-lg-10 col-md-10">
                         <div class="form-group">
-                          <label for="pwd">Sector*</label>
-                          <select class="form-select mg-b-40">
+                          <label for="sector">Sector*</label>
+                          <select class="form-select mg-b-40" id="sector" name="sector">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -250,8 +248,8 @@
                     <div class="row">
                       <div class="col-xl-5 col-lg-5 col-md-5">
                         <div class="form-group">
-                          <label for="pwd">Stage*</label>
-                          <select class="form-select mg-b-40">
+                          <label for="stage">Stage*</label>
+                          <select class="form-select mg-b-40" id="stage" name="stage">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -261,8 +259,8 @@
                       </div>
                       <div class="col-xl-5 col-lg-5 col-md-5">
                         <div class="form-group">
-                          <label for="pwd">Funding Ask *</label>
-                          <select class="form-select mg-b-40">
+                          <label for="fundingAsk">Funding Ask *</label>
+                          <select class="form-select mg-b-40" id="fundingAsk" name="fundingAsk">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -274,8 +272,8 @@
                     <div class="row">
                       <div class="col-xl-10 col-lg-10 col-md-10">
                         <div class="form-group">
-                          <label for="pwd">Problem Statement *</label>
-                          <textarea id="productdetails" name="productdetails" class="form-control mg-b-40" rows="4"
+                          <label for="problemStatement">Problem Statement *</label>
+                          <textarea id="problemStatement" name="problemStatement" class="form-control mg-b-40" rows="4"
                             cols="50">
                         </textarea>
                         </div>
@@ -284,8 +282,8 @@
                     <div class="row">
                       <div class="col-xl-10 col-lg-10 col-md-10">
                         <div class="form-group">
-                          <label for="pwd">Product Details *</label>
-                          <textarea id="foundingteam" name="foundingteam" class="form-control mg-b-40" rows="3"
+                          <label for="productDetails">Product Details *</label>
+                          <textarea id="productDetails" name="productDetails" class="form-control mg-b-40" rows="3"
                             cols="50">
                       </textarea>
                         </div>
@@ -294,57 +292,52 @@
                     <div class="row">
                       <div class="col-xl-10 col-lg-10 col-md-10">
                         <div class="form-group">
-                          <label for="pwd">Founding Team *</label>
-                          <input type="password" class="form-control mg-b-40" id="pwd">
+                          <label for="foundingTeam">Founding Team *</label>
+                          <input type="password" class="form-control mg-b-40" id="foundingTeam" name="foundingTeam">
                         </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-xl-10 col-lg-10 col-md-10">
                         <div class="form-group">
-                          <label for="pwd">Traction*</label>
-                          <input type="password" class="form-control mg-b-40" id="pwd">
+                          <label for="traction">Traction*</label>
+                          <input type="password" class="form-control mg-b-40" id="traction" name="traction">
                         </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-xl-10 col-lg-10 col-md-10">
                         <div class="form-group">
-                          <label for="pwd">Existing Investors (if any)</label>
-                          <input type="password" class="form-control mg-b-40" id="pwd">
+                          <label for="existingInves">Existing Investors (if any)</label>
+                          <input type="password" class="form-control mg-b-40" id="existingInves" name="existingInves">
                         </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-xl-5 col-lg-5 col-md-5">
-                        <form method="post" action="#" id="#" class="position-relative">
-                          <div class="form-group files">
-                            <label>Drop in your Pitch Deck</label>
-                            <input type="file" class="form-control" multiple="">
-                          </div>
-
-                        </form>
+                        <!-- <form method="post" action="#" id="#" class="position-relative"> -->
+                        <div class="form-group files">
+                          <label for="pitchDesk">Drop in your Pitch Deck</label>
+                          <input type="file" class="form-control" multiple="" id="pitchDesk" name="pitchDesk">
+                        </div>
+                        <!-- </form> -->
                       </div>
                       <div class="col-xl-5 col-lg-5 col-md-5">
-                        <form method="post" action="#" id="#" class="position-relative">
-                          <div class="form-group files">
-                            <label>Product Demo (Optional)</label>
-                            <input type="file" class="form-control" multiple="">
-                          </div>
-
-                        </form>
+                        <div class="form-group files">
+                          <label for="productDemo">Product Demo (Optional)</label>
+                          <input type="file" class="form-control" multiple="" id="productDemo" name="productDemo">
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-              </form>
+                <div class="btn-container m-t-64">
+                  <button type="submit" class="btn-get-started">Submit my pitch <img
+                      src="./assets/images/home/right-indicator.svg" alt="Right" id="submitPitches" /></button>
+                </div>
+              </div>
             </div>
-            <div class="btn-container m-t-64">
-              <a href="#" class="btn-get-started">Submit my pitch <img src="./assets/images/home/right-indicator.svg"
-                  alt="Right" /></a>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -477,7 +470,13 @@
         $('.header-side-menu').hide();
       })
     });
-
+    const pitchusForm = document.querySelector('#pitchusForm');
+    if(pitchusForm){
+      debugger
+      pitchusForm.addEventListener("submit",function(e){
+        submitPitches(e,this)
+      })
+    }
   </script>
 </body>
 
