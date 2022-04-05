@@ -329,6 +329,17 @@
                         </div>
                       </div>
                     </div>
+                    <div class="row">
+                       <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div id="progress-wrp">
+                          <div class="progress-bar"></div>
+                          <div class="status">0%</div>
+                         </div>
+                       </div>
+                       <div class="col-xl-5 col-lg-5 col-md-5">
+
+                       </div>
+                    </div>
                   </div>
                 </div>
                 <div class="btn-container m-t-64">
@@ -461,6 +472,35 @@
   <script src="assets/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <style>
+    #progress-wrp {
+  border: 1px solid #0099CC;
+  padding: 1px;
+  position: relative;
+  height: 30px;
+  border-radius: 3px;
+  margin: 10px;
+  text-align: left;
+  background: #fff;
+  box-shadow: inset 1px 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+#progress-wrp .progress-bar {
+  height: 100%;
+  border-radius: 3px;
+  background-color: #f39ac7;
+  width: 0;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.11);
+}
+
+#progress-wrp .status {
+  top: 3px;
+  left: 50%;
+  position: absolute;
+  display: inline-block;
+  color: #000000;
+}
+  </style>
   <script type="text/javascript">
     $(document).on('ready', function () {
       $("#sidemenuicon").on("click", function () {
@@ -471,11 +511,15 @@
       })
     });
 
+
     /* file upload  */
     var pitchDeskURLafterupload = null;
-    var Upload = function (file) {
+    var productDemoURLafterupload = null;
+    var selectedname = null;
+    var Upload = function (file,nameselected) {
     this.file = file;
-};
+    selectedname = nameselected;
+    };
 
 Upload.prototype.getType = function() {
     return this.file.type;
@@ -501,14 +545,20 @@ Upload.prototype.doUpload = function () {
             var myXhr = $.ajaxSettings.xhr();
             if (myXhr.upload) {
               debugger;
-                //myXhr.upload.addEventListener('progress', that.progressHandling, false);
+                myXhr.upload.addEventListener('progress', this.progressHandling, false);
             }
             return myXhr;
         },
         success: function (data) {
           debugger;
-          pitchDeskURLafterupload= data.data.location;
-            // your callback here
+          if(selectedname == pitchDesk)
+          {
+            pitchDeskURLafterupload= data.data.location;
+          }
+          if(selectedname == productDemo){
+            productDemoURLafterupload = data.data.location;
+          }
+          // your callback here
         },
         error: function (error) {
             // handle error
@@ -524,19 +574,44 @@ Upload.prototype.doUpload = function () {
     });
    };
 
+   Upload.prototype.progressHandling = function (event) {
+    var percent = 0;
+    var position = event.loaded || event.position;
+    var total = event.total;
+    var progress_bar_id = "#progress-wrp";
+    if (event.lengthComputable) {
+        percent = Math.ceil(position / total * 100);
+    }
+    // update progressbars classes so it fits your code
+    $(progress_bar_id + " .progress-bar").css("width", +percent + "%");
+    $(progress_bar_id + " .status").text(percent + "%");
+};
 
    $("#pitchDesk").on("change", function (e) {
      debugger;
     var file = $(this)[0].files[0];
-    var upload = new Upload(file);
+    var upload = new Upload(file,pitchDesk);
 
     // maby check size or type here with upload.getSize() and upload.getType()
 
     // execute upload
     upload.doUpload();
   });
-    /* end file upload**/
 
+
+  $("#productDemo").on("change", function (e) {
+     debugger;
+    var file = $(this)[0].files[0];
+    var upload = new Upload(file,productDemo);
+
+    // maby check size or type here with upload.getSize() and upload.getType()
+
+    // execute upload
+    upload.doUpload();
+  });
+
+    /* end file upload**/
+  
 
 
     $("form").on("submit", function( event ) {
@@ -546,7 +621,7 @@ Upload.prototype.doUpload = function () {
          alert('file not upload');
          return;
       }
-      var data={
+      var datas={
           firstName: $('#fname').val(),
           lastName: $('#lname').val(),
           email: $('#email').val(),
@@ -560,13 +635,14 @@ Upload.prototype.doUpload = function () {
           foundingTeam: $('#foundingTeam').val(),
           traction: $('#traction').val(),
           pitchDeck: $('#pitchDeck').val(),
-          productDemo:pitchDeskURLafterupload
+          pitchDeck:pitchDeskURLafterupload,
+          productDemo:productDemoURLafterupload
       };      
       console.log( $( this ).serialize());
       $.ajax({
       type:'POST',
       url:'http://pitch.thedotreview.com/v1/form/submit',
-      data:data,
+      data:datas,
       success:function(data){
           //debugger;
           alert('submit your pitch');
