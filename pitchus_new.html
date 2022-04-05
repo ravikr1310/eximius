@@ -470,13 +470,50 @@
         $('.header-side-menu').hide();
       })
     });
-    const pitchusForm = document.querySelector('#pitchusForm');
-    if(pitchusForm){
-      debugger
-      pitchusForm.addEventListener("submit",function(e){
-        submitPitches(e,this)
-      })
-    }
+
+    $("form").on("submit", function( event ) {
+      //debugger;
+      event.preventDefault();
+      var data={
+          firstName: $('#fname').val(),
+          lastName: $('#lname').val(),
+          email: $('#email').val(),
+          contactNumber: $('#cnumber').val(),
+          linkeprofile:$('#linkeprofile').val(),
+          sector: $('#sector').val(),
+          stage: $('#stage').val(),
+          fundingAsk: $('#fundingAsk').val(),
+          problemStatement: $('#problemStatement').val(),
+          productDetails: $('#productDetails').val(),
+          foundingTeam: $('#foundingTeam').val(),
+          traction: $('#traction').val(),
+          pitchDeck: $('#pitchDeck').val(),
+          productDemo:$('#productDemo').val()
+      };      
+      console.log( $( this ).serialize());
+      $.ajax({
+      type:'POST',
+      url:'http://pitch.thedotreview.com/v1/form/submit',
+      data:data,
+      success:function(data){
+          //debugger;
+          console.log(data);
+          },
+        error:function(e){
+          //debugger;
+          console.log(e);
+        }
+      });
+    });
+
+    
+    // const pitchusForm = document.querySelector('#pitchusForm');
+    // if(pitchusForm){
+    //   debugger
+    //   pitchusForm.addEventListener("submit",function(e){
+    //     submitPitches(e,this)
+    //   })
+    // }
   </script>
 </body>
 
