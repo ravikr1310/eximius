@@ -471,9 +471,81 @@
       })
     });
 
+    /* file upload  */
+    var pitchDeskURLafterupload = null;
+    var Upload = function (file) {
+    this.file = file;
+};
+
+Upload.prototype.getType = function() {
+    return this.file.type;
+};
+Upload.prototype.getSize = function() {
+    return this.file.size;
+};
+Upload.prototype.getName = function() {
+    return this.file.name;
+};
+Upload.prototype.doUpload = function () {
+    var that = this;
+    var formData = new FormData();
+
+    // add assoc key values, this will be posts values
+    formData.append("file", this.file, this.getName());
+    formData.append("upload_file", true);
+
+    $.ajax({
+        type: "POST",
+        url: "http://pitch.thedotreview.com/v1/form/file/upload",
+        xhr: function () {           
+            var myXhr = $.ajaxSettings.xhr();
+            if (myXhr.upload) {
+              debugger;
+                //myXhr.upload.addEventListener('progress', that.progressHandling, false);
+            }
+            return myXhr;
+        },
+        success: function (data) {
+          debugger;
+          pitchDeskURLafterupload= data.data.location;
+            // your callback here
+        },
+        error: function (error) {
+            // handle error
+            debugger;
+            console.log(error);
+        },
+        async: true,
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        timeout: 60000
+    });
+   };
+
+
+   $("#pitchDesk").on("change", function (e) {
+     debugger;
+    var file = $(this)[0].files[0];
+    var upload = new Upload(file);
+
+    // maby check size or type here with upload.getSize() and upload.getType()
+
+    // execute upload
+    upload.doUpload();
+  });
+    /* end file upload**/
+
+
+
     $("form").on("submit", function( event ) {
       //debugger;
       event.preventDefault();
+      if(pitchDeskURLafterupload==null){
+         alert('file not upload');
+         return;
+      }
       var data={
           firstName: $('#fname').val(),
           lastName: $('#lname').val(),
@@ -488,7 +560,7 @@
           foundingTeam: $('#foundingTeam').val(),
           traction: $('#traction').val(),
           pitchDeck: $('#pitchDeck').val(),
-          productDemo:$('#productDemo').val()
+          productDemo:pitchDeskURLafterupload
       };      
       console.log( $( this ).serialize());
       $.ajax({
@@ -497,6 +569,7 @@
       data:data,
       success:function(data){
           //debugger;
+          alert('submit your pitch');
           console.log(data);
           },
         error:function(e){
