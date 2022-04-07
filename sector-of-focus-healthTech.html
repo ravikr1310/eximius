@@ -49,11 +49,18 @@
         <ul>
           <li><a class="nav-link scrollto" href="portfolio_new.html">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="team1.html">Team</a></li>
-          <li><a class="nav-link scrollto" href="sector-of-focus.html">Sectors of focus</a></li>
-          <li><a class="nav-link scrollto" href="#Resources">Resources</a></li>
-          <li><a class="nav-link scrollto" href="careers.html">Career</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link scrollto" href="sector-of-focus.html">Sectors of focus</a>
+             <ul class="dropdown-menu">
+             <li class="pd-l-0"><a class="dropdown-item pd-l-0 active" href="sector-of-focus.html">Fintech</a></li>
+             <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-healthTech.html">Healthcare</a></li>
+             <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-mediaAndEntertainment.html">Media & Entertainment</a></li>
+             </ul>
+         </li>
+          <!-- <li><a class="nav-link scrollto" href="#Resources">Resources</a></li>
+          <li><a class="nav-link scrollto" href="careers.html">Career</a></li> -->
           <li class="pitch-menu"><a class="scrollto active" href="pitchus_new.html">Pitch Us</a></li>
-        </ul>        
+        </ul>
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
@@ -101,7 +108,7 @@
     </section>
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio our-portfolio position-relative game-chan-bg ">
+    <section id="portfolio" class="portfolio our-portfolio position-relative game-chan-bg p-t-56">
       <img src="./assets/images/home/blueshed.svg" alt="" class="gamechng">
       <div class="container" data-aos="fade-up">
         <div class="section-title pb-49 space-between-box">
@@ -229,15 +236,15 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonial Section ======= -->
-    <section id="testimonial" class="testimonial">
+    <section id="testimonial" class="testimonial portfoli-test">
       <div class="container testmonial-subcontainer position-relative" data-aos="fade-up">
         <div class="section-title pb-56">
-          <p>What They Say About Us</p>
+          <p>Testimonials</p>
         </div>
         <img src="./assets/images/home/greenshading_below.svg" alt="" class="position-absolute green-below">
         <div class="carousel slide caro1">
           <div class="row test-mon">
-            <section class="regular slider position-relative">
+            <section class="regular slider">
               <div>
                 <div class="ot-container">
                   <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
@@ -545,8 +552,8 @@
       $(".regular").slick({
         dots: false,
         infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 2.5,
+        slidesToScroll: 2.5
       });
       $("#sidemenuicon").on("click", function () {
         $('.header-side-menu').show();

@@ -49,11 +49,18 @@
         <ul>
           <li><a class="nav-link scrollto" href="portfolio_new.html">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="team1.html">Team</a></li>
-          <li><a class="nav-link scrollto" href="sector-of-focus.html">Sectors of focus</a></li>
-          <li><a class="nav-link scrollto" href="#Resources">Resources</a></li>
-          <li><a class="nav-link scrollto" href="careers.html">Career</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link scrollto" href="sector-of-focus.html">Sectors of focus</a>
+             <ul class="dropdown-menu">
+             <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus.html">Fintech</a></li>
+             <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-healthTech.html">Healthcare</a></li>
+             <li class="pd-l-0"><a class="dropdown-item pd-l-0 active" href="sector-of-focus-mediaAndEntertainment.html">Media & Entertainment</a></li>
+             </ul>
+         </li>
+          <!-- <li><a class="nav-link scrollto" href="#Resources">Resources</a></li>
+          <li><a class="nav-link scrollto" href="careers.html">Career</a></li> -->
           <li class="pitch-menu"><a class="scrollto active" href="pitchus_new.html">Pitch Us</a></li>
-        </ul>        
+        </ul>
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
@@ -66,10 +73,16 @@
           <div class="section-title">
             <h1>Media and Entertainment</h1>
           </div>
+<<<<<<< HEAD
           <p class="parag mb-40">The industry is set to hit INR 4 trillion by 2025 growing at a CAGR of 10.75% in the next four years. 
             This owes to the growing relationship between this sector seeping into Web 3.0 with India already seeing offshoots Web 3 Games and similar models.
             </p>
           <a href="#" class="btn-get-started">Event Recording <img src="./assets/images/home/right-indicator.svg"
+=======
+          <p class="parag mb-40">Lorem ipsum egongen prening bet att for atande intervall pegisamma. Sorat tepoling.
+            Plar forpappring semisam ningen.</p>
+          <a href="#" class="btn-get-started">Gaming Lounge<img src="./assets/images/home/right-indicator.svg"
+>>>>>>> 6b2fcedb2f3cd923ccf48bb413f9e2ad6e0719e2
               alt="Right" /></a>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" data-aos="zoom-in">
@@ -104,7 +117,7 @@
     </section>
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio our-portfolio position-relative game-chan-bg ">
+    <section id="portfolio" class="portfolio our-portfolio position-relative game-chan-bg p-t-56">
       <img src="./assets/images/home/blueshed.svg" alt="" class="gamechng">
       <div class="container" data-aos="fade-up">
         <div class="section-title pb-49 space-between-box">
@@ -232,15 +245,15 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonial Section ======= -->
-    <section id="testimonial" class="testimonial">
+    <section id="testimonial" class="testimonial portfoli-test">
       <div class="container testmonial-subcontainer position-relative" data-aos="fade-up">
         <div class="section-title pb-56">
-          <p>What They Say About Us</p>
+          <p>Testimonials</p>
         </div>
         <img src="./assets/images/home/greenshading_below.svg" alt="" class="position-absolute green-below">
         <div class="carousel slide caro1">
           <div class="row test-mon">
-            <section class="regular slider position-relative">
+            <section class="regular slider">
               <div>
                 <div class="ot-container">
                   <img src="./assets/images/home/founder1.svg" class="tf-profile-pic" alt="" />
@@ -548,8 +561,8 @@
       $(".regular").slick({
         dots: false,
         infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 2.5,
+        slidesToScroll: 2.5
       });
       $("#sidemenuicon").on("click", function () {
         $('.header-side-menu').show();
