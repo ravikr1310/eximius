@@ -1593,7 +1593,9 @@ img.green-polygon {
   margin: 15px 0 0 0;
   font-size: 24px;
 }
-
+.social-icons li {
+  padding-right: 16px;
+}
 
 .btn-get-started {
   font-family: 'Manrope-Regular';
@@ -3529,9 +3531,17 @@ section.other-invester-container .inner-container {
 }
 
 .footer-para {
-  width: 98%;
+  width: 70%;
 }
-
+.f-s-16{
+  font-size: 16px;
+}
+#portfolionew,#founderfund{
+  transform: translateY(75px);
+}
+#advisors{
+  transform: translateY(207px);
+}
 .footer-para .inner-para {
   width: 97%;
 }
