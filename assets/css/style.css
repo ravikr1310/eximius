@@ -3539,9 +3539,9 @@ section.other-invester-container .inner-container {
 #portfolionew,#founderfund{
   transform: translateY(75px);
 }
-#advisors{
+/* #advisors{
   transform: translateY(207px);
-}
+} */
 .footer-para .inner-para {
   width: 97%;
 }
