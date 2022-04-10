@@ -200,8 +200,17 @@
             animation-duration: 1s;
         }
 
-        #personalInfoCard {
-            display: block;
+        #personalInfoCard,
+        #personalInfoCard1,
+        #personalInfoCard2,
+        #personalInfoCard3,#personalInfoCard4 {
+            display: none;
+            background: #FFFFFF;
+            border: 1px solid rgba(200, 207, 245, 0.8);
+            box-sizing: border-box;
+            box-shadow: 0px 4px 40px rgba(135, 215, 206, 0.3);
+            border-radius: 8px;
+            padding: 33px;
         }
 
         #personalInfoCard1 {
@@ -227,20 +236,25 @@
         }
 
         .blue-background {
-            width: 272px;
+            width: 100%;
             height: 208px;
             /* Blue */
             background: #4971F6;
             opacity: 0.3;
             border-radius: 8px 8px 0px 0px;
             position: absolute;
-            bottom: 24%;
+            bottom: 0;
+        }
+
+        .profilebgOteam {
+            position: absolute;
             left: 20px;
+            bottom: 0;
         }
 
         .profileImg {
             position: absolute;
-            top: 24%;
+            bottom: 0;
         }
 
         .profileImgInvestmentTeam {
@@ -300,6 +314,11 @@
             color: #251238;
             opacity: 0.6;
             max-width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
         }
 
         .social-icons ul {
@@ -365,12 +384,10 @@
                     </div>
                 </div>
                 <div class="row position-relative mg-t-52">
-
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 tab-content team-tab-container"
                         data-aos="zoom-in" data-aos-delay="100">
                         <div class="tab1">
                             <div class="row">
-                                <!-- <div class="team-tab-box"> -->
                                 <div class="col-xl-4 col-lg-4 col-md-4">
                                     <img class="pearl-1 " src="./assets/images/Team_new/teamimg1.svg" alt="" />
                                 </div>
@@ -408,103 +425,109 @@
                         </div>
                         <div class="tab2" id="advisors">
                             <h2 class="founder-head">Advisor</h2>
-                            <div id="personalInfoCard" class="personalInfo" onmouseleave="hideSlideonmouseleave()">
-                                <div>
-                                    <div class="arrow">
-                                        <img src="./assets/images/Team_new/arrow.svg" alt="">
-                                    </div>
-                                    <div class="blue-background">
-                                    </div>
-                                    <div class="profileImg">
-                                        <img src="" alt="" id="advisorImage" width="">
+                            <div class="row Advisor-team">
+                                <div class="col-xl-3 col-lg-3 col-md-3 "></div>
+                                <div class="col-xl-9 col-lg-9 col-md-9" id="advisorTeam">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4"
+                                            onclick="addSlideOnHover(carddata.advisor1)">
+                                            <div class="team-tab-box-inner team-member-1 position-relative">
+                                                <img src="./assets/images/Team_new/photo-2.svg" alt="" />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0">
+                                                <p>Sanjiv Saklani<br><span>Advisor</span></p>
+                                                <div class="box-seperator"></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social2.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social3.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 "
+                                            onclick=addSlideOnHover(carddata.advisor2)>
+                                            <div class="team-tab-box-inner team-member-2 position-relative">
+                                                <img src="./assets/images/Team_new/photo.svg" alt="" />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0">
+                                                <p>Jasveer Singh<br><span>Advisor</span></p>
+                                                <div class="box-seperator"></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social2.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social3.svg"
+                                                                alt="" /></a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 "
+                                            onclick="addSlideOnHover(carddata.advisor3)">
+                                            <div class="team-tab-box-inner team-member-3 position-relative">
+                                                <img src="./assets/images/Team_new/photo-4.svg" alt="" />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0">
+                                                <p>Vikram Qanungo
+                                                    <br><span>Advisor</span>
+                                                </p>
+                                                <div class="box-seperator"></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social2.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social3.svg"
+                                                                alt="" /></a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="content">
-                                    <h2 class="advisor-name" id="advisorName"></h2>
-                                    <h4 class="designation" id="advisorDesignation"></h4>
-                                    <p class="content-advisor" id="contentAdvisor"></p>
-                                    <hr>
-                                    <div class="social-icons">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social2.svg" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social1.svg" alt="" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div style="min-height:50vh;">
-                                <div class="row Advisor-team" id="advisorTeam">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "
-                                        onclick="addSlideOnHover(carddata.advisor1)">
-                                        <div class="team-tab-box-inner team-member-1 position-relative">
-                                            <img src="./assets/images/Team_new/photo-2.svg" alt="" />
+                                <div class="col-xl-9 col-lg-9 col-md-9" id="personalInfoCard" class="personalInfo"
+                                    onmouseleave="hideSlideonmouseleave()">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4">
+                                            <img src="./assets/images/Team_new/roundarrow.svg" />
+                                            <img class="profilebgOteam" src="./assets/images/Team_new/profilebg.svg" />
+                                            <!-- <div class="blue-background">
+                                            </div> -->
+                                            <div class="profileImg">
+                                                <img src="" alt="" id="advisorImage" width="">
+                                            </div>
                                         </div>
-                                        <div class="team-tab-box-inner-bottom pb-0">
-                                            <p>Sanjiv Saklani<br><span>Advisor</span></p>
-                                            <div class="box-seperator"></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><img src="./assets/images/home/social2.svg"
-                                                            alt="" /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><img src="./assets/images/home/social3.svg"
-                                                            alt="" /></a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 " onclick=addSlideOnHover(carddata.advisor2)>
-                                        <div class="team-tab-box-inner team-member-2 position-relative">
-                                            <img src="./assets/images/Team_new/photo.svg" alt="" />
-                                        </div>
-                                        <div class="team-tab-box-inner-bottom pb-0">
-                                            <p>Jasveer Singh<br><span>Advisor</span></p>
-                                            <div class="box-seperator"></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><img src="./assets/images/home/social2.svg"
-                                                            alt="" /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><img src="./assets/images/home/social3.svg"
-                                                            alt="" /></a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "
-                                        onclick="addSlideOnHover(carddata.advisor3)">
-                                        <div class="team-tab-box-inner team-member-3 position-relative">
-                                            <img src="./assets/images/Team_new/photo-4.svg" alt="" />
-                                        </div>
-                                        <div class="team-tab-box-inner-bottom pb-0">
-                                            <p>Vikram Qanungo
-                                                <br><span>Advisor</span>
-                                            </p>
-                                            <div class="box-seperator"></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><img src="./assets/images/home/social2.svg"
-                                                            alt="" /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><img src="./assets/images/home/social3.svg"
-                                                            alt="" /></a>
-                                                </li>
-
-                                            </ul>
+                                        <div class="col-xl-8 col-lg-8 col-md-8">
+                                            <h2 class="advisor-name" id="advisorName"></h2>
+                                            <h4 class="designation" id="advisorDesignation"></h4>
+                                            <p class="content-advisor" id="contentAdvisor"></p>
+                                            <hr>
+                                            <div class="social-icons">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social2.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social3.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social1.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -512,351 +535,365 @@
                         </div>
                         <div class="tab3" id="investment">
                             <h2 class="founder-head">Investment<br>Team</h2>
-                            <div id="personalInfoCard1" class="personalInfo1" onmouseleave="hideSlideonmouseleave1()">
-                                <div>
-                                    <div class="arrow">
-                                        <img src="./assets/images/Team_new/arrow.svg" alt="">
-                                    </div>
-                                    <div class="blue-background">
-                                    </div>
-                                    <div class="profileImgInvestmentTeam">
-                                        <img src="" alt="" id="advisorImage1" width="">
+                            <div class="row Advisor-team">
+                                <div class="col-xl-3 col-lg-3 col-md-3 "></div>
+                                <div class="col-xl-9 col-lg-9 col-md-9" id="investmentTeam">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4"
+                                            onclick="addSlideOnHover1(carddata.advisor4)">
+                                            <div class="team-tab-box-inner team-member-1 position-relative">
+                                                <img src="./assets/images/Team_new/photo-3.svg" alt="" />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0">
+                                                <p>Vidhi Doshi<br><span>Advisor</span></p>
+                                                <div class="box-seperator"></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social2.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social3.svg"
+                                                                alt="" /></a>
+                                                    </li>
 
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-
                                 </div>
-                                <div class="content">
-                                    <h2 class="advisor-name" id="advisorName1"></h2>
-                                    <h4 class="designation" id="advisorDesignation1"></h4>
-                                    <p class="content-advisor" id="contentAdvisor1"></p>
-                                    <hr>
-                                    <div class="social-icons">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social2.svg" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                                            </li>
+                                <div class="col-xl-9 col-lg-9 col-md-9" id="personalInfoCard1" class="personalInfo1"
+                                    onmouseleave="hideSlideonmouseleave1()">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4">
+                                            <div>
+                                                <img src="./assets/images/Team_new/roundarrow.svg" />
+                                                <img class="profilebgOteam"
+                                                    src="./assets/images/Team_new/profilebg.svg" />
+                                                <div class="profileImgInvestmentTeam">
+                                                    <img src="" alt="" id="advisorImage1" width="">
+                                                </div>
 
-                                        </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-8 col-md-8">
+                                            <h2 class="advisor-name" id="advisorName1"></h2>
+                                            <h4 class="designation" id="advisorDesignation1"></h4>
+                                            <p class="content-advisor" id="contentAdvisor1"></p>
+                                            <hr>
+                                            <div class="social-icons">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social2.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social3.svg"
+                                                                alt="" /></a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div style="min-height:50vh;">
 
-                                <div class="row Advisor-team" id="investmentTeam"
-                                    onclick="addSlideOnHover1(carddata.advisor4)">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 ">
-                                        <div class="team-tab-box-inner team-member-1 position-relative">
-                                            <img src="./assets/images/Team_new/photo-3.svg" alt="" />
-                                        </div>
-                                        <div class="team-tab-box-inner-bottom pb-0">
-                                            <p>Vidhi Doshi<br><span>Advisor</span></p>
-                                            <div class="box-seperator"></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><img src="./assets/images/home/social2.svg"
-                                                            alt="" /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><img src="./assets/images/home/social3.svg"
-                                                            alt="" /></a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
                         </div>
                         <div class="tab4" id="portfolio">
                             <h2 class="founder-head">Portfolio & <br> Growth</h2>
-                            <div id="personalInfoCard2" class="personalInfo2" onmouseleave="hideSlideonmouseleave2()">
-                                <div>
-                                    <div class="arrow">
-                                        <img src="./assets/images/Team_new/arrow.svg" alt="">
-                                    </div>
-                                    <div class="blue-background">
-                                    </div>
-                                    <div class="profileImg">
-                                        <img src="" alt="" id="advisorImage2" width="">
+                            <div class="row Advisor-team">
+                                <div class="col-xl-3 col-lg-3 col-md-3 "></div>
+                                <div class="col-xl-9 col-lg-9 col-md-9 " id="portfolio&growth">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4"
+                                            onclick="addSlideOnHover2(carddata.advisor5)">
+                                            <div class=" team-tab-box-inner team-member-1 position-relative ">
+                                                <img src="./assets/images/Team_new/photo.svg " alt=" " />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0 ">
+                                                <p>Aditya Shrivastav<br><span>Marketing Lead
+                                                    </span></p>
+                                                <div class="box-seperator "></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social2.svg "
+                                                                alt=" " /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social3.svg "
+                                                                alt=" " /></a>
+                                                    </li>
 
-                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4"
+                                            onclick="addSlideOnHover2(carddata.advisor6) ">
+                                            <div class="team-tab-box-inner team-member-3 position-relative ">
+                                                <img src="./assets/images/Team_new/photo-6.svg " alt=" " />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0 ">
+                                                <p>Amrita Saini<br><span>Human Resources Lead
+                                                    </span></p>
+                                                <div class="box-seperator "></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social2.svg "
+                                                                alt=" " /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social3.svg "
+                                                                alt=" " /></a>
+                                                    </li>
 
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <h2 class="advisor-name" id="advisorName2"></h2>
-                                    <h4 class="designation" id="advisorDesignation2"></h4>
-                                    <p class="content-advisor" id="contentAdvisor2"></p>
-                                    <hr>
-                                    <div class="social-icons">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social2.svg" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                                            </li>
+                                <div class="col-xl-9 col-lg-9 col-md-9 " id="personalInfoCard2" class="personalInfo2"
+                                    onmouseleave="hideSlideonmouseleave2()">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4">
+                                            <img src="./assets/images/Team_new/roundarrow.svg" />
+                                            <img class="profilebgOteam" src="./assets/images/Team_new/profilebg.svg" />
+                                            <div class="profileImg">
+                                                <img src="" alt="" id="advisorImage2" width="">
 
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="min-height: 50vh;">
-
-
-                                <div class="row Advisor-team" id="portfolio&growth">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "
-                                        onclick="addSlideOnHover2(carddata.advisor5)">
-                                        <div class=" team-tab-box-inner team-member-1 position-relative ">
-                                            <img src="./assets/images/Team_new/photo.svg " alt=" " />
+                                            </div>
                                         </div>
-                                        <div class="team-tab-box-inner-bottom pb-0 ">
-                                            <p>Aditya Shrivastav<br><span>Marketing Lead
-                                                </span></p>
-                                            <div class="box-seperator "></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social2.svg "
-                                                            alt=" " /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social3.svg "
-                                                            alt=" " /></a>
-                                                </li>
+                                        <div class="col-xl-8 col-lg-8 col-md-8">
+                                            <h2 class="advisor-name" id="advisorName2"></h2>
+                                            <h4 class="designation" id="advisorDesignation2"></h4>
+                                            <p class="content-advisor" id="contentAdvisor2"></p>
+                                            <hr>
+                                            <div class="social-icons">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social2.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social3.svg"
+                                                                alt="" /></a>
+                                                    </li>
 
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "
-                                        onclick="addSlideOnHover2(carddata.advisor6) ">
-                                        <div class="team-tab-box-inner team-member-3 position-relative ">
-                                            <img src="./assets/images/Team_new/photo-6.svg " alt=" " />
-                                        </div>
-                                        <div class="team-tab-box-inner-bottom pb-0 ">
-                                            <p>Amrita Saini<br><span>Human Resources Lead
-                                                </span></p>
-                                            <div class="box-seperator "></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social2.svg "
-                                                            alt=" " /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social3.svg "
-                                                            alt=" " /></a>
-                                                </li>
-
-                                            </ul>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab5" id="operation">
-                            <h2 class="founder-head ">Operations</h2>
-                            <div id="personalInfoCard3" class="personalInfo3" onmouseleave="hideSlideonmouseleave3()">
-                                <div>
-                                    <div class="arrow">
-                                        <img src="./assets/images/Team_new/arrow.svg" alt="">
-                                    </div>
-                                    <div class="blue-background">
-                                    </div>
-                                    <div class="profileImgOperations">
-                                        <img src="" alt="" id="advisorImage3" width="">
+                            <h2 class="founder-head">Operations</h2>
+                            <div class="row Advisor-team">
+                                <div class="col-xl-3 col-lg-3 col-md-3 "></div>
+                                <div class="col-xl-9 col-lg-9 col-md-9 " id="operations">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4"
+                                            onclick="addSlideOnHover3(carddata.advisor6)">
+                                            <div class=" team-tab-box-inner team-member-1 position-relative ">
+                                                <img src="./assets/images/Team_new/photo.svg " alt=" " />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0 ">
+                                                <p>Aditya Shrivastav<br><span>Marketing Lead
+                                                    </span></p>
+                                                <div class="box-seperator "></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social2.svg "
+                                                                alt=" " /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social3.svg "
+                                                                alt=" " /></a>
+                                                    </li>
 
-                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4"
+                                            onclick="addSlideOnHover3(carddata.advisor7) ">
+                                            <div class="team-tab-box-inner team-member-3 position-relative ">
+                                                <img src="./assets/images/Team_new/photo-6.svg " alt=" " />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0 ">
+                                                <p>Amrita Saini<br><span>Human Resources Lead
+                                                    </span></p>
+                                                <div class="box-seperator "></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social2.svg "
+                                                                alt=" " /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social3.svg "
+                                                                alt=" " /></a>
+                                                    </li>
 
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <h2 class="advisor-name" id="advisorName3"></h2>
-                                    <h4 class="designation" id="advisorDesignation3"></h4>
-                                    <p class="content-advisor" id="contentAdvisor3"></p>
-                                    <hr>
-                                    <div class="social-icons">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social2.svg" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                                            </li>
+                                <div class="col-xl-9 col-lg-9 col-md-9 " id="personalInfoCard3" class="personalInfo3"
+                                    onmouseleave="hideSlideonmouseleave3()">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4">
+                                            <img src="./assets/images/Team_new/roundarrow.svg" />
+                                            <img class="profilebgOteam" src="./assets/images/Team_new/profilebg.svg" />
+                                            <div class="profileImg">
+                                                <img src="" alt="" id="advisorImage3" width="">
 
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="min-height :50vh;">
-
-                                <div class="row Advisor-team " id="operations">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "
-                                        onclick="addSlideOnHover3(carddata.advisor7)">
-                                        <div class="team-tab-box-inner team-member-2 position-relative ">
-                                            <img src="./assets/images/Team_new/photo-7.svg " alt=" " />
+                                            </div>
                                         </div>
-                                        <div class="team-tab-box-inner-bottom pb-0 ">
-                                            <p>Unnati Tak<br><span>Operations Manager
-                                                </span></p>
-                                            <div class="box-seperator "></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social2.svg "
-                                                            alt=" " /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social3.svg "
-                                                            alt=" " /></a>
-                                                </li>
+                                        <div class="col-xl-8 col-lg-8 col-md-8">
+                                            <h2 class="advisor-name" id="advisorName3"></h2>
+                                            <h4 class="designation" id="advisorDesignation3"></h4>
+                                            <p class="content-advisor" id="contentAdvisor3"></p>
+                                            <hr>
+                                            <div class="social-icons">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social2.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social3.svg"
+                                                                alt="" /></a>
+                                                    </li>
 
-                                            </ul>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "
-                                        onclick="addSlideOnHover3(carddata.advisor7)">
-                                        <div class="team-tab-box-inner team-member-2 position-relative ">
-                                            <img src="./assets/images/Team_new/photo-7.svg " alt=" " />
-                                        </div>
-                                        <div class="team-tab-box-inner-bottom pb-0 ">
-                                            <p>Purvi Sahni<br><span>Advisor</span></p>
-                                            <div class="box-seperator "></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social2.svg "
-                                                            alt=" " /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social3.svg "
-                                                            alt=" " /></a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
-                        <div class="tab5">
+                        <div class="tab6" >
                             <h2 class="founder-head ">Student Venture Partner</h2>
-                            <div id="personalInfoCard4" class="personalInfo4" onmouseleave="hideSlideonmouseleave4()">
-                                <div>
-                                    <div class="arrow">
-                                        <img src="./assets/images/Team_new/arrow.svg" alt="">
-                                    </div>
-                                    <div class="blue-background">
-                                    </div>
-                                    <div class="profileImgOperations">
-                                        <img src="" alt="" id="advisorImage4" width="">
+                            <div class="row Advisor-team ">
+                                <div class="col-xl-3 col-lg-3 col-md-3"></div>
+                                <div class="col-xl-9 col-lg-9 col-md-9" id="svp">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4"
+                                            onclick="addSlideOnHover4(carddata.advisor8)">
+                                            <div class="team-tab-box-inner team-member-2 position-relative ">
+                                                <img src="./assets/images/Team_new/photo-7.svg " alt=" " />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0 ">
+                                                <p>Aryan Mittal
+                                                    <br><span>Student Venture Partner
+                                                    </span>
+                                                </p>
+                                                <div class="box-seperator "></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social2.svg "
+                                                                alt=" " /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social3.svg "
+                                                                alt=" " /></a>
+                                                    </li>
 
-                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4"
+                                            onclick="addSlideOnHover4(carddata.advisor9)">
+                                            <div class="team-tab-box-inner team-member-2 position-relative ">
+                                                <img src="./assets/images/Team_new/photo-7.svg " alt=" " />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0 ">
+                                                <p>Parth Goel
+                                                    <br><span>Student Venture Partner
+                                                    </span>
+                                                </p>
+                                                <div class="box-seperator "></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social2.svg "
+                                                                alt=" " /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social3.svg "
+                                                                alt=" " /></a>
+                                                    </li>
 
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4"
+                                            onclick="addSlideOnHover4(carddata.advisor10)">
+                                            <div class="team-tab-box-inner team-member-2 position-relative ">
+                                                <img src="./assets/images/Team_new/photo-7.svg " alt=" " />
+                                            </div>
+                                            <div class="team-tab-box-inner-bottom pb-0 ">
+                                                <p>Bhargav Chaudhari
+                                                    <br><span>Student Venture Partner
+                                                    </span>
+                                                </p>
+                                                <div class="box-seperator "></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social2.svg "
+                                                                alt=" " /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="# "><img src="./assets/images/home/social3.svg "
+                                                                alt=" " /></a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <h2 class="advisor-name" id="advisorName4"></h2>
-                                    <h4 class="designation" id="advisorDesignation4"></h4>
-                                    <p class="content-advisor" id="contentAdvisor4"></p>
-                                    <hr>
-                                    <div class="social-icons">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social2.svg" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="./assets/images/home/social3.svg" alt="" /></a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="min-height :50vh;">
-
-                                <div class="row Advisor-team " id="svp">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "
-                                        onclick="addSlideOnHover4(carddata.advisor8)">
-                                        <div class="team-tab-box-inner team-member-2 position-relative ">
-                                            <img src="./assets/images/Team_new/photo-7.svg " alt=" " />
+                                <div class="col-xl-9 col-lg-9 col-md-9 " id="personalInfoCard4" class="personalInfo4"
+                                    onmouseleave="hideSlideonmouseleave4()">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4">
+                                            <img src="./assets/images/Team_new/roundarrow.svg" />
+                                            <img class="profilebgOteam" src="./assets/images/Team_new/profilebg.svg" />
+                                            <div class="profileImgOperations">
+                                                <img src="" alt="" id="advisorImage4" width="">
+                                            </div>
                                         </div>
-                                        <div class="team-tab-box-inner-bottom pb-0 ">
-                                            <p>Aryan Mittal
-                                                <br><span>Student Venture Partner
-                                                </span>
-                                            </p>
-                                            <div class="box-seperator "></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social2.svg "
-                                                            alt=" " /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social3.svg "
-                                                            alt=" " /></a>
-                                                </li>
+                                        <div class="col-xl-8 col-lg-8 col-md-8">
+                                            <h2 class="advisor-name" id="advisorName4"></h2>
+                                            <h4 class="designation" id="advisorDesignation4"></h4>
+                                            <p class="content-advisor" id="contentAdvisor4"></p>
+                                            <hr>
+                                            <div class="social-icons">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social2.svg"
+                                                                alt="" /></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="./assets/images/home/social3.svg"
+                                                                alt="" /></a>
+                                                    </li>
 
-                                            </ul>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "
-                                        onclick="addSlideOnHover4(carddata.advisor9)">
-                                        <div class="team-tab-box-inner team-member-2 position-relative ">
-                                            <img src="./assets/images/Team_new/photo-7.svg " alt=" " />
-                                        </div>
-                                        <div class="team-tab-box-inner-bottom pb-0 ">
-                                            <p>Parth Goel
-                                                <br><span>Student Venture Partner
-                                                </span>
-                                            </p>
-                                            <div class="box-seperator "></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social2.svg "
-                                                            alt=" " /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social3.svg "
-                                                            alt=" " /></a>
-                                                </li>
 
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-3 "
-                                        onclick="addSlideOnHover4(carddata.advisor10)">
-                                        <div class="team-tab-box-inner team-member-2 position-relative ">
-                                            <img src="./assets/images/Team_new/photo-7.svg " alt=" " />
-                                        </div>
-                                        <div class="team-tab-box-inner-bottom pb-0 ">
-                                            <p>Bhargav Chaudhari
-                                                <br><span>Student Venture Partner
-                                                </span>
-                                            </p>
-                                            <div class="box-seperator "></div>
-                                            <ul>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social2.svg "
-                                                            alt=" " /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="# "><img src="./assets/images/home/social3.svg "
-                                                            alt=" " /></a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- <div style="min-height :50vh;">
+
+                                
+                            </div> -->
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <!-- ======= Funders ======= -->
@@ -1120,7 +1157,7 @@
         }
 
         let addSlideOnHover = (advisor) => {
-            debugger
+            //debugger
             document.getElementById('advisorName').innerHTML = advisor.name;
             document.getElementById('advisorDesignation').innerHTML = advisor.designation;
             document.getElementById('contentAdvisor').innerHTML = advisor.description;
@@ -1128,15 +1165,16 @@
 
             document.getElementById('advisorImage').src = advisor.image;
 
-            document.getElementById('advisorTeam').style.display = 'none';
+            document.getElementById('advisorTeam').style.display = 'none'; // none
             document.getElementById('advisorTeam').classList.add = "animate__fadeIn ";
             document.getElementById('personalInfoCard').style.display = 'block';
         }
-
         let hideSlideonmouseleave = () => {
             document.getElementById('advisorTeam').style.display = 'block';
             document.getElementById('personalInfoCard').style.display = 'none';
         }
+
+
         let addSlideOnHover1 = (advisor) => {
             document.getElementById('advisorName1').innerHTML = advisor.name;
             document.getElementById('advisorDesignation1').innerHTML = advisor.designation;
