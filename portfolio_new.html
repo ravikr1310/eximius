@@ -33,7 +33,22 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <script>
+    $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+            var inputValue = $(this).attr("value");
+            $("." + inputValue).toggle();
+            $("#" + inputValue).focus();
+        });
+    });
+    </script>
   <style>
+    .box{       
+        color: #fff;
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
+    }
     .tab {
       height: 100%;
       /* overflow-y: scroll; */
@@ -371,19 +386,19 @@ border-radius: 8px;
               </label>
               <form>
                 <div class="form-container">
-                  <input type="checkbox" value="">
+                  <input type="checkbox" name="filterCheckbox" value="Fintech">
                   <label class="checkbox-inline-cb">Fintech</label>
                 </div>
                 <div class="form-container">
-                  <input type="checkbox" value="">
+                  <input type="checkbox" name="filterCheckbox" value="HealthTech">
                   <label class="checkbox-inline-cb">Health Tech</label>
                 </div>
                 <div class="form-container">
-                  <input type="checkbox" value="">
+                  <input type="checkbox" name="filterCheckbox" value="MedicalEntertainment">
                   <label class="checkbox-inline-cb">Medical & Entertainment</label>
                 </div>
                 <div class="form-container">
-                  <input type="checkbox" value="">
+                  <input type="checkbox" name="filterCheckbox" value="Other">
                   <label class="checkbox-inline-cb">Other</label>
                 </div>
               </form>
@@ -393,6 +408,37 @@ border-radius: 8px;
       </div>
     </section>
 
+    
+      <div class="Fintech box container" id="Fintech" data-aos="fade-up">
+        <div class="section-title Gaming-section-title">
+          <p>Fintech</p>
+          <h3>Fintech</h3>
+        </div>        
+      </div>
+    
+    
+      <div class="HealthTech box  container " id="HealthTech" data-aos="fade-up">
+        <div class="section-title Gaming-section-title">
+          <p>HealthTech</p>
+          <h3>HealthTech</h3>
+        </div>      
+      </div>
+    
+   
+      <div class="container MedicalEntertainment box" id="MedicalEntertainment" data-aos="fade-up">
+        <div class="section-title Gaming-section-title">
+          <p>MedicalEntertainment</p>
+          <h3>MedicalEntertainment</h3>
+        </div>      
+      </div>
+   
+      <div class="container Other box" id="MedicalEntertainment" data-aos="fade-up">
+        <div class="section-title Gaming-section-title">
+          <p>other</p>
+          <h3>other</h3>
+        </div>      
+      </div>
+    
     <!-- ======= Press Release Section ======= -->
     <section id="ourportfolio" class="contact portfolio-mid-section">
       <div class="container" data-aos="fade-up">
@@ -1080,8 +1126,11 @@ border-radius: 8px;
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+    
 
+    // 
   </script>
+ 
 </body>
 
 </html>
