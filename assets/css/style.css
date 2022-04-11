@@ -3229,7 +3229,7 @@ section.wesupport {
   line-height: 25.6px;
   padding: 0;
   margin: 0;
-  width: 76%;
+  width: 104%;
 }
 
 .para-container {
@@ -6078,6 +6078,7 @@ section.offer {
 
 #footer .footer-top .footer-links {
   /* margin-bottom: 30px; */
+      /* padding-left: 95px */
 }
 
 #footer .footer-top .footer-links ul {
