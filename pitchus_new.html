@@ -78,8 +78,8 @@
 
     .pitch-inner .files:before {
       position: absolute;
-      bottom: -12px;
-      left: 0;
+      top: 115px;
+    left: -62px;
       pointer-events: none;
       width: 100%;
       right: 0;
@@ -311,18 +311,22 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-xl-5 col-lg-5 col-md-5">
+                      <div class="col-xl-5 col-lg-5 col-md-5 position-relative">
                         <!-- <form method="post" action="#" id="#" class="position-relative"> -->
                         <div class="form-group files">
                           <label for="pitchDesk">Drop in your Pitch Deck</label>
                           <input type="file" class="form-control" multiple="" id="pitchDesk" name="pitchDesk">
+                          <p id="droppick"></p>
+                          <p id="dropinvalidfile">invalid file extension! Please upload a pdf, pptx or docx.</p>
                         </div>
                         <!-- </form> -->
                       </div>
-                      <div class="col-xl-5 col-lg-5 col-md-5">
+                      <div class="col-xl-5 col-lg-5 col-md-5 position-relative">
                         <div class="form-group files">
                           <label for="productDemo">Product Demo (Optional)</label>
                           <input type="file" class="form-control" multiple="" id="productDemo" name="productDemo">
+                          <p id="optionaldroppick"></p>
+                          <p id="optionaldropinvalidfile">invalid file extension! Please upload a pdf, pptx or docx.</p>
                         </div>
                       </div>
                     </div>
@@ -486,6 +490,54 @@
       display: inline-block;
       color: #000000;
     }
+    p#droppick {
+      display: none;
+      font-family: 'Manrope-SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: #4BA05E;
+      padding-top: 6px;
+    }
+    #dropinvalidfile{
+      display: none;
+      font-family: 'Manrope-SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: #E13232;
+      padding-top:6px
+    }
+    p#optionaldroppick{
+      display: none;
+      font-family: 'Manrope-SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: #4BA05E;
+      padding-top: 6px;
+    }
+    #optionaldropinvalidfile{
+      display: none;
+      font-family: 'Manrope-SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: #E13232;
+      padding-top:6px
+    }
   </style>
   <script type="text/javascript">
     $(document).on('ready', function () {
@@ -530,24 +582,27 @@
         xhr: function () {
           var myXhr = $.ajaxSettings.xhr();
           if (myXhr.upload) {
-            debugger;
             myXhr.upload.addEventListener('progress', this.progressHandling, false);
           }
           return myXhr;
         },
         success: function (data) {
-          debugger;
+          debugger
           if (selectedname == pitchDesk) {
             pitchDeskURLafterupload = data.data.location;
+            document.getElementById("droppick").style.display = 'block';
+            document.getElementById("droppick").innerHTML = data.message;
           }
           if (selectedname == productDemo) {
             productDemoURLafterupload = data.data.location;
+            document.getElementById("optionaldroppick").style.display = 'block';
+            document.getElementById("optionaldroppick").innerHTML = data.message;
           }
+          console.log("productDemoURLafterupload: " + productDemoURLafterupload)
           // your callback here
         },
         error: function (error) {
           // handle error
-          debugger;
           console.log(error);
         },
         async: true,
@@ -573,7 +628,6 @@
     };
 
     $("#pitchDesk").on("change", function (e) {
-      debugger;
       var file = $(this)[0].files[0];
       var upload = new Upload(file, pitchDesk);
 
@@ -585,7 +639,6 @@
 
 
     $("#productDemo").on("change", function (e) {
-      debugger;
       var file = $(this)[0].files[0];
       var upload = new Upload(file, productDemo);
 
