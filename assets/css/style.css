@@ -734,7 +734,7 @@ section.our-str {
 }
 
 section.portfolio-mid-section {
-  padding-top: 152px;
+  margin-top: 5%;
   position: var(--pos-rltv);
   background-image: url(../images/portfolio_new/greenbg1.svg), url(../images/portfolio_new/bluebg1.svg);
   background-position: left 26px top 80px, left 0 top 0;
