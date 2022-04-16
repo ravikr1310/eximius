@@ -40,6 +40,24 @@
             $("." + inputValue).toggle();
             $("#" + inputValue).focus();
         });
+
+        //EximiusI
+        $(".EximiusI").click(function(){
+              $('.FINTECH ').toggle();
+              $('.Healthtech').toggle();
+              $('.MediaandEntertainment').toggle();
+              $('.Otherfirst').hide();
+        })
+
+        //TheGamingLounge
+        $(".TheGamingLounge").click(function(){
+            $('.EsportsXo').toggle();
+        });
+
+        $(".FoundersFund").click(function(){
+            $('.FoundersFundSection').toggle();
+        });
+
     });
     </script>
   <style>
@@ -374,9 +392,9 @@ border-radius: 8px;
             <div class="team_details">
               <ul>
                 <li class="active"><a class="inner-main-team" href="#">All</a></li>
-                <li><a class="inner-main-team" href="#ourportfolio">Eximius I</a></li>
-                <li><a class="inner-main-team" href="#portfolionew">The Gaming Lounge</a></li>
-                <li><a class="inner-main-team" href="#founderfund">Founder's Fund</a></li>
+                <li><a class="inner-main-team EximiusI" >Eximius I</a></li>
+                <li><a class="inner-main-team TheGamingLounge" >The Gaming Lounge</a></li>
+                <li><a class="inner-main-team FoundersFund" >Founder's Fund</a></li>
               </ul>
             </div>
           </div>
@@ -385,19 +403,19 @@ border-radius: 8px;
               <label class="filter-label">Filter <img src="./assets/images/portfolio_new/blue-right-arror.svg" />
               </label>
               <form>
-                <div class="form-container">
+                <div class="form-container FINTECH">
                   <input type="checkbox" name="filterCheckbox" value="Fintech">
                   <label class="checkbox-inline-cb">Fintech</label>
                 </div>
-                <div class="form-container">
+                <div class="form-container Healthtech">
                   <input type="checkbox" name="filterCheckbox" value="HealthTech">
                   <label class="checkbox-inline-cb">Health Tech</label>
                 </div>
-                <div class="form-container">
+                <div class="form-container MediaandEntertainment">
                   <input type="checkbox" name="filterCheckbox" value="MedicalEntertainment">
                   <label class="checkbox-inline-cb">Medical & Entertainment</label>
                 </div>
-                <div class="form-container">
+                <div class="form-container Otherfirst">
                   <input type="checkbox" name="filterCheckbox" value="Other">
                   <label class="checkbox-inline-cb">Other</label>
                 </div>
@@ -406,9 +424,7 @@ border-radius: 8px;
           </div>
         </div>
       </div>
-    </section>
-
-    
+    </section>    
       <div class="Fintech box container" id="Fintech" data-aos="fade-up">
         <div class="section-title Gaming-section-title">
           <p>Fintech</p>
@@ -438,7 +454,19 @@ border-radius: 8px;
           <h3>other</h3>
         </div>      
       </div>
+
+      <div class="container box EsportsXo" id="EsportsXo" data-aos="fade-up">
+        <div class="section-title">
+          EsportsXo
+      </div>
+      </div>
     
+
+      <div class="container box FoundersFundSection" id="EsportsXo" data-aos="fade-up">
+        <div class="section-title Gaming-section-title">
+          Foounder Found Section
+      </div>
+      </div>
     <!-- ======= Press Release Section ======= -->
     <section id="ourportfolio" class="contact portfolio-mid-section">
       <div class="container" data-aos="fade-up">
