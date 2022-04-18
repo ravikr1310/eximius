@@ -34,68 +34,37 @@
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
   <script>
-     $(document).ready(function(){
+    $(document).ready(function(){
         $('input[type="checkbox"]').click(function(){
-          
-          var fields = $('#divfilterlist input[type=checkbox]:checked').serializeArray();
-          jQuery.each( fields, function( i, field ) {
-            debugger;
-               $("." + field.value).show();
-               console.log( field.value);
-               console.log($(this).val());
-
-          });
-            // var inputValue = $(this).attr("value");                       
-            // $('.result-sec-cb').css("display", "flex");
-            // if($(this).prop("checked") == true){
-            //    $("." + inputValue).show();
-            //    $("#" + inputValue).focus();
-            //     console.log("Checkbox is checked.");
-            // }
-            // else if($(this).prop("checked") == false){
-            //     $("." + inputValue).hide();
-            //     console.log("Checkbox is unchecked.");
-            // }
+            var inputValue = $(this).attr("value");
+            $("." + inputValue).toggle();
+            $("#" + inputValue).focus();
         });
         //EximiusI
-        $("#eximius").click(function(){
+        $(".EximiusI").click(function(){
+          debugger;              
               TheFoundersFundHide();  
               TheGamingLoungeHide();
-              $('.FINTECH').show();
-              $('.Healthtech').show();
-              $('.MediaandEntertainment').show();
+              $('.FINTECH').toggle();
+              $('.Healthtech').toggle();
+              $('.MediaandEntertainment').toggle();
               $('.Otherfirst').hide();
-              $('.result-sec-cb').css("display", "flex");
-              $('.EximiusI').css('class','active');
-              
-              // submenu
-              $('.commonbox').css('display','block');
-              $('#otherdisplay').css("display","none");
-              $('.EsportsXo').hide();
-              $('.FoundersFundSection').hide();
+              $('.result-sec-cb').css("display", "flex"); 
+              $('.result-sec-cb').css("display", "block");
         });
         //TheGamingLounge
-        $("#thetamingtounge").click(function(){
+        $(".TheGamingLounge").click(function(){
             reset();
             EximiusIHide();
             TheFoundersFundHide();
-            $('.EsportsXo').show();
+            $('.EsportsXo').toggle();
         });
-        $("#FoundersFund").click(function(){
+        $(".FoundersFund").click(function(){
             reset();
             EximiusIHide();
             TheGamingLoungeHide();            
-            $('.FoundersFundSection').show();
+            $('.FoundersFundSection').toggle();
         });
-        $(".showall").click(function(){
-          debugger
-          $('.FINTECH').show();
-          $('.Healthtech').show();
-          $('.MediaandEntertainment').show();
-          $('.Otherfirst').show();
-          $('.result-sec-cb').css("display", "flex"); 
-          $('.result-sec-cb').css("display", "flex");
-        })
     });
     function reset(){
       $('#bdID').trigger("reset");
@@ -113,12 +82,15 @@
     }
     function TheFoundersFundHide(){
       $('.FoundersFundSection').hide();
-    } 
+    }
    
   </script>
   <style>
-    .commonbox{
-        display: none; 
+    .commonbox{       
+        color: #fff;
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
     }
     .tab {
       height: 100%;
@@ -294,7 +266,7 @@
       display: flex;
       align-items: center;
       margin-top: 32px;
-      /* display: none; */
+      display: none;
     }
     /* .bottum_section {
     display: flex;
@@ -346,10 +318,7 @@
     .filter-label img {
       margin-left: 37px;
     }
-    /* .team_details li.actived {
-        background: var(--button-hover);
-        box-shadow: var(--box-shadow);
-    } */
+
     .pf-checkboxes form label.checkbox-inline-cb {
       color: var(--primary-color);
       font-weight: 600;
@@ -448,10 +417,10 @@ border-radius: 8px;
             </div>
             <div class="team_details">
               <ul>
-                <li class="active showall"><a class="inner-main-team" href="#">All</a></li>
-                <li><a class="inner-main-team" id="eximius">Eximius I</a></li>
-                <li><a class="inner-main-team" id="thetamingtounge" >The Gaming Lounge</a></li>
-                <li><a class="inner-main-team" id="FoundersFund">Founder's Fund</a></li>
+                <li class="active"><a class="inner-main-team" href="#">All</a></li>
+                <li><a class="inner-main-team EximiusI" >Eximius I</a></li>
+                <li><a class="inner-main-team TheGamingLounge" >The Gaming Lounge</a></li>
+                <li><a class="inner-main-team FoundersFund" >Founder's Fund</a></li>
               </ul>
             </div>
           </div>
@@ -460,7 +429,6 @@ border-radius: 8px;
               <label class="filter-label">Filter <img src="./assets/images/portfolio_new/blue-right-arror.svg" />
               </label>
               <form>
-              <div id="divfilterlist">
                 <div class="form-container FINTECH">
                   <input type="checkbox" name="filterCheckbox" value="Fintech">
                   <label class="checkbox-inline-cb">Fintech</label>
@@ -473,7 +441,6 @@ border-radius: 8px;
                   <input type="checkbox" name="filterCheckbox" value="MedicalEntertainment">
                   <label class="checkbox-inline-cb">Medical & Entertainment</label>
                 </div>
-              </div>
                 <div class="form-container Otherfirst">
                   <input type="checkbox" name="filterCheckbox" value="Other">
                   <label class="checkbox-inline-cb">Other</label>
@@ -484,15 +451,15 @@ border-radius: 8px;
         </div>
       </div>
     </section>    
-      <!-- <div class="Fintech commonbox container" id="Fintech" data-aos="fade-up">
+      <div class="Fintech commonbox container" id="Fintech" data-aos="fade-up">
         <div class="section-title Gaming-section-title">
           <p>Fintech</p>
           <h3>Fintech</h3>
         </div>        
-      </div> -->
+      </div>
     
     
-      <!-- <div class="HealthTech commonbox container" id="HealthTech" data-aos="fade-up">
+      <div class="HealthTech commonbox container" id="HealthTech" data-aos="fade-up">
         <div class="section-title Gaming-section-title">
           <p>HealthTech</p>
           <h3>HealthTech</h3>
@@ -505,23 +472,36 @@ border-radius: 8px;
           <p>MedicalEntertainment</p>
           <h3>MedicalEntertainment</h3>
         </div>      
-      </div> -->
+      </div>
    
-      <div class="container Other commonbox" id="otherdisplay" data-aos="fade-up">
+      <div class="container Other commonbox" id="MedicalEntertainment" data-aos="fade-up">
         <div class="section-title Gaming-section-title">
           <p>other</p>
           <h3>other</h3>
         </div>      
       </div>
+
+      <div class="container commonbox EsportsXo" id="EsportsXo" data-aos="fade-up">
+        <div class="section-title">
+          EsportsXo
+      </div>
+      </div>
+    
+
+      <div class="container commonbox FoundersFundSection" id="FoundersFundSection" data-aos="fade-up">
+        <div class="section-title Gaming-section-title">
+          Foounder Found Section
+      </div>
+      </div>
     <!-- ======= Press Release Section ======= -->
     <section id="ourportfolio" class="contact portfolio-mid-section">
-      <div class="container Fintech commonbox" data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
           <p>Eximius I</p>
           <h3>$10M SEBI Registered Fund</h3>
         </div>
         <div class="row position-relative">
-          <div class="col-xl-4 col-lg-4 col-md-4" id="Fintech" data-aos="zoom-in">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/first.svg" alt="Card image cap">
               <div class="card-body">
@@ -530,13 +510,7 @@ border-radius: 8px;
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
-                  1. Flux 
-                  2. Jar 
-                  3. Fego 
-                  4. iTribe 
-                  5. Fleek 
-                  6. Skydo 
-                  7. Bimakavach 
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
                 <div class="bottum_section">
                   <span class="social-links mt-3">
@@ -549,7 +523,7 @@ border-radius: 8px;
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 HealthTech commonbox" id="HealthTech" data-aos="zoom-in">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/second.svg" alt="Card image cap">
               <div class="card-body">
@@ -558,7 +532,7 @@ border-radius: 8px;
                   <a href="./fintech.html" class="btn-fintech">Health tech</a>
                 </div>
                 <p class="pr-desc">
-                  1. Eka Care 
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
                 <div class="bottum_section">
                   <span class="social-links mt-3">
@@ -571,7 +545,7 @@ border-radius: 8px;
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 MedicalEntertainment commonbox" id="MedicalEntertainment" data-aos="zoom-in">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/third.svg" alt="Card image cap">
               <div class="card-body">
@@ -580,10 +554,7 @@ border-radius: 8px;
                   <a href="./fintech.html" class="btn-fintech">Media & Entertainment </a>
                 </div>
                 <p class="pr-desc">
-                  1. Kala Gato 
-                  2. Zorro 
-                  3. Stan 
-                  4. Oyela 
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
                 <div class="bottum_section">
                   <span class="social-links mt-3">
@@ -598,7 +569,7 @@ border-radius: 8px;
           </div>
         </div>
       </div>
-      <div class="container commonbox EsportsXo" id="portfolionew" data-aos="fade-up">
+      <div class="container " id="portfolionew" data-aos="fade-up">
         <div class="section-title Gaming-section-title">
           <p>The Gaming Lounge</p>
           <h3>Syndicate For Selected Gaming Investments</h3>
@@ -740,7 +711,7 @@ border-radius: 8px;
           </div>
         </div>
       </div>
-      <div class="container commonbox FoundersFundSection" id="founderfund" data-aos="fade-up">
+      <div class="container" id="founderfund" data-aos="fade-up">
         <div class="section-title founder-section-title">
           <p>Founder's Fund</p>
           <h3>General Partner's Personal Investment</h3>
@@ -1057,7 +1028,7 @@ border-radius: 8px;
 
     <!-- ======= News Letter Section ======= -->
     <section id="newsletter" class="newsletter">
-      <div class="container inner-container-newsletter">
+      <div class="container inner-container-newsletter" data-aos="fade-up">
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in">
             <h4 class="head">Subscribe to our Newsletter</h4>
@@ -1193,7 +1164,6 @@ border-radius: 8px;
         $('.header-side-menu').hide();
       })
     });
-    
     function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -1208,7 +1178,10 @@ border-radius: 8px;
       evt.currentTarget.className += " active";
     }
 
-   </script>
+    
+
+    // 
+  </script>
  
 </body>
 
