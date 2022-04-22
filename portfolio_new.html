@@ -69,8 +69,7 @@
              }
                     
         });
-        
-        
+                
         //EximiusI
         $("#eximius").click(function(){
               TheFoundersFundHide();  
@@ -95,12 +94,14 @@
             TheFoundersFundHide();
             $('.EsportsXo').show();
         });
+        //Founders Fund
         $("#FoundersFund").click(function(){
             reset();
             EximiusIHide();
             TheGamingLoungeHide();            
             $('.FoundersFundSection').show();
         });
+        //
         $(".showall").click(function(){
           debugger
           $('.FINTECH').show();
@@ -109,10 +110,21 @@
           $('.Otherfirst').show();
           $('.result-sec-cb').css("display", "flex"); 
           $('.result-sec-cb').css("display", "flex");
+          $('.commonbox').css('display','block');
         })
     });
+    function loadfirsttime()
+    {
+      $('.FINTECH').show();
+          $('.Healthtech').show();
+          $('.MediaandEntertainment').show();
+          $('.Otherfirst').show();
+          $('.result-sec-cb').css("display", "flex"); 
+          $('.result-sec-cb').css("display", "flex");
+          $('.commonbox').css('display','block');
+    }
     function reset(){
-      $('#bdID').trigger("reset");
+      //$('#bdID').trigger("reset");
     }
     function EximiusIHide(){
               $('.FINTECH').hide();
@@ -120,7 +132,7 @@
               $('.MediaandEntertainment').hide();
               $('.Otherfirst').hide();
               $('.result-sec-cb').css("display", "none");             
-              
+              $('.commonbox').css('display','none');
     }
     function TheGamingLoungeHide(){
       $('.EsportsXo').hide();
@@ -423,7 +435,7 @@ border-radius: 8px;
   </style>
 </head>
 
-<body id="bdID">
+<body onload="loadfirsttime()" id="bdID">
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container align-items-center">
@@ -457,7 +469,7 @@ border-radius: 8px;
       <div class="container">
         <div class="row">
           <div class="pfolio-pattern"></div>
-          <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="50">
+          <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-delay="5">
             <div class="section-title">
               <h1>Portfolio</h1>
             </div>
@@ -1017,7 +1029,7 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
               </p>
             </div>
           </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
+          <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="10">
             <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 964.svg" class="img-fluid-tools" alt="" /></div>
@@ -1030,7 +1042,7 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
+          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="10">
             <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 968.svg" class="img-fluid-tools" alt="" /></div>
@@ -1041,7 +1053,7 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
               </p>
             </div>
           </div>
-          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="100">
+          <div class="col-md-4 col-lg-4 align-items-stretch" data-aos-delay="10">
             <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 969.svg" class="img-fluid-tools" alt="" /></div>
@@ -1053,7 +1065,7 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
               </p>
             </div>
           </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="300">
+          <div class="col-md-4 col-lg-4 d-flex align-items-stretch" data-aos-delay="10">
             <div class="icon-box pd-l-0">
 
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 970.svg" class="img-fluid-tools" alt="" /></div>
