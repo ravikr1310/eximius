@@ -34,82 +34,37 @@
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
   <script>
-     $(document).ready(function(){
+    $(document).ready(function(){
         $('input[type="checkbox"]').click(function(){
-          var arroriginal =["HealthTech","MediaEntertainment","Fintech"];
-          var newarrifmatch=[];
-          var newarrnotmatched =[];
-          var arr = [];
-          var uncheckedarr=[];
-             $('#divfilterlist input:checkbox:checked').each(function(i){
-                 arr[i] = $(this).val(); // u can get id or anything else  
-                        
-             });
-             $("#divfilterlist input:checkbox:not(:checked)").each(function(i){
-              uncheckedarr[i] = $(this).val();
-             });
-             console.log(arr);
-             console.log(uncheckedarr);            
-
-             for (let index = 0; index < arr.length; index++) {
-               const element = arr[index];
-               $("." + element).show();               
-             }
-             if (uncheckedarr.length==3) {
-              for (let index = 0; index < uncheckedarr.length; index++) {
-               const element = uncheckedarr[index];
-               $("." + element).show();                
-             }  
-             } 
-             else {
-              for (let index = 0; index < uncheckedarr.length; index++) {
-               const element = uncheckedarr[index];
-               $("." + element).hide();                
-             }   
-             }
-                    
+            var inputValue = $(this).attr("value");
+            $("." + inputValue).toggle();
+            $("#" + inputValue).focus();
         });
-        
-        
         //EximiusI
-        $("#eximius").click(function(){
+        $(".EximiusI").click(function(){
+          debugger;              
               TheFoundersFundHide();  
               TheGamingLoungeHide();
-              $('.FINTECH').show();
-              $('.Healthtech').show();
-              $('.MediaandEntertainment').show();
+              $('.FINTECH').toggle();
+              $('.Healthtech').toggle();
+              $('.MediaandEntertainment').toggle();
               $('.Otherfirst').hide();
-              $('.result-sec-cb').css("display", "flex");
-              $('.EximiusI').css('class','active');
-              
-              // submenu
-              $('.commonbox').css('display','block');
-              $('#otherdisplay').css("display","none");
-              $('.EsportsXo').hide();
-              $('.FoundersFundSection').hide();
+              $('.result-sec-cb').css("display", "flex"); 
+              $('.result-sec-cb').css("display", "block");
         });
         //TheGamingLounge
-        $("#thetamingtounge").click(function(){
+        $(".TheGamingLounge").click(function(){
             reset();
             EximiusIHide();
             TheFoundersFundHide();
-            $('.EsportsXo').show();
+            $('.EsportsXo').toggle();
         });
-        $("#FoundersFund").click(function(){
+        $(".FoundersFund").click(function(){
             reset();
             EximiusIHide();
             TheGamingLoungeHide();            
-            $('.FoundersFundSection').show();
+            $('.FoundersFundSection').toggle();
         });
-        $(".showall").click(function(){
-          debugger
-          $('.FINTECH').show();
-          $('.Healthtech').show();
-          $('.MediaandEntertainment').show();
-          $('.Otherfirst').show();
-          $('.result-sec-cb').css("display", "flex"); 
-          $('.result-sec-cb').css("display", "flex");
-        })
     });
     function reset(){
       $('#bdID').trigger("reset");
@@ -127,12 +82,15 @@
     }
     function TheFoundersFundHide(){
       $('.FoundersFundSection').hide();
-    } 
+    }
    
   </script>
   <style>
-    .commonbox{
-        display: none; 
+    .commonbox{       
+        color: #fff;
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
     }
     .tab {
       height: 100%;
@@ -308,7 +266,7 @@
       display: flex;
       align-items: center;
       margin-top: 32px;
-      /* display: none; */
+      display: none;
     }
     /* .bottum_section {
     display: flex;
@@ -360,10 +318,7 @@
     .filter-label img {
       margin-left: 37px;
     }
-    /* .team_details li.actived {
-        background: var(--button-hover);
-        box-shadow: var(--box-shadow);
-    } */
+
     .pf-checkboxes form label.checkbox-inline-cb {
       color: var(--primary-color);
       font-weight: 600;
@@ -437,9 +392,8 @@ border-radius: 8px;
           <li class="nav-item dropdown">
             <a class="nav-link scrollto" href="sector-of-focus.html">Sectors of focus</a>
              <ul class="dropdown-menu">
-
              <li class="pd-l-0"><a class="dropdown-item pd-l-0 active" href="sector-of-focus.html">Fintech</a></li>
-             <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-healthTech.html">HealthTech</a></li>
+             <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-healthTech.html">Healthcare</a></li>
              <li class="pd-l-0"><a class="dropdown-item pd-l-0" href="sector-of-focus-mediaAndEntertainment.html">Media & Entertainment</a></li>
              </ul>
          </li>
@@ -463,10 +417,10 @@ border-radius: 8px;
             </div>
             <div class="team_details">
               <ul>
-                <li class="active showall"><a class="inner-main-team" href="#">All</a></li>
-                <li><a class="inner-main-team" id="eximius">Eximius I</a></li>
-                <li><a class="inner-main-team" id="thetamingtounge" >The Gaming Lounge</a></li>
-                <li><a class="inner-main-team" id="FoundersFund">Founder's Fund</a></li>
+                <li class="active"><a class="inner-main-team" href="#">All</a></li>
+                <li><a class="inner-main-team EximiusI" >Eximius I</a></li>
+                <li><a class="inner-main-team TheGamingLounge" >The Gaming Lounge</a></li>
+                <li><a class="inner-main-team FoundersFund" >Founder's Fund</a></li>
               </ul>
             </div>
           </div>
@@ -475,20 +429,18 @@ border-radius: 8px;
               <label class="filter-label">Filter <img src="./assets/images/portfolio_new/blue-right-arror.svg" />
               </label>
               <form>
-              <div id="divfilterlist">
-                <div class="form-container">
-                  <input type="checkbox" name="filterCheckbox" class="myCheckBox" value="Fintech">
+                <div class="form-container FINTECH">
+                  <input type="checkbox" name="filterCheckbox" value="Fintech">
                   <label class="checkbox-inline-cb">Fintech</label>
                 </div>
-                <div class="form-container">
-                  <input type="checkbox" name="filterCheckbox" class="myCheckBox" value="HealthTech">
+                <div class="form-container Healthtech">
+                  <input type="checkbox" name="filterCheckbox" value="HealthTech">
                   <label class="checkbox-inline-cb">Health Tech</label>
                 </div>
-                <div class="form-container ">
-                  <input type="checkbox" name="filterCheckbox" class="myCheckBox" value="MediaEntertainment">
-                  <label class="checkbox-inline-cb">Media & Entertainment</label>
-                </div>                
-              </div>
+                <div class="form-container MediaandEntertainment">
+                  <input type="checkbox" name="filterCheckbox" value="MedicalEntertainment">
+                  <label class="checkbox-inline-cb">Medical & Entertainment</label>
+                </div>
                 <div class="form-container Otherfirst">
                   <input type="checkbox" name="filterCheckbox" value="Other">
                   <label class="checkbox-inline-cb">Other</label>
@@ -499,15 +451,15 @@ border-radius: 8px;
         </div>
       </div>
     </section>    
-      <!-- <div class="Fintech commonbox container" id="Fintech" data-aos="fade-up">
+      <div class="Fintech commonbox container" id="Fintech" data-aos="fade-up">
         <div class="section-title Gaming-section-title">
           <p>Fintech</p>
           <h3>Fintech</h3>
         </div>        
-      </div> -->
+      </div>
     
     
-      <!-- <div class="HealthTech commonbox container" id="HealthTech" data-aos="fade-up">
+      <div class="HealthTech commonbox container" id="HealthTech" data-aos="fade-up">
         <div class="section-title Gaming-section-title">
           <p>HealthTech</p>
           <h3>HealthTech</h3>
@@ -520,23 +472,36 @@ border-radius: 8px;
           <p>MedicalEntertainment</p>
           <h3>MedicalEntertainment</h3>
         </div>      
-      </div> -->
+      </div>
    
-      <div class="container Other commonbox" id="otherdisplay" data-aos="fade-up">
+      <div class="container Other commonbox" id="MedicalEntertainment" data-aos="fade-up">
         <div class="section-title Gaming-section-title">
           <p>other</p>
           <h3>other</h3>
         </div>      
       </div>
+
+      <div class="container commonbox EsportsXo" id="EsportsXo" data-aos="fade-up">
+        <div class="section-title">
+          EsportsXo
+      </div>
+      </div>
+    
+
+      <div class="container commonbox FoundersFundSection" id="FoundersFundSection" data-aos="fade-up">
+        <div class="section-title Gaming-section-title">
+          Foounder Found Section
+      </div>
+      </div>
     <!-- ======= Press Release Section ======= -->
     <section id="ourportfolio" class="contact portfolio-mid-section">
-      <div class="container commonbox" data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
           <p>Eximius I</p>
           <h3>$10M SEBI Registered Fund</h3>
         </div>
         <div class="row position-relative">
-          <div class="col-xl-4 col-lg-4 col-md-4 Fintech" id="Fintech" data-aos="zoom-in">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/first.svg" alt="Card image cap">
               <div class="card-body">
@@ -545,26 +510,20 @@ border-radius: 8px;
                   <a href="./fintech.html" class="btn-fintech">FinTech</a>
                 </div>
                 <p class="pr-desc">
-                  1. Flux 
-                  2. Jar 
-                  3. Fego 
-                  4. iTribe 
-                  5. Fleek 
-                  6. Skydo 
-                  7. Bimakavach 
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
                 <div class="bottum_section">
                   <span class="social-links mt-3">
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="jar-details.html" class="btn-get-started scrollto pull-right">View More<img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More<img
                       src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 HealthTech" id="HealthTech" data-aos="zoom-in">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/second.svg" alt="Card image cap">
               <div class="card-body">
@@ -573,20 +532,20 @@ border-radius: 8px;
                   <a href="./fintech.html" class="btn-fintech">Health tech</a>
                 </div>
                 <p class="pr-desc">
-                  1. Eka Care 
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
                 <div class="bottum_section">
                   <span class="social-links mt-3">
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="ekacare-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                       src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 MediaEntertainment" id="MediaEntertainment" data-aos="zoom-in">
+          <div class="col-xl-4 col-lg-4 col-md-4" data-aos="zoom-in">
             <div class="card">
               <img class="card-img-top" src="./assets/images/portfolio_new/third.svg" alt="Card image cap">
               <div class="card-body">
@@ -595,17 +554,14 @@ border-radius: 8px;
                   <a href="./fintech.html" class="btn-fintech">Media & Entertainment </a>
                 </div>
                 <p class="pr-desc">
-                  1. Kala Gato 
-                  2. Zorro 
-                  3. Stan 
-                  4. Oyela 
+                  Jar Is Helping Users In Investing Digital Gold And Rediscover The Comulative Advantages Of Savings
                 </p>
                 <div class="bottum_section">
                   <span class="social-links mt-3">
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="finarkin-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
@@ -613,7 +569,7 @@ border-radius: 8px;
           </div>
         </div>
       </div>
-      <div class="container commonbox EsportsXo" id="portfolionew" data-aos="fade-up">
+      <div class="container " id="portfolionew" data-aos="fade-up">
         <div class="section-title Gaming-section-title">
           <p>The Gaming Lounge</p>
           <h3>Syndicate For Selected Gaming Investments</h3>
@@ -635,7 +591,7 @@ border-radius: 8px;
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="jar-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
@@ -657,7 +613,7 @@ border-radius: 8px;
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="ekacare-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
@@ -679,7 +635,7 @@ border-radius: 8px;
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="finarkin-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
@@ -703,7 +659,7 @@ border-radius: 8px;
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="jar-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
@@ -725,7 +681,7 @@ border-radius: 8px;
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="ekacare-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
@@ -747,7 +703,7 @@ border-radius: 8px;
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="finarkin-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
@@ -755,7 +711,7 @@ border-radius: 8px;
           </div>
         </div>
       </div>
-      <div class="container commonbox FoundersFundSection" id="founderfund" data-aos="fade-up">
+      <div class="container" id="founderfund" data-aos="fade-up">
         <div class="section-title founder-section-title">
           <p>Founder's Fund</p>
           <h3>General Partner's Personal Investment</h3>
@@ -777,7 +733,7 @@ border-radius: 8px;
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="jar-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
@@ -799,7 +755,7 @@ border-radius: 8px;
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="ekacare-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a>
                 </div>
               </div>
@@ -821,7 +777,7 @@ border-radius: 8px;
                     <a href="#" class="linkinedin"><img src="./assets/images/portfolio_new/linkindin.svg" alt="" /></a>
                     <a href="#" class="twiter"><img src="./assets/images/portfolio_new/twitter.svg" alt="" /></a>
                   </span>
-                  <a href="finarkin-details.html" class="btn-get-started scrollto pull-right">View More <img
+                  <a href="./pitchus.html" class="btn-get-started scrollto pull-right">View More <img
                     src="./assets/images/home/right-indicator.svg" alt="Right"></a> 
                 </div>
               </div>
@@ -988,7 +944,7 @@ border-radius: 8px;
 
         <div class="section-title">
           <p><b>Tools</b> To Get You Started</p>
-          <a href="dealbook.html" class="btn-get-started pull-right">See More <img src="./assets/images/home/right-indicator.svg"
+          <a href="#" class="btn-get-started pull-right">See More <img src="./assets/images/home/right-indicator.svg"
               alt="Right" /></a>
         </div>
 
@@ -1000,8 +956,8 @@ border-radius: 8px;
 
               <h4 class="title"><a href="">Notion</a></h4>
               <p class="description">
-                Notion is a product management application for companies and individuals, providing components such as notes, databases, Kanban boards, calendars, reminders etc. 
-Get $1,000 off on Team Plan as a part of the Eximius portfolio!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
@@ -1012,8 +968,8 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
 
               <h4 class="title"><a href="">Razorpay</a></h4>
               <p class="description">
-                Razorpay is India’s first full-stack financial solutions company that enables businesses to send, receive, route & manage all payments. 
-                Enjoy credits worth ₹1L for Payment Gateway and more!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
@@ -1024,8 +980,8 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
 
               <h4 class="title"><a href="">Mixpanel</a></h4>
               <p class="description">
-                Mixpanel helps companies easily track user behaviour through data.
-                Eximius Venture’s portfolio gets $50K in Mixpanel credits over 12 months, to enhance user experience and make better products.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
@@ -1036,8 +992,8 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
               <div class="icon"><img src="./assets/images/portfolio_new/Frame 968.svg" class="img-fluid-tools" alt="" /></div>
               <h4 class="title"><a href="">Google cloud</a></h4>
               <p class="description">
-                Google Cloud is a Cloud based productivity tool for startups to accelerate their growth. 
-                Get credit based offers by becoming a part of the Eximius portfolio.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
@@ -1048,8 +1004,8 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
 
               <h4 class="title"><a href="">Freshworks</a></h4>
               <p class="description">
-                Freshworks is a leading maker of cloud-based customer and employee engagement software. 
-                By being a part of the Eximius portfolio, you get credits worth $10,000 on Freshworks products.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
@@ -1060,8 +1016,8 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
 
               <h4 class="title"><a href="">Amajon web services</a></h4>
               <p class="description">
-                Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services.
-                As a part of the Eximius portfolio, you get $25,000 in AWS Activate Credits valid for 2 year and 1 year of AWS Business Support (up to $5,000).
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                aliqua.
               </p>
             </div>
           </div>
@@ -1072,13 +1028,12 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
 
     <!-- ======= News Letter Section ======= -->
     <section id="newsletter" class="newsletter">
-      <div class="container inner-container-newsletter">
+      <div class="container inner-container-newsletter" data-aos="fade-up">
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12" data-aos="zoom-in">
             <h4 class="head">Subscribe to our Newsletter</h4>
-            <p class="parag">Get Fresh Updates And News Delivered Straight To Your Inbox, Because We Know You Can’t Check Our Website Daily.
-
-            </p>
+            <p class="parag">Lorem ipsum egongen prening bet att for atande intervall pegisamma. Sorat tepoling. Plar
+              forpappring semisam ningen.</p>
             <!-- The form -->
             <form class="example" action="/action_page.php">
               <input type="text" placeholder="johndoe@gmail.com" name="search2">
@@ -1110,12 +1065,12 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
             <h2 class="contact-address"> <img src="./assets/images/home/cil_location-pin.svg" class="location-icon"
                 alt="" /> Gurgaon -</h2>
             <p class="f-abt">The Solitaire Plaza, F-101, Sector 26<br>
-              pitches@eximiusvc.com
+              Support@eximius.com
             </p>
             <h2 class="contact-address pd-t-40"><img src="./assets/images/home/cil_location-pin.svg"
                 class="location-icon" alt="" />Bengaluru -</h2>
-            <p class="f-abt">Harlur Main Road, HSR layout<br>
-              pitches@eximiusvc.com
+            <p class="f-abt">Harlur Main road, HSR layout<br>
+              Support@eximius.com
             </p>
             </ul>
           </div>
@@ -1126,7 +1081,7 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
               <li><a href="sector-of-focus.html">Sector of focus</a></li>
               <!-- <li><a href="careers.html">Career</a></li> -->
               <!-- <li><a href="#">Founder Forum</a></li> -->
-              <li><a href="team1.html">Our Team</a></li>
+              <li><a href="team1.html">Out Team</a></li>
             </ul>
           </div>
           <!-- <div class="col-lg-3 col-md-3 col-sm-3 footer-links padding-left100">
@@ -1152,10 +1107,10 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
           </div>
           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-align-right pd-l-0 pd-r-0">
             <div class="social-links">
-              <a href="https://www.youtube.com/channel/UCx1ZoY1xWqluit80Yz9tTFg" class="twitter"><img src="./assets/images/home/social1.svg" alt="" /></a>
-              <a href="https://www.linkedin.com/company/eximius-capital-ventures/" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
-              <a href="https://twitter.com/eximiusvc" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
-              <a href="https://medium.com/eximius-ventures" class="google-plus mg-r-0"><img src="./assets/images/home/social4.svg" alt="" /></a>
+              <a href="#" class="twitter"><img src="./assets/images/home/social1.svg" alt="" /></a>
+              <a href="#" class="instagram"><img src="./assets/images/home/social2.svg" alt="" /></a>
+              <a href="#" class="google-plus"><img src="./assets/images/home/social3.svg" alt="" /></a>
+              <a href="#" class="google-plus mg-r-0"><img src="./assets/images/home/social4.svg" alt="" /></a>
             </div>
           </div>
         </div>
@@ -1209,7 +1164,6 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
         $('.header-side-menu').hide();
       })
     });
-    
     function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -1224,7 +1178,10 @@ Get $1,000 off on Team Plan as a part of the Eximius portfolio!
       evt.currentTarget.className += " active";
     }
 
-   </script>
+    
+
+    // 
+  </script>
  
 </body>
 
